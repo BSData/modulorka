@@ -1,0 +1,1702 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="e871-e837-c9a4-e8cb" name="Dirk Bikaz" hidden="false" collective="false" import="true" targetId="5a56-b7ce-b0b3-36a1" type="selectionEntry"/>
+    <entryLink id="3f11-c5d0-9a05-c408" name="Speed-Boss" hidden="false" collective="false" import="true" targetId="5e8b-b45e-afda-8718" type="selectionEntry"/>
+    <entryLink id="7141-1c91-c414-c8bf" name="Speed Kultistz" hidden="false" collective="false" import="true" targetId="bd69-72f4-aeb6-a357" type="selectionEntry"/>
+    <entryLink id="7d73-fe75-3160-ec85" name="Arma-Boss" hidden="false" collective="false" import="true" targetId="b6ed-5dd9-03cf-abde" type="selectionEntry"/>
+    <entryLink id="903f-83bb-cf68-972d" name="Gearboss" hidden="false" collective="false" import="true" targetId="0365-6b50-3ecd-def7" type="selectionEntry"/>
+    <entryLink id="b462-6137-d9e2-59b8" name="Ladz" hidden="false" collective="false" import="true" targetId="a1da-dd0f-2757-5795" type="selectionEntry"/>
+    <entryLink id="6f3f-8c7b-2504-bf2f" name="Truck" hidden="false" collective="false" import="true" targetId="67c3-c06a-b965-2027" type="selectionEntry"/>
+    <entryLink id="dff0-cbcc-8bda-564d" name="Geargobz" hidden="false" collective="false" import="true" targetId="46b4-b701-cbe6-4965" type="selectionEntry"/>
+    <entryLink id="fc4b-f34c-98db-6d09" name="Hunta Brawlaz" hidden="false" collective="false" import="true" targetId="69d2-9b40-8a20-1819" type="selectionEntry"/>
+    <entryLink id="8fd2-2043-cfd9-892d" name="Gob-Ladz" hidden="false" collective="false" import="true" targetId="6a11-d5d5-cdc1-35a7" type="selectionEntry"/>
+    <entryLink id="70ff-26a1-81eb-6e2e" name="Hunta-Boss" hidden="false" collective="false" import="true" targetId="bf5e-5c10-0aeb-8d18" type="selectionEntry"/>
+    <entryLink id="33af-dc78-951c-5630" name="Hunta-Gobs" hidden="false" collective="false" import="true" targetId="1332-48e8-18d0-0adb" type="selectionEntry"/>
+    <entryLink id="48f1-d845-68e1-c44e" name="Gearhedz" hidden="false" collective="false" import="true" targetId="f74a-cf68-fb52-b763" type="selectionEntry"/>
+    <entryLink id="6754-81f8-6cf7-9d2a" name="Warr-Lock" hidden="false" collective="false" import="true" targetId="f083-6e10-10c8-12b7" type="selectionEntry"/>
+    <entryLink id="d19a-4add-1a5e-10db" name="Alphahunter on Rammonsta" hidden="false" collective="false" import="true" targetId="c85c-7e29-8db3-0878" type="selectionEntry"/>
+    <entryLink id="5ef9-1aef-2349-c5cd" name="Baron Gigantus" hidden="false" collective="false" import="true" targetId="3b93-9421-c786-b19c" type="selectionEntry"/>
+    <entryLink id="449a-6e1f-3e45-580c" name="Gronik Drark: Da Steel Lad" hidden="false" collective="false" import="true" targetId="ce1d-1cbf-b096-5e59" type="selectionEntry"/>
+    <entryLink id="398c-591f-2339-89d4" name="Kolonel Druuk: Da Kommanda" hidden="false" collective="false" import="true" targetId="f2cf-bc2c-36b9-c82c" type="selectionEntry"/>
+    <entryLink id="2ebf-0a86-5f5a-146c" name="Kragnard Da Dworfhata" hidden="false" collective="false" import="true" targetId="8551-a5d1-1114-36e4" type="selectionEntry"/>
+    <entryLink id="dab1-8a3a-75c6-1dea" name="Rogg Eadbanga: Lord of Rokk" hidden="false" collective="false" import="true" targetId="52bf-2c7f-33ce-3e8e" type="selectionEntry"/>
+    <entryLink id="d564-4018-fbc4-3faf" name="Gob-Wrangla" hidden="false" collective="false" import="true" targetId="2dfc-b7c4-8e04-b996" type="selectionEntry"/>
+    <entryLink id="c27a-61c8-aff7-9804" name="Hunta Cavalry" hidden="false" collective="false" import="true" targetId="0387-a11d-d3db-9368" type="selectionEntry"/>
+    <entryLink id="565f-9294-2f02-96f8" name="Snozwot Grotwazza: Gob-Masta" hidden="false" collective="false" import="true" targetId="34ae-2858-57c0-9a13" type="selectionEntry"/>
+    <entryLink id="bb5a-45cf-0865-9ea6" name="Gharnog Skorchahamma: Da Minigunator" hidden="false" collective="false" import="true" targetId="d20d-c606-ea66-80de" type="selectionEntry"/>
+    <entryLink id="6897-176d-757b-a852" name="Monsta-Bomma" hidden="false" collective="false" import="true" targetId="d4d1-4655-7e8b-db4b" type="selectionEntry"/>
+    <entryLink id="697c-511d-dd53-ab14" name="Monsta-Hound" hidden="false" collective="false" import="true" targetId="c4c1-2f9a-005d-8883" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="5a56-b7ce-b0b3-36a1" name="Dirt Bikaz" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="9f59-b942-4859-04a4" name="Dirt Bikaz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">2</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ab84-4a92-1e61-30b7" name="Agile" hidden="false" targetId="3d6f-9e28-bc29-9139" type="profile"/>
+        <infoLink id="e151-ece5-207d-0432" name="Mounted (Speedkultistz)" hidden="false" targetId="2277-cb69-f627-57fd" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5440-abcd-5998-10d1" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="a7ba-0cc0-3b6f-9dd6" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="f23e-2ed2-718d-ac91" name="Fast" hidden="false" targetId="a520-8150-7aef-b15a" primary="false"/>
+        <categoryLink id="7812-df60-45f9-8c17" name="Mounted" hidden="false" targetId="381b-1d1c-1d0b-0693" primary="false"/>
+        <categoryLink id="d52b-af96-bd52-4553" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="false"/>
+        <categoryLink id="7e1e-05e3-3034-10ee" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9af5-8894-50f1-4b2a" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6e84-280f-fecf-b02b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4284-441e-942d-d992" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="258e-d317-952c-6440" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bbbc-155e-e798-1936" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bd69-72f4-aeb6-a357" name="Speed Kultistz" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="12cb-f295-eefa-e2fc" name="Speed Kultistz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">4</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e085-946a-8ac3-70b9" name="Agile" hidden="false" targetId="3d6f-9e28-bc29-9139" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9b12-9a09-984c-fb61" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="fe02-00d7-fc01-1ebf" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="090a-3895-deaa-56d4" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="false"/>
+        <categoryLink id="99ba-457e-bdc2-aab7" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d4da-3cc8-8bda-f59e" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f277-bb4c-58dc-ff4a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="12a8-5778-a7ab-6ed5" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="18d3-bf6a-6776-2680" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="34c8-1f46-474d-8693" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5e8b-b45e-afda-8718" name="Speed-Boss" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="322f-4233-f2c3-91eb" name="Speed-Boss" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">6</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bf30-d519-05ad-e039" name="Agile" hidden="false" targetId="3d6f-9e28-bc29-9139" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8151-acc1-9dc5-215c" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="15cc-f1c3-db3b-acf8" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="false"/>
+        <categoryLink id="590e-0550-06cf-1f3d" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="75c1-2db2-7564-1f4b" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="384e-0c03-2bca-3517" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a0fd-776b-392d-e1c4" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7212-5c9e-e408-db31" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1a76-4a30-1649-ed6d" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aeea-e323-bf40-9c5a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="46c4-54c3-a3f5-8858" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a1da-dd0f-2757-5795" name="Ladz" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="ad73-5a5d-7770-e5ce" name="Ladz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">4</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d1fe-2dae-2af7-f8fe" name="Overwatch" hidden="false" targetId="21c6-d4b4-4766-7188" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="bef7-9447-039d-b43e" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="2262-32b9-87e4-8ba0" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="a0b4-646b-28f2-3140" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="386a-758e-714b-5f32" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5eb5-0357-fbb5-62de" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7304-ae14-2897-d6e2" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3fb8-0a17-028a-576b" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3f05-7104-e87f-628d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1d2d-1886-1695-7134" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6a11-d5d5-cdc1-35a7" name="Gob-Ladz" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="d685-d183-7ea3-8570" name="Gob-Ladz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">2</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">1</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">2</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="38eb-b2f5-0958-ddad" name="Overwatch" hidden="false" targetId="21c6-d4b4-4766-7188" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6a12-d0eb-aa66-96ea" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="29dd-c674-dda9-df54" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="0a43-69d6-2fe5-6b23" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+        <categoryLink id="f8cf-f9ce-f662-8e5c" name="Goblin" hidden="false" targetId="c377-399d-c098-4a83" primary="false"/>
+        <categoryLink id="1ed9-c54e-a090-cbb0" name="Fragile" hidden="false" targetId="56a5-b46b-a6cf-a29a" primary="false"/>
+        <categoryLink id="5742-9307-21ff-0670" name="Small" hidden="false" targetId="976e-2c74-2a99-dce4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cbf4-74a5-7762-ec9e" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5f06-a7f4-4b3d-bc07" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8005-59e8-e89e-d01a" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="68e9-be2d-80c9-0a47" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="067f-c224-2afd-0442" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b6ed-5dd9-03cf-abde" name="Arma-Boss" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="afec-541d-8f96-5910" name="Arma-Boss" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">5</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="18c3-389b-d9ad-c4b2" name="Overwatch" hidden="false" targetId="21c6-d4b4-4766-7188" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cea2-896a-e2c4-30a5" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="3eb3-0e8d-8de4-7fdd" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="dccf-fb3a-bd4d-86dc" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="8858-b770-75a7-f37f" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
+        <categoryLink id="7d51-ef31-f867-4fb4" name="Bulky" hidden="false" targetId="1590-958c-9778-75fb" primary="false"/>
+        <categoryLink id="939a-127b-6fe1-ed02" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f88a-dac7-3f1e-dd54" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b7b-c600-dd52-b254" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e72e-704f-3304-dd8e" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7238-97c2-8526-701a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4a1f-05ba-ea04-bb74" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="67c3-c06a-b965-2027" name="Truck" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5962-fdcb-fbe0-09d4" name="Truck" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">2</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">6</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="15f8-0117-6c4d-eeac" name="Overwatch" hidden="false" targetId="21c6-d4b4-4766-7188" type="profile"/>
+        <infoLink id="e882-1bea-3080-2aa8" name="Transport" hidden="false" targetId="5f4d-9031-2176-04d3" type="profile"/>
+        <infoLink id="6797-85e8-a538-9f91" name="Explosive" hidden="false" targetId="70ec-5fed-6f5f-991a" type="profile"/>
+        <infoLink id="5030-d924-caa9-5ea1" name="Ram" hidden="false" targetId="e7bf-7600-2e56-7d82" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7feb-2ec2-6eb5-8b33" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+        <categoryLink id="bdec-04ca-af8d-b4c7" name="New CategoryLink" hidden="false" targetId="60ef-0f36-ca03-750d" primary="true"/>
+        <categoryLink id="fe22-6f65-032d-351a" name="Transport" hidden="false" targetId="5b46-50e8-d637-7901" primary="false"/>
+        <categoryLink id="f2cc-c9bf-7c86-1cd4" name="Steadfast" hidden="false" targetId="1db6-c967-f964-eada" primary="false"/>
+        <categoryLink id="09ea-7674-cf1f-b947" name="Opentop" hidden="false" targetId="41d7-d7aa-a2de-7d9f" primary="false"/>
+        <categoryLink id="3001-5dfc-e3c1-92b0" name="Battlebus" hidden="false" targetId="d4a1-8ea0-f4b9-df50" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9d8a-f1c9-35ee-9948" name="Ram" hidden="false" collective="false" import="true" targetId="9979-1cbb-f2b9-381a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="19d7-2963-2ab7-ff1c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="72d9-65e3-b750-8199" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="404a-a986-79b1-d04c" name="Vehicle Gear" hidden="false" collective="false" import="true" targetId="9620-5edb-1173-f4e9" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f74a-cf68-fb52-b763" name="Gearhedz" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="2d1e-b4ea-97a7-aa47" name="Gearhedz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">4</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4752-df2b-0b45-8aac" name="Keep Yer &apos;Ed Down" hidden="false" targetId="8775-3315-ac69-c57e" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1b94-fea9-d2c2-2288" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="9d03-9131-2f5a-2d83" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="8f24-766d-4832-ab7a" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="a45b-c93b-e2ad-85fd" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="25d0-6499-619b-7b26" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="574c-cbf6-0d47-10ea" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1054-3622-da6e-a7ea" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="46f9-7bf6-fd1b-8189" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1f41-cdc5-4421-12b0" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="46b4-b701-cbe6-4965" name="Geargobz" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="c513-9f12-56ea-acab" name="Geargobz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">2</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">1</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">2</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6f5d-4fe6-2d82-0939" name="Keep Yer &apos;Ed Down" hidden="false" targetId="8775-3315-ac69-c57e" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="50a3-4352-fb99-ad06" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="23a7-6576-7eee-5a80" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="f94e-5ce9-2d4f-5389" name="Goblin" hidden="false" targetId="c377-399d-c098-4a83" primary="false"/>
+        <categoryLink id="ee64-39d6-6a32-e7a0" name="Fragile" hidden="false" targetId="56a5-b46b-a6cf-a29a" primary="false"/>
+        <categoryLink id="500e-bc36-013b-a9b9" name="Small" hidden="false" targetId="976e-2c74-2a99-dce4" primary="false"/>
+        <categoryLink id="d52c-a9d6-2bc7-b508" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="accf-ab3c-50ee-9094" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2373-856b-171c-8546" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8318-7237-a717-d2d1" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="96e0-da70-c434-c419" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b61f-c301-1aa8-aac0" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0365-6b50-3ecd-def7" name="Gearboss" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="94dd-88e9-ea87-b836" name="Gearboss" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">8</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="58bb-a76e-c29b-5922" name="Keep Yer &apos;Ed Down" hidden="false" targetId="8775-3315-ac69-c57e" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="84a0-1065-81dc-50a3" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="8219-6de3-29c4-7562" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="581a-0e98-e377-18e8" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="cef7-aff2-6271-344e" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
+        <categoryLink id="ceb8-d03a-4090-c815" name="Slow" hidden="false" targetId="e720-6b39-10eb-f0d7" primary="false"/>
+        <categoryLink id="2bdb-451c-87c3-3788" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="false"/>
+        <categoryLink id="7d87-3475-44f4-2f5c" name="Bulky" hidden="false" targetId="1590-958c-9778-75fb" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b4df-b1a9-9c47-0f82" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="65fc-0add-533e-b95c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b935-24ec-1696-ebf1" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d87e-6f83-670e-be98" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b256-9fae-4c9e-e9e9" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6b57-524a-7500-2242" name="Rokkaladz" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="281d-6a38-389e-a324" name="Rokkaladz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">4</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8d40-82f8-ad86-a11e" name="Unfazed" hidden="false" targetId="62f1-0d63-0b00-75f9" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d0cd-c1c9-5e2f-545f" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="1cb3-8e09-b1a8-38c0" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="3654-c65d-fe5e-d1af" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="7c4a-b04b-9659-cbbc" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2dcc-59dc-a239-1d2d" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="70a1-1dff-20ef-06c2" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="90a5-a7cc-b829-29c4" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4926-0073-17ef-8850" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="087c-f1fc-5471-b70e" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6d7a-8272-5122-fa72" name="Rokkaboss" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="58ba-6c16-facc-e2e7" name="Rokkaboss" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">5</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4ac5-4ed1-9fa7-5e17" name="Unfazed" hidden="false" targetId="62f1-0d63-0b00-75f9" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2e40-8b78-3040-662c" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="e731-b8a7-253e-ba9b" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="3799-9ff8-f961-b83b" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="54d8-4a86-6455-cfa7" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
+        <categoryLink id="1499-621c-a3b7-3ad0" name="Bulky" hidden="false" targetId="1590-958c-9778-75fb" primary="false"/>
+        <categoryLink id="1a5f-c28c-c752-dffd" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6d54-f29c-6127-f4df" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b6f3-dae6-905a-5cea" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1251-e5c1-be45-233f" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6d6d-f0cb-f90d-ff04" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a739-a867-29c6-dc2a" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="69d2-9b40-8a20-1819" name="Hunta Brawlaz" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="7f0b-075d-261b-b893" name="Hunta Brawlaz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">2</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">4</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">4</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3a86-733f-c381-8eb0" name="Charge!" hidden="false" targetId="8df4-bd28-a886-bfb7" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="86a2-89f0-5ce9-4069" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="c6cf-a849-5da1-3a97" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="f040-a520-78f1-f886" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="e2ae-346d-1ed9-9258" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9012-2143-4fa4-98a4" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ddf1-7930-09a4-01ef" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="bb23-3ffa-c234-17ff" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dddd-731d-0232-0bf8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="98a3-fa75-c2fc-0a5a" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1332-48e8-18d0-0adb" name="Hunta-Gobs" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="17e1-ec5e-75d0-7a80" name="Hunta-Gobs" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">1</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">2</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c73f-19d8-5aac-444b" name="Charge!" hidden="false" targetId="8df4-bd28-a886-bfb7" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3e3a-3fb7-1fa2-1e72" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="1cec-c4be-c02e-484d" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="bee6-3758-7da5-ac3d" name="Goblin" hidden="false" targetId="c377-399d-c098-4a83" primary="false"/>
+        <categoryLink id="53a7-f488-0065-fd4a" name="Fragile" hidden="false" targetId="56a5-b46b-a6cf-a29a" primary="false"/>
+        <categoryLink id="664e-05d4-a8b8-0b06" name="Small" hidden="false" targetId="976e-2c74-2a99-dce4" primary="false"/>
+        <categoryLink id="e2d2-6ee7-f70d-472f" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8efd-0929-7330-8109" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3228-0594-2adf-9fbf" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="553f-1b6e-8c30-56d3" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bbbb-8f3a-f879-e02c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b2c2-ea9e-bee2-2ef3" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bf5e-5c10-0aeb-8d18" name="Hunta-Boss" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="984c-2fd1-8b3f-be0f" name="Hunta-Boss" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">2</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">4</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">8</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f447-952e-318e-baa5" name="Charge!" hidden="false" targetId="8df4-bd28-a886-bfb7" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3769-2841-6f85-e8d6" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="995f-550f-ca5d-a720" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="195d-6aa7-d7c1-3576" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="502d-8e5b-d8a9-d2f2" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
+        <categoryLink id="b287-06b2-6adf-2eb1" name="Bulky" hidden="false" targetId="1590-958c-9778-75fb" primary="false"/>
+        <categoryLink id="126c-0bbc-6057-05c4" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e342-0bba-7678-4c94" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b147-c9f4-08ab-708b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="2e81-3a5e-8396-a734" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fb0d-7027-7df7-de3d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6dbf-d29e-5029-2ff4" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f083-6e10-10c8-12b7" name="Warr-Lock" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7b81-e598-aa53-de95" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="caf9-e5cd-7666-1992" name="Warr-Lock" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">4</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">5</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="aa62-3a3d-b20b-25f6" name="Charge!" hidden="false" targetId="8df4-bd28-a886-bfb7" type="profile"/>
+        <infoLink id="88bb-9e3b-e2ad-874c" name="Laza-Eyes" hidden="false" targetId="33ce-142d-865c-a7d9" type="profile"/>
+        <infoLink id="400d-c3aa-a6df-4177" name="Soulsucka" hidden="false" targetId="74eb-fbf8-4ea6-4e85" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2a54-10ec-45a3-2789" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="ae3e-64e3-4c22-be27" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="18e1-f045-608c-5d8d" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="6919-3686-edb5-3cca" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+        <categoryLink id="e478-548f-cfec-e2f2" name="Shaman" hidden="false" targetId="bd6d-16e1-1eb9-1c2a" primary="false"/>
+        <categoryLink id="c041-6b4d-879b-df9d" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="41b3-dce9-ec8e-9ef5" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="73d5-2724-8eb0-9b0a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f9da-5293-9ea5-75da" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dee9-cf4c-5507-e15b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ee9e-2095-59a2-f8e4" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="6.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0387-a11d-d3db-9368" name="Hunta Cavalry" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="980b-1105-19ea-a8f7" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="43b0-b73d-0a9d-e13d" name="Hunta Cavalry" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">2</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">4</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">4</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0829-0ddf-babd-560b" name="Charge!" hidden="false" targetId="8df4-bd28-a886-bfb7" type="profile"/>
+        <infoLink id="b92e-833b-5f77-49e4" name="Mounted (Hunta Brawla)" hidden="false" targetId="f4af-f73a-ef57-eab1" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4fb4-ef0b-552d-7c7a" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="15db-5b44-1187-6655" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="8ba2-0ac0-af42-4f55" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="9db8-1b45-97ed-8846" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+        <categoryLink id="f674-3606-510c-14e2" name="Shaman" hidden="false" targetId="bd6d-16e1-1eb9-1c2a" primary="false"/>
+        <categoryLink id="a73c-af8a-4ea2-4cf0" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b7fc-1cec-4fb0-f43f" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8846-bc8b-aeeb-ef60" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="099e-1c96-030b-ac17" name="Monsta Maul" hidden="false" collective="false" import="true" targetId="91de-256f-90a8-ad76" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e40c-c889-47df-f84f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7042-b9f5-48b6-05b1" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="5.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c85c-7e29-8db3-0878" name="Alphahunter on Rammonsta" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="661a-ff33-e4f4-4f7e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4828-5a59-17e3-a79d" name="Alphahunter on Rammonsta" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">2</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">4</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">6</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bedb-7719-7a0f-838a" name="Charge!" hidden="false" targetId="8df4-bd28-a886-bfb7" type="profile"/>
+        <infoLink id="378b-4f32-35d3-67d0" name="Mounted (Hunta Brawla)" hidden="false" targetId="f4af-f73a-ef57-eab1" type="profile"/>
+        <infoLink id="0d00-874d-a6e1-50b9" name="Beast Ram" hidden="false" targetId="b615-d092-0433-6254" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6317-96db-92b0-7285" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="f4d3-0f7c-fce2-fa6e" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="2456-369b-d895-8614" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+        <categoryLink id="3bcd-1d78-6bba-8af8" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+        <categoryLink id="c433-df3f-a037-93e8" name="Monsta" hidden="false" targetId="1537-8b19-1962-9051" primary="false"/>
+        <categoryLink id="429d-cdde-4271-36a6" name="Mounted" hidden="false" targetId="381b-1d1c-1d0b-0693" primary="false"/>
+        <categoryLink id="6d13-2555-624e-57a3" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
+        <categoryLink id="bfcb-4219-27e0-6e91" name="Fast" hidden="false" targetId="a520-8150-7aef-b15a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8902-f566-66e6-b536" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5656-9388-6031-0118" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0ffa-666f-bcde-462c" name="Monsta Maul" hidden="false" collective="false" import="true" targetId="91de-256f-90a8-ad76" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4049-e2c7-94b3-fc5c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="59ad-f8c7-971d-3af5" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2dfc-b7c4-8e04-b996" name="Gob-Wrangla" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4438-276a-bccc-e410" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="0b87-138a-3c3c-0658" name="Gob-Wrangla" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">2</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">4</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="01a4-6dad-98b0-4556" name="Charge!" hidden="false" targetId="8df4-bd28-a886-bfb7" type="profile"/>
+        <infoLink id="c5b9-cbc9-eb8c-919b" name="Gobwranglin" hidden="false" targetId="1ed1-fa27-04ef-63b0" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f902-1fd3-4f13-3a6e" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="1618-e9bb-bd51-c00c" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="443a-0fc7-7f9e-ef09" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="e778-b984-cc95-ed0d" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+        <categoryLink id="15ec-8582-ef9f-c908" name="Gob-Wrangla" hidden="false" targetId="21c2-066c-e9d3-c267" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="fbff-3112-6e54-ca6a" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="42ce-0eee-413f-d4cc" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b9c4-ca3b-0019-263c" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7125-6995-13b0-4265" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bc28-5a92-0190-d201" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="5.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d20d-c606-ea66-80de" name="Gharnog Skorchahamma: Da Minigunator" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="2b2c-b316-c832-4782" name="Gharnog Skorchahamma: Da Minigunator" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">8</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e37f-8caa-353e-6566" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Glory Seeker’ AI Archetype.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="858b-5c57-5700-9be7" name="Overwatch" hidden="false" targetId="21c6-d4b4-4766-7188" type="profile"/>
+        <infoLink id="8daf-b529-f344-586c" name="Metal Endoskeleton" hidden="false" targetId="0490-2150-68cc-6643" type="profile"/>
+        <infoLink id="7248-19f2-1bf9-fc8d" name="He&apos;ll Be Bak" hidden="false" targetId="9324-ec91-fa25-72a2" type="profile"/>
+        <infoLink id="8e15-0e85-e926-140b" name="Terminated" hidden="false" targetId="68b7-7b33-aba6-d887" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="155a-6917-9fbf-9abb" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="40aa-3c69-4ca7-5dac" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="3e5c-10df-481d-9377" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="7c12-7eed-c06a-6a7f" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+        <categoryLink id="efbe-c8c1-b8cf-9cf9" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+        <categoryLink id="11c0-737e-f73b-6428" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c197-2ed4-1696-c92c" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d066-6d4c-1225-4b93" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4ebd-ed3a-2fe3-b797" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c900-b707-532c-8bb9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b776-188a-2a47-4426" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9107-3e7e-e4cf-979c" name="Machine Gun" hidden="false" collective="false" import="true" targetId="9a73-47b0-4982-5fc5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="49ea-990f-93cd-f8d7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0113-0bb9-5459-9bd9" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f2cf-bc2c-36b9-c82c" name="Kolonel Druuk: Da Kommanda" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="9903-6900-fbea-9b1d" name="Kolonel Druuk: Da Kommanda" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">8</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5d48-d438-51ce-d5dd" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Infiltrator’ AI Archetype.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="fbc8-aa2a-b379-1fc5" name="Overwatch" hidden="false" targetId="21c6-d4b4-4766-7188" type="profile"/>
+        <infoLink id="28ac-8d0d-13d8-c07a" name="Kunnin&apos;" hidden="false" targetId="e13b-2c34-b361-0582" type="profile"/>
+        <infoLink id="c817-a70d-a3ba-3424" name="Infiltratin&apos;" hidden="false" targetId="456c-34e2-1dc4-456b" type="profile"/>
+        <infoLink id="e954-054c-5a8b-8d1a" name="Spotta" hidden="false" targetId="3caa-3728-0dca-2eec" type="profile"/>
+        <infoLink id="2285-f226-d62b-2ad5" name="Sneakin&apos;" hidden="false" targetId="c9f4-2f67-7507-2a1c" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0701-d0d8-1564-8ad1" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="a9f9-054e-6077-ee5b" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="6a13-0128-3b3c-3c33" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="c5c6-c0ee-c88b-86c2" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+        <categoryLink id="b483-2f22-ba4c-575b" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+        <categoryLink id="a8b1-a422-9d52-df86" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+        <categoryLink id="8090-9854-083e-571e" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
+        <categoryLink id="e107-e698-2bce-c58d" name="Spek-Ops" hidden="false" targetId="5748-94ea-1f98-ce73" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7a2b-5290-e5bc-5da4" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c285-e8ed-0be6-a055" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a368-47be-592c-5996" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7460-5337-dc73-0dba" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5bbd-4a0c-5d03-2f3a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="bcaf-b73d-98c2-bf59" name="Meka-Fist" hidden="false" collective="false" import="true" targetId="3032-7340-2ef2-9bdb" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf73-bc5e-0e0e-3098" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0d61-ab9f-7aa8-6bd9" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="668d-6e7a-e5e6-9f62" name="Grenade" hidden="false" collective="false" import="true" targetId="8c24-e8dc-2a9d-fa1e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a769-264e-dd6f-d07a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ebf-90c8-b6d8-3101" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6dce-a9e2-769c-aacd" name="Skoped Pistol" hidden="false" collective="false" import="true" targetId="f0e7-7dd5-d3cc-02a1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7161-9206-0b45-5e68" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="61dd-170c-0ba2-72fb" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8551-a5d1-1114-36e4" name="Kragnard Da Dworfhata" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="b613-80f5-a156-d222" name="Kragnard Da Dworfhata" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">6</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d3df-8315-d49a-1cad" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Aggressive’ AI Archetype.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5b65-a4a4-f5fd-8c68" name="Overwatch" hidden="false" targetId="21c6-d4b4-4766-7188" type="profile"/>
+        <infoLink id="f928-335c-8489-9b9b" name="Datz Gotta Be A Dworf" hidden="false" targetId="c856-528a-0d46-220e" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="be53-653c-61a1-a43c" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="0db3-cf89-82df-f73e" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="023c-772f-7cb4-09f4" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="3d92-35ce-ba7d-d8b9" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+        <categoryLink id="864e-36b9-4041-3ff4" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+        <categoryLink id="aa9d-275f-a444-b0e5" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+        <categoryLink id="3c51-0839-12a9-ad02" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
+        <categoryLink id="a085-96a6-fa38-a9f9" name="Spek-Ops" hidden="false" targetId="5748-94ea-1f98-ce73" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8099-6902-78f0-3648" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ae5f-ab67-58ae-ebaf" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4ce9-651e-073a-bf64" name="Grenade" hidden="false" collective="false" import="true" targetId="8c24-e8dc-2a9d-fa1e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d0bf-e33b-07fc-89e2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c79-02d2-4c5f-859f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a6e4-adc2-331e-5933" name="Megabludga" hidden="false" collective="false" import="true" targetId="85d8-cb12-c6a7-0b57" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7589-4861-a321-139c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f804-e6ce-790d-76f2" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="52bf-2c7f-33ce-3e8e" name="Rogg Eadbanga: Lord of Rokk" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="6c77-90c9-c28f-e0d5" name="Rogg Eadbanga: Lord of Rokk" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">2</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">6</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4ea1-2ba0-25d6-6364" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Enthusiastic’ AI Archetype.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e9de-b300-8b1e-3328" name="Overwatch" hidden="false" targetId="21c6-d4b4-4766-7188" type="profile"/>
+        <infoLink id="fa6a-5a3b-d520-43fc" name="Datz Gotta Be A Dworf" hidden="false" targetId="c856-528a-0d46-220e" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="722e-73dc-504c-9a09" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="fffe-c061-c448-f422" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="85b4-081a-1e9c-006a" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="2d31-ce00-052c-5318" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+        <categoryLink id="2212-a1a9-db7d-0b29" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+        <categoryLink id="dd1c-5717-445c-3f97" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="00e0-3478-79eb-e4fd" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8fcc-c143-1d19-11d9" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4a8a-02f2-cbe3-3a81" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a060-bb0f-2980-a030" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0b07-ba02-a0da-bf39" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="88e8-d7bb-6090-d452" name="Boombox" hidden="false" collective="false" import="true" targetId="8fcd-65ad-6970-43f0" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7caa-d6b0-f07a-fcbc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0e25-a2c9-0556-3895" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="381d-1c12-fc2c-61e6" name="Axeblasta" hidden="false" collective="false" import="true" targetId="0ea8-9ce8-cebf-d654" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c0e5-faf0-8c8e-d84f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4ec5-0b6c-b7ad-f5f8" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="de5c-9148-ed03-a853" name="Supa-Speakaz" hidden="false" collective="false" import="true" targetId="2e67-d1fe-20b6-f58e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="376c-74b7-ec6d-8527" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e74c-86cd-37a6-e8ad" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3b93-9421-c786-b19c" name="Baron Gigantus" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="73db-e674-bfdc-57d6" name="Baron Gigantus" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">2</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">6</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bc59-fbd8-bfc3-4a2d" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Cautious’ AI Archetype.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1c3e-9113-d089-0ec4" name="Unfazed" hidden="false" targetId="62f1-0d63-0b00-75f9" type="profile"/>
+        <infoLink id="2398-8df0-3278-aaf7" name="Just Walk Away" hidden="false" targetId="ba7d-70d0-942b-c222" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9576-5578-30ee-8a70" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="d92e-66ba-dd2c-25fe" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="4efd-8743-a90f-371a" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="9b92-1254-b57b-23d2" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+        <categoryLink id="384c-3ff4-dd92-d72e" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+        <categoryLink id="e510-8e19-0ad6-51f3" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c5b3-6f3c-35ab-dd60" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3a7a-4dc7-f811-44bc" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="eae3-bee7-4282-30e7" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cc69-9a1d-a032-fc4d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="49de-8972-07d7-c47c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c496-80ae-ab82-72f7" name="Boom-Mic" hidden="false" collective="false" import="true" targetId="d334-16e2-2c03-025a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fbc6-9cbc-bcb2-2716" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1218-f7d0-0440-3146" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d9f9-86cd-5023-6ab8" name="Bludga" hidden="false" collective="false" import="true" targetId="270a-d6cf-f4d5-0c87" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="48ad-a1ab-959e-860c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c335-36e0-b55e-43c9" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d05b-29b6-bafb-ab12" name="Supa-Speakaz" hidden="false" collective="false" import="true" targetId="2e67-d1fe-20b6-f58e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="55c6-1122-59b5-51b0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3412-9047-207b-d14a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fceb-2fdb-2e4e-17c8" name="Skoped Pistol" hidden="false" collective="false" import="true" targetId="f0e7-7dd5-d3cc-02a1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d71c-d7ef-116f-c9ad" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fcfc-70ef-5e81-4be0" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="10.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="34ae-2858-57c0-9a13" name="Snozwot Grotwazza: Gob-Masta" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="68a6-6e49-e03f-8b9f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6444-faf5-ba8d-be48" name="Snozwot Grotwazza: Gob-Masta" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">2</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">4</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b151-fe2a-bd0b-0ed8" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Kunnin’ AI Archetype.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="996f-01f7-fc95-ef84" name="Charge!" hidden="false" targetId="8df4-bd28-a886-bfb7" type="profile"/>
+        <infoLink id="e0e2-c693-6ad1-ccc9" name="Gobwranglin" hidden="false" targetId="1ed1-fa27-04ef-63b0" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="75d1-02ee-fa03-5bc7" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="fbea-e071-979a-71f8" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="1ec4-4006-703b-54d5" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="4fc6-8889-0878-12e9" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+        <categoryLink id="708b-010b-73ae-a9b6" name="Gob-Wrangla" hidden="false" targetId="21c2-066c-e9d3-c267" primary="false"/>
+        <categoryLink id="9c14-656b-afe4-194e" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+        <categoryLink id="6165-b726-7341-0b9c" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7177-5798-c744-cbb0" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="46ec-d419-488c-e65f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1993-9662-688b-99a1" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="57fd-5e24-45ff-ffc6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf34-c029-72ad-31b2" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ee73-1fbb-3c1a-83a2" name="Gob-Taza" hidden="false" collective="false" import="true" targetId="a5a3-fc21-09b9-3b9d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="525c-411e-6f21-a7f6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ad2-7c33-3ef4-7991" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a39d-afd5-8979-67dd" name="Gob-Whip" hidden="false" collective="false" import="true" targetId="a139-55c7-36a4-7b27" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="564d-1593-cf3f-f536" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="526f-9a87-9be9-76d1" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7e2e-f7e0-5582-b7a1" name="Skoped Pistol" hidden="false" collective="false" import="true" targetId="f0e7-7dd5-d3cc-02a1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4960-b563-76fa-fedf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1147-e9b7-9ef7-82ff" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="12.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ce1d-1cbf-b096-5e59" name="Gronik Drark: Da Steel Lad" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="9f13-7f46-8aaf-94be" name="Gronik Drark: Da Steel Lad" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">4</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">4</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3b59-1da1-8b75-7410" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Enthusiastic’ AI Archetype.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7c95-4aac-cbc5-a41d" name="Keep Yer &apos;Ed Down" hidden="false" targetId="8775-3315-ac69-c57e" type="profile"/>
+        <infoLink id="c436-2fb2-663e-c547" name="Jet Bootz" hidden="false" targetId="ca05-66ef-0e08-aeb9" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3c70-783c-7a0f-ff0a" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="78e6-ea8c-df5f-85a2" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="62a0-0093-df43-c681" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="bb43-e974-65c6-440a" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+        <categoryLink id="f971-35d2-93dd-70ed" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+        <categoryLink id="1e0a-d7f2-80cc-3351" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5b9d-a7c1-256e-c23c" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca6f-2836-80be-4e75" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0519-2efd-4f8e-8d99" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3a01-bb2f-58d8-af3d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9664-7c28-afa5-db82" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="dd6f-caaa-32c3-d638" name="Blowtorch" hidden="false" collective="false" import="true" targetId="89da-f015-7611-6807" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0214-ac76-8447-242a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0a9b-b208-26a3-5f85" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d2ec-bbd4-e257-5d27" name="Rokkit-Rifle" hidden="false" collective="false" import="true" targetId="580c-ded9-ecd6-c8b6" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c2c3-5e01-3ae9-d853" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c823-b717-119d-25e2" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d4d1-4655-7e8b-db4b" name="Monsta-Bomma" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="03e5-19da-300c-b1dc" name="Monsta-Bomma" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">0</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">1</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7dd4-4e61-a650-9ad9" name="Boombite!" hidden="false" targetId="3837-8a8e-3c0e-6350" type="profile"/>
+        <infoLink id="2b98-c58d-468b-23d7" name="Light Da Fuse!" hidden="false" targetId="40f6-43c2-c482-cdd3" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4338-631b-18db-4e27" name="Monsta" hidden="false" targetId="1537-8b19-1962-9051" primary="false"/>
+        <categoryLink id="3012-97ce-c814-ebe4" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="db22-7c5b-4bc5-d41e" name="Small" hidden="false" targetId="976e-2c74-2a99-dce4" primary="false"/>
+        <categoryLink id="9bfc-b94a-371f-dcab" name="Pet" hidden="false" targetId="5882-d50c-bf48-6cbf" primary="false"/>
+        <categoryLink id="d68e-3bd0-ba70-f498" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="02f3-a1dd-27c9-fe97" name="Fragile" hidden="false" targetId="56a5-b46b-a6cf-a29a" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c4c1-2f9a-005d-8883" name="Monsta-Hound" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9606-98e2-4a27-cefe" name="Monsta-Hound" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">0</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">1</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7910-3210-0786-7c08" name="Guard Dog" hidden="false" targetId="e193-b368-5f2f-55ab" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="669d-e218-26e4-fd13" name="Monsta" hidden="false" targetId="1537-8b19-1962-9051" primary="false"/>
+        <categoryLink id="f080-f7dd-5e93-0580" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="cb45-fb46-bb0f-cadc" name="Small" hidden="false" targetId="976e-2c74-2a99-dce4" primary="false"/>
+        <categoryLink id="3439-5b46-13fa-a667" name="Pet" hidden="false" targetId="5882-d50c-bf48-6cbf" primary="false"/>
+        <categoryLink id="7470-2d6f-561d-cd57" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="afa7-a3f4-9704-ee66" name="Fragile" hidden="false" targetId="56a5-b46b-a6cf-a29a" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9a0c-73a1-3e99-94e3" name="Bike-gobz" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="db1d-5482-1b89-d960" name="Bike-gobz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">2</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">1</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">1</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3752-d928-42e9-8636" name="Mounted (Speed-Gobz)" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model uses the rules associated with the &apos;Mounted&apos; Keyword. Due to the Fragile Keyword, when this model reaches 0 HP it must take a Fragile test - on a failure this model is automatically out and no dismounted model should be placed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3753-29b3-6f75-081a" name="Agile" hidden="false" targetId="3d6f-9e28-bc29-9139" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="dde0-6e86-264e-cee9" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="1a77-13e3-53f9-b87d" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="601b-ae34-da59-1f5b" name="Goblin" hidden="false" targetId="c377-399d-c098-4a83" primary="false"/>
+        <categoryLink id="3d43-3a12-2062-5b3a" name="Fragile" hidden="false" targetId="56a5-b46b-a6cf-a29a" primary="false"/>
+        <categoryLink id="2ff3-c341-f5b3-dea6" name="Small" hidden="false" targetId="976e-2c74-2a99-dce4" primary="false"/>
+        <categoryLink id="0214-3c8f-8a78-78a3" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1c69-29d2-403f-0c58" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f224-cdb6-09d0-1e45" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8791-5bbd-1ef6-96f2" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="053d-1180-40b0-054b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0cbe-fa04-7bf3-aa4b" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0bc2-378d-b9ec-e56a" name="Speedgobz" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="f2fd-d145-994b-12fa" name="Speedgobz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">2</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">1</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">2</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d24d-b613-26f5-c93f" name="Agile" hidden="false" targetId="3d6f-9e28-bc29-9139" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3fee-f6a9-941b-ec2f" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="e0c1-340d-99ef-cda6" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="6ff3-be71-016e-5343" name="Goblin" hidden="false" targetId="c377-399d-c098-4a83" primary="false"/>
+        <categoryLink id="8380-4ecb-0c9f-5fe7" name="Fragile" hidden="false" targetId="56a5-b46b-a6cf-a29a" primary="false"/>
+        <categoryLink id="d694-e0a0-f4c7-6ec8" name="Small" hidden="false" targetId="976e-2c74-2a99-dce4" primary="false"/>
+        <categoryLink id="a919-0325-c93b-3fc5" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="fb30-5e74-2e77-0bce" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dd84-d625-2a2d-5231" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7227-0e28-0aa6-ebec" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d5a6-1a8c-d82f-c593" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4258-d339-37d8-1ff5" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2b2a-57e6-5010-5228" name="GitzmoOrc" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="e14d-969f-15f2-9698" name="GitzmoOrc" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">4</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9b04-0750-9b93-08f4" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Enthusiastic’ AI Archetype.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e235-8c08-ea75-3630" name="Keep Yer &apos;Ed Down" hidden="false" targetId="8775-3315-ac69-c57e" type="profile"/>
+        <infoLink id="23cc-cb3f-d56d-a950" name="Sekrit Identiti" hidden="false" targetId="69b0-d55a-b391-c1a6" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3212-dd4d-5809-69d5" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="b7bd-5ed9-1f0c-0c57" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="9a6d-37fe-9fb4-70b6" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="7d78-0ff4-3ed5-7af9" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
+        <categoryLink id="fd12-fb3d-2bed-0bd4" name="Slow" hidden="false" targetId="e720-6b39-10eb-f0d7" primary="false"/>
+        <categoryLink id="bcb9-3b37-3373-3592" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="false"/>
+        <categoryLink id="b3fd-79fe-222a-8657" name="Bulky" hidden="false" targetId="1590-958c-9778-75fb" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6e79-0390-b4b5-fc27" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8af4-67b7-6e90-e95b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7ef0-f1a8-df62-1ec8" name="Monowheel" hidden="false" collective="false" import="true" targetId="41e8-ed33-3b75-d811" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5256-022f-673d-1999" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ce97-4982-a304-bca9" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d54b-1c27-b2c0-8452" name="Meka-Saw" hidden="false" collective="false" import="true" targetId="6d47-4b99-fae2-6a46" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="99d5-6c5b-30bf-2a8a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c3de-47d1-c555-3180" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7b64-275b-3edb-744a" name="Rokkit-Rifle" hidden="false" collective="false" import="true" targetId="580c-ded9-ecd6-c8b6" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b472-9f41-9e8b-0bb7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b6af-8146-0570-04b4" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="21c6-d4b4-4766-7188" name="Overwatch" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">On using this ability, this Model enters the ‘Overwatch’ state, ending it’s turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5f4d-9031-2176-04d3" name="Transport" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model has a capacity of 4.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="70ec-5fed-6f5f-991a" name="Explosive" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model has an explosive radius of 3” and has a power of 1.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e7bf-7600-2e56-7d82" name="Ram" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model has an Attack Cross-section of 2&quot;.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8775-3315-ac69-c57e" name="Keep Yer &apos;Ed Down" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">After this Model has been activated, if they are in Partial Cover it is treated as if they were in Full Cover. This ability is then reset when the next round begins.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="62f1-0d63-0b00-75f9" name="Unfazed" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">De-Stun and Extinguish actions do not end this Model’s turn. This Model is immune to the ‘Fleeing’ state.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8df4-bd28-a886-bfb7" name="Charge!" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">If there is an enemy model within 6”, this Model immediately moves within Clobba range of that model and performs a Clobba attack. Apply a -1 penalty to their Clobba score for this attack.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="33ce-142d-865c-a7d9" name="Laza-Eyes" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Remove 2 HP from this Model, then designate a target within 12” and perform an aim test. If successful, this attack removes 4 HP from the target.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="74eb-fbf8-4ea6-4e85" name="Soulsucka" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">If this Model successfully hits with a Clobba attack, add 2 HP to this Model. </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f4af-f73a-ef57-eab1" name="Mounted (Hunta Brawla)" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model uses the rules associated with the ‘Mounted’ Keyword.  </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b615-d092-0433-6254" name="Beast Ram" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Draw an 10” long straight line. 1” wide. Move the Rammonsta along this line. If the line intersects terrain or a Model with the ‘Steadfast’ keyword, the line ends at the intersection, and the Rammonsta is stunned after their turn ends. 
+For any enemy Model intersecting this line, the player who controls them must move them 2” perpendicular to the Rammonsta’s path. 
+Next, for every affected Model, the player controlling the Rammonsta must roll a D6. If the result is higher than the affected Model’s Clobba score, that Model is hit and takes 2 HP damage - otherwise it is unaffected.
+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1ed1-fa27-04ef-63b0" name="Gobwranglin" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Friendly units with both the ‘Goblin’, ‘On Foot’ and ‘Fragile’ keyword, who are within 2” of this Model, can ignore the special rules associated with the ‘Fragile’ keyword.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9324-ec91-fa25-72a2" name="He&apos;ll Be Bak" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">If this Model is Out, roll a D6. On a 3+, this Model returns to play and it’s HP is restored to 2.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0490-2150-68cc-6643" name="Metal Endoskeleton" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Add 1 to this Model’s Clobba score when defending Clobba attacks.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8e94-1fce-cc52-29f9" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Glory Seeker’ AI Archetype.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="68b7-7b33-aba6-d887" name="Terminated" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">As per the ‘Glory Seeker’ AI Archetype, identify this Model’s target at the beginning of the game and have this Model single-mindedly pursue them. One that Model is ‘Out’, whether through the actions of this Model or any other, this Model will then move to the closest edge of the battlefield, and on reaching it they are taken out of play.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="456c-34e2-1dc4-456b" name="Infiltratin&apos;" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model starts the game with the ‘Concealed’ state applied.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e13b-2c34-b361-0582" name="Kunnin&apos;" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Whilst this Model is in the ‘Concealed’ state, this Model gets a +1 modifier to its Aim and Clobba skills.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c9f4-2f67-7507-2a1c" name="Sneakin&apos;" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model enters the ‘Concealed’ state, ending it’s turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3caa-3728-0dca-2eec" name="Spotta" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Select an enemy Model in this Model’s line of sight and remove any ‘Concealed’ and/or ‘Overwatch’ states. This ends this Model’s turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c856-528a-0d46-220e" name="Datz Gotta Be A Dworf" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">If Kragnard is within 6” and line of sight of any Model with the ‘Small’ Keyword, he becomes obsessed with defeating that Model even if that model is part of the same wargang. When obsessed, Kragnard must:
+1. Perform a Clobba attack on any ‘Small’ Models if in range.
+2. If a ‘Small’ Model is not in range of a Clobba attack, Kragnard must move towards the closest ‘Small’ Model using the most direct path possible.
+3. If Kragnard cannot move because of State effects, it will take any actions required to clear those State effects
+Kragnard repeats this until he runs out of actions, or there are no ‘Small’ models within 6” and line of sight.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ba7d-70d0-942b-c222" name="Just Walk Away" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">When using the Boom-Mic, the Ability Bloodkurdlin’ Skream has a 2” Area of Effect.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b498-fe86-9af1-0989" name="Gob-Masta" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Snozwot starts the game with an entourage of two Gob-Ladz, each armed with Pistols and Bludgas. These start with the ‘Pet’ state, with Snozwot as their Master, and cost no additional points.
+Snozwot may have up to two of these Gob Pets at any one time. Should any lose the ‘Pet’ state, be Downed or Out, or be otherwise separated from Snozwot, he can recruit any other friendly Gobs within 2” into his entourage, who immediately acquire the ‘Pet’ state.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ca05-66ef-0e08-aeb9" name="Jet Bootz" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Choose an empty point on the battlefield that is not vertically obstructed, and roll a D6. On a roll of 2-5, Gronik instantly moves to this position. On a roll of 1, Dronik undershoots by 4”. On a roll of 6, Gronik overshoots by 4”. 
+When Gronik lands, any Models within a 2” radius are pushed away 2”.
+Gronik may use this Ability only once per game. Use of this Ability does not end Gronik’s Turn.
+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3837-8a8e-3c0e-6350" name="Boombite!" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">If this Model is in a ‘Bestial’ state, add the keyword ‘Explosive’. This Model has an explosive radius of 2” and has a power of 4.
+When Model is in a ‘Bestial’ state, and successfully hits an enemy Model with a Clobba attack, it does not do Clobba damage, and instead explodes.
+This Model is then Out and removed from the table.
+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="40f6-43c2-c482-cdd3" name="Light Da Fuse!" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">On use of this ability, remove the ‘Pet’ Keyword from this Model and add the ‘Explosive’ keyword. Apply the ‘Bestial’ state to this Model. This ability does not take an action, and does not end this Model’s turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e193-b368-5f2f-55ab" name="Guard Dog" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">When this Model has the ‘Pet’ keyword it’s Master cannot be targeted with Clobba attacks, unless this Model is Stunned or Downed.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="69b0-d55a-b391-c1a6" name="Sekrit Identiti" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This model should not be deployed with regular units and must be kept in reserve. The controllign player gains one additional Gearhed at no additional points cost (though special weapons must still be purchased at cost), which is deployed normally. 
+
+For the duration of the game, whenever the controlling player has activated ANY friendly Gearhed Model which has Actions remaining, they may transofrm that Gearhed into GitzmoOrc. The transformed model is removed from play and replaced with GitzmoOrc. Any Wargear from the transofrmed Gearhed is discarded. Any Mission items carried by the transformed Gearhed are transferred to GitzmoOrc, and any States are carried over. THis ability ends GitzmoOrc&apos;s Turn.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
