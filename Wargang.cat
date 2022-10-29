@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="e871-e837-c9a4-e8cb" name="Dirk Bikaz" hidden="false" collective="false" import="true" targetId="5a56-b7ce-b0b3-36a1" type="selectionEntry"/>
     <entryLink id="3f11-c5d0-9a05-c408" name="Speed-Boss" hidden="false" collective="false" import="true" targetId="5e8b-b45e-afda-8718" type="selectionEntry"/>
@@ -27,6 +27,8 @@
     <entryLink id="bb5a-45cf-0865-9ea6" name="Gharnog Skorchahamma: Da Minigunator" hidden="false" collective="false" import="true" targetId="d20d-c606-ea66-80de" type="selectionEntry"/>
     <entryLink id="6897-176d-757b-a852" name="Monsta-Bomma" hidden="false" collective="false" import="true" targetId="d4d1-4655-7e8b-db4b" type="selectionEntry"/>
     <entryLink id="697c-511d-dd53-ab14" name="Monsta-Hound" hidden="false" collective="false" import="true" targetId="c4c1-2f9a-005d-8883" type="selectionEntry"/>
+    <entryLink id="ab72-8e47-782f-e448" name="GitzmoOrc" hidden="false" collective="false" import="true" targetId="2b2a-57e6-5010-5228" type="selectionEntry"/>
+    <entryLink id="1753-790f-5c06-33f3" name="Speedgobz" hidden="false" collective="false" import="true" targetId="0bc2-378d-b9ec-e56a" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="5a56-b7ce-b0b3-36a1" name="Dirt Bikaz" hidden="false" collective="false" import="true" type="model">
@@ -1508,7 +1510,10 @@
         <categoryLink id="7d78-0ff4-3ed5-7af9" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
         <categoryLink id="fd12-fb3d-2bed-0bd4" name="Slow" hidden="false" targetId="e720-6b39-10eb-f0d7" primary="false"/>
         <categoryLink id="bcb9-3b37-3373-3592" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="false"/>
-        <categoryLink id="b3fd-79fe-222a-8657" name="Bulky" hidden="false" targetId="1590-958c-9778-75fb" primary="false"/>
+        <categoryLink id="5744-9608-bdea-5af5" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
+        <categoryLink id="7318-2325-6ba7-0683" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+        <categoryLink id="9df6-9265-930e-fd5f" name="Fast" hidden="false" targetId="a520-8150-7aef-b15a" primary="false"/>
+        <categoryLink id="d6a2-b917-8bbf-a8ed" name="Offbalance" hidden="false" targetId="d844-c619-d2b2-2ce1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="6e79-0390-b4b5-fc27" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
