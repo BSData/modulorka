@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="3" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="4" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="fda5-738e-1874-bcf7" name="Points" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="9378-4835-dc32-2b6f" name="Carry" defaultCostLimit="-1.0" hidden="false"/>
@@ -70,6 +70,7 @@
     <categoryEntry id="bd6d-16e1-1eb9-1c2a" name="Shaman" hidden="false"/>
     <categoryEntry id="a520-8150-7aef-b15a" name="Fast" hidden="false"/>
     <categoryEntry id="d844-c619-d2b2-2ce1" name="Offbalance" hidden="false"/>
+    <categoryEntry id="8ad5-49a9-b718-0bf5" name="Mech" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b001-9d67-598a-8478" name="Wargang" hidden="false">
