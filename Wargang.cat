@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="e871-e837-c9a4-e8cb" name="Dirk Bikaz" hidden="false" collective="false" import="true" targetId="5a56-b7ce-b0b3-36a1" type="selectionEntry"/>
     <entryLink id="3f11-c5d0-9a05-c408" name="Speed-Boss" hidden="false" collective="false" import="true" targetId="5e8b-b45e-afda-8718" type="selectionEntry"/>
@@ -29,6 +29,9 @@
     <entryLink id="697c-511d-dd53-ab14" name="Monsta-Hound" hidden="false" collective="false" import="true" targetId="c4c1-2f9a-005d-8883" type="selectionEntry"/>
     <entryLink id="ab72-8e47-782f-e448" name="GitzmoOrc" hidden="false" collective="false" import="true" targetId="2b2a-57e6-5010-5228" type="selectionEntry"/>
     <entryLink id="1753-790f-5c06-33f3" name="Speedgobz" hidden="false" collective="false" import="true" targetId="0bc2-378d-b9ec-e56a" type="selectionEntry"/>
+    <entryLink id="53ba-52bb-3a18-57ad" name="Rokkaboss" hidden="false" collective="false" import="true" targetId="6d7a-8272-5122-fa72" type="selectionEntry"/>
+    <entryLink id="69eb-f0a6-7fb6-062e" name="Rokkaladz" hidden="false" collective="false" import="true" targetId="6b57-524a-7500-2242" type="selectionEntry"/>
+    <entryLink id="9e29-c671-f10c-e467" name="Da Macheen" hidden="false" collective="false" import="true" targetId="f883-5c07-9e67-0815" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="5a56-b7ce-b0b3-36a1" name="Dirt Bikaz" hidden="false" collective="false" import="true" type="model">
@@ -703,11 +706,12 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4fb4-ef0b-552d-7c7a" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
-        <categoryLink id="15db-5b44-1187-6655" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="8ba2-0ac0-af42-4f55" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
         <categoryLink id="9db8-1b45-97ed-8846" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
-        <categoryLink id="f674-3606-510c-14e2" name="Shaman" hidden="false" targetId="bd6d-16e1-1eb9-1c2a" primary="false"/>
-        <categoryLink id="a73c-af8a-4ea2-4cf0" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+        <categoryLink id="dbf2-1945-d553-a7b3" name="Mounted" hidden="false" targetId="381b-1d1c-1d0b-0693" primary="false"/>
+        <categoryLink id="723f-fa73-f7ed-dc5b" name="Fast" hidden="false" targetId="a520-8150-7aef-b15a" primary="false"/>
+        <categoryLink id="9f90-e1a6-1edc-50a7" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
+        <categoryLink id="8db0-eacf-2b67-c162" name="Monsta" hidden="false" targetId="1537-8b19-1962-9051" primary="false"/>
+        <categoryLink id="6419-0203-bc0e-8a63" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b7fc-1cec-4fb0-f43f" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -1542,6 +1546,75 @@
       </entryLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f883-5c07-9e67-0815" name="Da Macheen" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="b0c3-5007-52b9-2d9a" name="Da Macheen" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">1</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">4</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">6</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="18a9-18c4-2e09-6492" name="Brain Scramlin&apos;" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">When this Model is activated each round, roll a D6.
+
+On a 1, this Model behaves according to the &apos;Jaded&apos; AI Archetype.
+On a 2-3, this Model behaves according to the &apos;Cautious&apos; AI Archetype.
+On a 4-5, this Model behaves according to the &apos;Aggressive&apos; AI Archetype.
+On a 6, this Model behaves according to the &apos;Aggressive&apos; AI Archetype, and attacks twice (once with each weapon) when Clobberin&apos;.
+
+If a friendly Model with the &apos;Engineer&apos; keyword is within 1&quot; of this Model, you may skip this roll and control this Model directly as if it were a non-Mercenary Model.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3d7d-f5c6-38e2-91ed" name="Keep Yer &apos;Ed Down" hidden="false" targetId="8775-3315-ac69-c57e" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="dc58-c731-edde-cba4" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="a975-f866-21c2-de5a" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="ff57-bfe7-2950-bae4" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="3c79-1e92-2f86-f4e9" name="Slow" hidden="false" targetId="e720-6b39-10eb-f0d7" primary="false"/>
+        <categoryLink id="47b5-a3be-ac8b-7b50" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="false"/>
+        <categoryLink id="006e-1980-48d8-0e4f" name="Bulky" hidden="false" targetId="1590-958c-9778-75fb" primary="false"/>
+        <categoryLink id="b37f-840c-8730-3939" name="Steadfast" hidden="false" targetId="1db6-c967-f964-eada" primary="false"/>
+        <categoryLink id="cf68-354f-f164-5a8e" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+        <categoryLink id="de20-2a08-383a-3e26" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+        <categoryLink id="ea57-0917-5b0d-2aa7" name="Mech" hidden="false" targetId="8ad5-49a9-b718-0bf5" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b982-4dfb-0ca0-b99b" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ad6-b58b-2354-4f46" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9c7c-309e-df67-749e" name="Meka-Saw" hidden="false" collective="false" import="true" targetId="6d47-4b99-fae2-6a46" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bc46-2c17-06ef-7932" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f952-940d-469b-85ed" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ddfb-7c13-0d4d-d23e" name="Meka-Klaw" hidden="false" collective="false" import="true" targetId="ef97-8315-1a94-7df7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2252-31ee-1a78-47a4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="510a-47c1-6f83-8a08" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="23e0-65c1-47d6-5c33" name="Cyba-Legz" hidden="false" collective="false" import="true" targetId="ec1b-5663-94d8-c1ef" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3433-c955-1f81-0cc9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b617-ecfb-7c7e-28a6" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="10.0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
       </costs>
     </selectionEntry>
