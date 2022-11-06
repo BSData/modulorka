@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="4" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="5" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
+----------------------------------------------
+Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
   <costTypes>
     <costType id="fda5-738e-1874-bcf7" name="Points" defaultCostLimit="-1.0" hidden="false"/>
     <costType id="9378-4835-dc32-2b6f" name="Carry" defaultCostLimit="-1.0" hidden="false"/>
@@ -71,14 +74,18 @@
     <categoryEntry id="a520-8150-7aef-b15a" name="Fast" hidden="false"/>
     <categoryEntry id="d844-c619-d2b2-2ce1" name="Offbalance" hidden="false"/>
     <categoryEntry id="8ad5-49a9-b718-0bf5" name="Mech" hidden="false"/>
+    <categoryEntry id="a346-2e75-0214-ab8a" name="Pyratz" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b001-9d67-598a-8478" name="Wargang" hidden="false">
       <categoryLinks>
-        <categoryLink id="9ae1-eff6-0292-f6e5" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
-        <categoryLink id="1299-5e81-0b74-4ffb" name="Troops" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
-        <categoryLink id="a16b-0251-85a4-1dca" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
-        <categoryLink id="b5f0-1d4d-8952-d0e9" name="Vehicle" hidden="false" targetId="60ef-0f36-ca03-750d" primary="false"/>
+        <categoryLink id="9ae1-eff6-0292-f6e5" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+        <categoryLink id="1299-5e81-0b74-4ffb" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+        <categoryLink id="a16b-0251-85a4-1dca" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="false"/>
+        <categoryLink id="b5f0-1d4d-8952-d0e9" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="false"/>
+        <categoryLink id="89d6-53a8-c3b3-011e" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="false"/>
+        <categoryLink id="f460-3112-f1b9-5fb8" name="Pyratz" hidden="false" targetId="a346-2e75-0214-ab8a" primary="false"/>
+        <categoryLink id="ae04-53d4-d493-a167" name="Monsta" hidden="false" targetId="1537-8b19-1962-9051" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1132,9 +1139,13 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="2055-b625-635d-0cb1" name="Supa-Stompa" hidden="false" targetId="89b8-acf3-0330-dee8" type="profile"/>
+        <infoLink id="2055-b625-635d-0cb1" name="Mekalegz" hidden="false" targetId="7ec3-afdd-1550-3c56" type="profile"/>
         <infoLink id="0043-7dd9-3ce2-de94" name="Unicycle" hidden="false" targetId="9af8-2feb-5d55-542c" type="profile"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0de7-9424-3bee-1b93" name="Offbalance" hidden="false" targetId="d844-c619-d2b2-2ce1" primary="false"/>
+        <categoryLink id="ce33-fa9e-c16c-ee52" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
@@ -1451,6 +1462,57 @@
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="8e06-3553-989d-f740" name="Misc Gear" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c5b0-904e-b921-ce0d" name="Mekalegz" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9862-5ade-3927-3682" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="34e1-41f1-6da1-dd3e" name="Monowheel" hidden="true" collective="false" import="true" targetId="41e8-ed33-3b75-d811" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="ce31-b575-6410-e31d" name="Cyba-Legz" hidden="true" collective="false" import="true" targetId="ec1b-5663-94d8-c1ef" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="a4f5-a6f0-e3f4-0334" name="Beast-Brainz" hidden="true" collective="false" import="true" targetId="c431-54a6-25bf-4df8" type="selectionEntry">
           <modifiers>
@@ -1520,7 +1582,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="9c3b-a751-2541-2951" name="Supa-Speakaz" hidden="false" collective="false" import="true" targetId="2e67-d1fe-20b6-f58e" type="selectionEntry">
+        <entryLink id="9c3b-a751-2541-2951" name="Supa-Speakaz" hidden="true" collective="false" import="true" targetId="2e67-d1fe-20b6-f58e" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -1571,48 +1633,6 @@
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1537-8b19-1962-9051" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="381b-1d1c-1d0b-0693" type="instanceOf"/>
                   </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="8e77-de1a-c20d-9531" name="Monowheel" hidden="true" collective="false" import="true" targetId="41e8-ed33-3b75-d811" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="0fda-3531-0979-9adb" name="Cyba-Legz" hidden="true" collective="false" import="true" targetId="ec1b-5663-94d8-c1ef" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
