@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="e871-e837-c9a4-e8cb" name="Dirk Bikaz" hidden="false" collective="false" import="true" targetId="5a56-b7ce-b0b3-36a1" type="selectionEntry"/>
     <entryLink id="3f11-c5d0-9a05-c408" name="Speed-Boss" hidden="false" collective="false" import="true" targetId="5e8b-b45e-afda-8718" type="selectionEntry"/>
@@ -32,6 +32,7 @@
     <entryLink id="53ba-52bb-3a18-57ad" name="Rokkaboss" hidden="false" collective="false" import="true" targetId="6d7a-8272-5122-fa72" type="selectionEntry"/>
     <entryLink id="69eb-f0a6-7fb6-062e" name="Rokkaladz" hidden="false" collective="false" import="true" targetId="6b57-524a-7500-2242" type="selectionEntry"/>
     <entryLink id="9e29-c671-f10c-e467" name="Da Macheen" hidden="false" collective="false" import="true" targetId="f883-5c07-9e67-0815" type="selectionEntry"/>
+    <entryLink id="6732-9b09-238b-408c" name="Bika-gobz" hidden="false" collective="false" import="true" targetId="9a0c-73a1-3e99-94e3" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="5a56-b7ce-b0b3-36a1" name="Dirt Bikaz" hidden="false" collective="false" import="true" type="model">
@@ -52,10 +53,10 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5440-abcd-5998-10d1" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
-        <categoryLink id="a7ba-0cc0-3b6f-9dd6" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="a7ba-0cc0-3b6f-9dd6" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
         <categoryLink id="f23e-2ed2-718d-ac91" name="Fast" hidden="false" targetId="a520-8150-7aef-b15a" primary="false"/>
         <categoryLink id="7812-df60-45f9-8c17" name="Mounted" hidden="false" targetId="381b-1d1c-1d0b-0693" primary="false"/>
-        <categoryLink id="d52b-af96-bd52-4553" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="false"/>
+        <categoryLink id="d52b-af96-bd52-4553" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="true"/>
         <categoryLink id="7e1e-05e3-3034-10ee" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -93,8 +94,8 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9b12-9a09-984c-fb61" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
-        <categoryLink id="fe02-00d7-fc01-1ebf" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
-        <categoryLink id="090a-3895-deaa-56d4" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="false"/>
+        <categoryLink id="fe02-00d7-fc01-1ebf" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
+        <categoryLink id="090a-3895-deaa-56d4" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="true"/>
         <categoryLink id="99ba-457e-bdc2-aab7" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -132,9 +133,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8151-acc1-9dc5-215c" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
-        <categoryLink id="15cc-f1c3-db3b-acf8" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="false"/>
+        <categoryLink id="15cc-f1c3-db3b-acf8" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="true"/>
         <categoryLink id="590e-0550-06cf-1f3d" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="75c1-2db2-7564-1f4b" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="75c1-2db2-7564-1f4b" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
         <categoryLink id="384e-0c03-2bca-3517" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -172,9 +173,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="bef7-9447-039d-b43e" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
-        <categoryLink id="2262-32b9-87e4-8ba0" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="2262-32b9-87e4-8ba0" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
         <categoryLink id="a0b4-646b-28f2-3140" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="386a-758e-714b-5f32" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+        <categoryLink id="386a-758e-714b-5f32" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5eb5-0357-fbb5-62de" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -210,9 +211,9 @@
         <infoLink id="38eb-b2f5-0958-ddad" name="Overwatch" hidden="false" targetId="21c6-d4b4-4766-7188" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="6a12-d0eb-aa66-96ea" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="6a12-d0eb-aa66-96ea" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
         <categoryLink id="29dd-c674-dda9-df54" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="0a43-69d6-2fe5-6b23" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+        <categoryLink id="0a43-69d6-2fe5-6b23" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="true"/>
         <categoryLink id="f8cf-f9ce-f662-8e5c" name="Goblin" hidden="false" targetId="c377-399d-c098-4a83" primary="false"/>
         <categoryLink id="1ed9-c54e-a090-cbb0" name="Fragile" hidden="false" targetId="56a5-b46b-a6cf-a29a" primary="false"/>
         <categoryLink id="5742-9307-21ff-0670" name="Small" hidden="false" targetId="976e-2c74-2a99-dce4" primary="false"/>
@@ -253,10 +254,10 @@
       <categoryLinks>
         <categoryLink id="cea2-896a-e2c4-30a5" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
         <categoryLink id="3eb3-0e8d-8de4-7fdd" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="dccf-fb3a-bd4d-86dc" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="dccf-fb3a-bd4d-86dc" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
         <categoryLink id="8858-b770-75a7-f37f" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
         <categoryLink id="7d51-ef31-f867-4fb4" name="Bulky" hidden="false" targetId="1590-958c-9778-75fb" primary="false"/>
-        <categoryLink id="939a-127b-6fe1-ed02" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+        <categoryLink id="939a-127b-6fe1-ed02" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="f88a-dac7-3f1e-dd54" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -295,8 +296,8 @@
         <infoLink id="5030-d924-caa9-5ea1" name="Ram" hidden="false" targetId="e7bf-7600-2e56-7d82" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="7feb-2ec2-6eb5-8b33" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
-        <categoryLink id="bdec-04ca-af8d-b4c7" name="New CategoryLink" hidden="false" targetId="60ef-0f36-ca03-750d" primary="true"/>
+        <categoryLink id="7feb-2ec2-6eb5-8b33" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="true"/>
+        <categoryLink id="bdec-04ca-af8d-b4c7" name="New CategoryLink" hidden="false" targetId="60ef-0f36-ca03-750d" primary="false"/>
         <categoryLink id="fe22-6f65-032d-351a" name="Transport" hidden="false" targetId="5b46-50e8-d637-7901" primary="false"/>
         <categoryLink id="f2cc-c9bf-7c86-1cd4" name="Steadfast" hidden="false" targetId="1db6-c967-f964-eada" primary="false"/>
         <categoryLink id="09ea-7674-cf1f-b947" name="Opentop" hidden="false" targetId="41d7-d7aa-a2de-7d9f" primary="false"/>
@@ -333,9 +334,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1b94-fea9-d2c2-2288" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
-        <categoryLink id="9d03-9131-2f5a-2d83" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="9d03-9131-2f5a-2d83" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
         <categoryLink id="8f24-766d-4832-ab7a" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="a45b-c93b-e2ad-85fd" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="false"/>
+        <categoryLink id="a45b-c93b-e2ad-85fd" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="25d0-6499-619b-7b26" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -371,12 +372,12 @@
         <infoLink id="6f5d-4fe6-2d82-0939" name="Keep Yer &apos;Ed Down" hidden="false" targetId="8775-3315-ac69-c57e" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="50a3-4352-fb99-ad06" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="50a3-4352-fb99-ad06" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
         <categoryLink id="23a7-6576-7eee-5a80" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
         <categoryLink id="f94e-5ce9-2d4f-5389" name="Goblin" hidden="false" targetId="c377-399d-c098-4a83" primary="false"/>
         <categoryLink id="ee64-39d6-6a32-e7a0" name="Fragile" hidden="false" targetId="56a5-b46b-a6cf-a29a" primary="false"/>
         <categoryLink id="500e-bc36-013b-a9b9" name="Small" hidden="false" targetId="976e-2c74-2a99-dce4" primary="false"/>
-        <categoryLink id="d52c-a9d6-2bc7-b508" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="false"/>
+        <categoryLink id="d52c-a9d6-2bc7-b508" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="accf-ab3c-50ee-9094" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -414,10 +415,10 @@
       <categoryLinks>
         <categoryLink id="84a0-1065-81dc-50a3" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
         <categoryLink id="8219-6de3-29c4-7562" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="581a-0e98-e377-18e8" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="581a-0e98-e377-18e8" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
         <categoryLink id="cef7-aff2-6271-344e" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
         <categoryLink id="ceb8-d03a-4090-c815" name="Slow" hidden="false" targetId="e720-6b39-10eb-f0d7" primary="false"/>
-        <categoryLink id="2bdb-451c-87c3-3788" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="false"/>
+        <categoryLink id="2bdb-451c-87c3-3788" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="true"/>
         <categoryLink id="7d87-3475-44f4-2f5c" name="Bulky" hidden="false" targetId="1590-958c-9778-75fb" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -455,9 +456,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d0cd-c1c9-5e2f-545f" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
-        <categoryLink id="1cb3-8e09-b1a8-38c0" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="1cb3-8e09-b1a8-38c0" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
         <categoryLink id="3654-c65d-fe5e-d1af" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="7c4a-b04b-9659-cbbc" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="false"/>
+        <categoryLink id="7c4a-b04b-9659-cbbc" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="2dcc-59dc-a239-1d2d" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -495,10 +496,10 @@
       <categoryLinks>
         <categoryLink id="2e40-8b78-3040-662c" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
         <categoryLink id="e731-b8a7-253e-ba9b" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="3799-9ff8-f961-b83b" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="3799-9ff8-f961-b83b" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
         <categoryLink id="54d8-4a86-6455-cfa7" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
         <categoryLink id="1499-621c-a3b7-3ad0" name="Bulky" hidden="false" targetId="1590-958c-9778-75fb" primary="false"/>
-        <categoryLink id="1a5f-c28c-c752-dffd" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="false"/>
+        <categoryLink id="1a5f-c28c-c752-dffd" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="6d54-f29c-6127-f4df" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -535,9 +536,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="86a2-89f0-5ce9-4069" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
-        <categoryLink id="c6cf-a849-5da1-3a97" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="c6cf-a849-5da1-3a97" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
         <categoryLink id="f040-a520-78f1-f886" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="e2ae-346d-1ed9-9258" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+        <categoryLink id="e2ae-346d-1ed9-9258" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="9012-2143-4fa4-98a4" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -573,12 +574,12 @@
         <infoLink id="c73f-19d8-5aac-444b" name="Charge!" hidden="false" targetId="8df4-bd28-a886-bfb7" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="3e3a-3fb7-1fa2-1e72" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="3e3a-3fb7-1fa2-1e72" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
         <categoryLink id="1cec-c4be-c02e-484d" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
         <categoryLink id="bee6-3758-7da5-ac3d" name="Goblin" hidden="false" targetId="c377-399d-c098-4a83" primary="false"/>
         <categoryLink id="53a7-f488-0065-fd4a" name="Fragile" hidden="false" targetId="56a5-b46b-a6cf-a29a" primary="false"/>
         <categoryLink id="664e-05d4-a8b8-0b06" name="Small" hidden="false" targetId="976e-2c74-2a99-dce4" primary="false"/>
-        <categoryLink id="e2d2-6ee7-f70d-472f" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+        <categoryLink id="e2d2-6ee7-f70d-472f" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8efd-0929-7330-8109" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -616,10 +617,10 @@
       <categoryLinks>
         <categoryLink id="3769-2841-6f85-e8d6" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
         <categoryLink id="995f-550f-ca5d-a720" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="195d-6aa7-d7c1-3576" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="195d-6aa7-d7c1-3576" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
         <categoryLink id="502d-8e5b-d8a9-d2f2" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
         <categoryLink id="b287-06b2-6adf-2eb1" name="Bulky" hidden="false" targetId="1590-958c-9778-75fb" primary="false"/>
-        <categoryLink id="126c-0bbc-6057-05c4" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+        <categoryLink id="126c-0bbc-6057-05c4" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="e342-0bba-7678-4c94" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -662,8 +663,8 @@
       <categoryLinks>
         <categoryLink id="2a54-10ec-45a3-2789" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
         <categoryLink id="ae3e-64e3-4c22-be27" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="18e1-f045-608c-5d8d" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
-        <categoryLink id="6919-3686-edb5-3cca" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+        <categoryLink id="18e1-f045-608c-5d8d" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
+        <categoryLink id="6919-3686-edb5-3cca" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="true"/>
         <categoryLink id="e478-548f-cfec-e2f2" name="Shaman" hidden="false" targetId="bd6d-16e1-1eb9-1c2a" primary="false"/>
         <categoryLink id="c041-6b4d-879b-df9d" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
       </categoryLinks>
@@ -706,12 +707,12 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4fb4-ef0b-552d-7c7a" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
-        <categoryLink id="9db8-1b45-97ed-8846" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+        <categoryLink id="9db8-1b45-97ed-8846" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="true"/>
         <categoryLink id="dbf2-1945-d553-a7b3" name="Mounted" hidden="false" targetId="381b-1d1c-1d0b-0693" primary="false"/>
         <categoryLink id="723f-fa73-f7ed-dc5b" name="Fast" hidden="false" targetId="a520-8150-7aef-b15a" primary="false"/>
         <categoryLink id="9f90-e1a6-1edc-50a7" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
         <categoryLink id="8db0-eacf-2b67-c162" name="Monsta" hidden="false" targetId="1537-8b19-1962-9051" primary="false"/>
-        <categoryLink id="6419-0203-bc0e-8a63" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="6419-0203-bc0e-8a63" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b7fc-1cec-4fb0-f43f" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -753,8 +754,8 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6317-96db-92b0-7285" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
-        <categoryLink id="f4d3-0f7c-fce2-fa6e" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
-        <categoryLink id="2456-369b-d895-8614" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+        <categoryLink id="f4d3-0f7c-fce2-fa6e" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
+        <categoryLink id="2456-369b-d895-8614" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="true"/>
         <categoryLink id="3bcd-1d78-6bba-8af8" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="c433-df3f-a037-93e8" name="Monsta" hidden="false" targetId="1537-8b19-1962-9051" primary="false"/>
         <categoryLink id="429d-cdde-4271-36a6" name="Mounted" hidden="false" targetId="381b-1d1c-1d0b-0693" primary="false"/>
@@ -801,8 +802,8 @@
       <categoryLinks>
         <categoryLink id="f902-1fd3-4f13-3a6e" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
         <categoryLink id="1618-e9bb-bd51-c00c" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="443a-0fc7-7f9e-ef09" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
-        <categoryLink id="e778-b984-cc95-ed0d" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+        <categoryLink id="443a-0fc7-7f9e-ef09" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
+        <categoryLink id="e778-b984-cc95-ed0d" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="true"/>
         <categoryLink id="15ec-8582-ef9f-c908" name="Gob-Wrangla" hidden="false" targetId="21c2-066c-e9d3-c267" primary="false"/>
       </categoryLinks>
       <entryLinks>
@@ -849,8 +850,8 @@
       <categoryLinks>
         <categoryLink id="155a-6917-9fbf-9abb" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
         <categoryLink id="40aa-3c69-4ca7-5dac" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="3e5c-10df-481d-9377" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
-        <categoryLink id="7c12-7eed-c06a-6a7f" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+        <categoryLink id="3e5c-10df-481d-9377" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
+        <categoryLink id="7c12-7eed-c06a-6a7f" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="true"/>
         <categoryLink id="efbe-c8c1-b8cf-9cf9" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="11c0-737e-f73b-6428" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
       </categoryLinks>
@@ -909,8 +910,8 @@
       <categoryLinks>
         <categoryLink id="0701-d0d8-1564-8ad1" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
         <categoryLink id="a9f9-054e-6077-ee5b" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="6a13-0128-3b3c-3c33" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
-        <categoryLink id="c5c6-c0ee-c88b-86c2" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+        <categoryLink id="6a13-0128-3b3c-3c33" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
+        <categoryLink id="c5c6-c0ee-c88b-86c2" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="true"/>
         <categoryLink id="b483-2f22-ba4c-575b" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="a8b1-a422-9d52-df86" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
         <categoryLink id="8090-9854-083e-571e" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
@@ -988,8 +989,8 @@
       <categoryLinks>
         <categoryLink id="be53-653c-61a1-a43c" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
         <categoryLink id="0db3-cf89-82df-f73e" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="023c-772f-7cb4-09f4" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
-        <categoryLink id="3d92-35ce-ba7d-d8b9" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+        <categoryLink id="023c-772f-7cb4-09f4" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
+        <categoryLink id="3d92-35ce-ba7d-d8b9" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="true"/>
         <categoryLink id="864e-36b9-4041-3ff4" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="aa9d-275f-a444-b0e5" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
         <categoryLink id="3c51-0839-12a9-ad02" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
@@ -1051,10 +1052,10 @@
       <categoryLinks>
         <categoryLink id="722e-73dc-504c-9a09" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
         <categoryLink id="fffe-c061-c448-f422" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="85b4-081a-1e9c-006a" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="85b4-081a-1e9c-006a" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
         <categoryLink id="2d31-ce00-052c-5318" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="2212-a1a9-db7d-0b29" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
-        <categoryLink id="dd1c-5717-445c-3f97" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="false"/>
+        <categoryLink id="dd1c-5717-445c-3f97" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="00e0-3478-79eb-e4fd" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -1131,10 +1132,10 @@
       <categoryLinks>
         <categoryLink id="9576-5578-30ee-8a70" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
         <categoryLink id="d92e-66ba-dd2c-25fe" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="4efd-8743-a90f-371a" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="4efd-8743-a90f-371a" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
         <categoryLink id="9b92-1254-b57b-23d2" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="384c-3ff4-dd92-d72e" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
-        <categoryLink id="e510-8e19-0ad6-51f3" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="false"/>
+        <categoryLink id="e510-8e19-0ad6-51f3" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c5b3-6f3c-35ab-dd60" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -1224,8 +1225,8 @@
       <categoryLinks>
         <categoryLink id="75d1-02ee-fa03-5bc7" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
         <categoryLink id="fbea-e071-979a-71f8" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="1ec4-4006-703b-54d5" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
-        <categoryLink id="4fc6-8889-0878-12e9" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="false"/>
+        <categoryLink id="1ec4-4006-703b-54d5" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
+        <categoryLink id="4fc6-8889-0878-12e9" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="true"/>
         <categoryLink id="708b-010b-73ae-a9b6" name="Gob-Wrangla" hidden="false" targetId="21c2-066c-e9d3-c267" primary="false"/>
         <categoryLink id="9c14-656b-afe4-194e" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="6165-b726-7341-0b9c" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
@@ -1299,8 +1300,8 @@
       <categoryLinks>
         <categoryLink id="3c70-783c-7a0f-ff0a" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
         <categoryLink id="78e6-ea8c-df5f-85a2" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="62a0-0093-df43-c681" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
-        <categoryLink id="bb43-e974-65c6-440a" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="false"/>
+        <categoryLink id="62a0-0093-df43-c681" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
+        <categoryLink id="bb43-e974-65c6-440a" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="true"/>
         <categoryLink id="f971-35d2-93dd-70ed" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="1e0a-d7f2-80cc-3351" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
       </categoryLinks>
@@ -1359,8 +1360,8 @@
         <infoLink id="2b98-c58d-468b-23d7" name="Light Da Fuse!" hidden="false" targetId="40f6-43c2-c482-cdd3" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="4338-631b-18db-4e27" name="Monsta" hidden="false" targetId="1537-8b19-1962-9051" primary="false"/>
-        <categoryLink id="3012-97ce-c814-ebe4" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="4338-631b-18db-4e27" name="Monsta" hidden="false" targetId="1537-8b19-1962-9051" primary="true"/>
+        <categoryLink id="3012-97ce-c814-ebe4" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
         <categoryLink id="db22-7c5b-4bc5-d41e" name="Small" hidden="false" targetId="976e-2c74-2a99-dce4" primary="false"/>
         <categoryLink id="9bfc-b94a-371f-dcab" name="Pet" hidden="false" targetId="5882-d50c-bf48-6cbf" primary="false"/>
         <categoryLink id="d68e-3bd0-ba70-f498" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
@@ -1387,8 +1388,8 @@
         <infoLink id="7910-3210-0786-7c08" name="Guard Dog" hidden="false" targetId="e193-b368-5f2f-55ab" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="669d-e218-26e4-fd13" name="Monsta" hidden="false" targetId="1537-8b19-1962-9051" primary="false"/>
-        <categoryLink id="f080-f7dd-5e93-0580" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="669d-e218-26e4-fd13" name="Monsta" hidden="false" targetId="1537-8b19-1962-9051" primary="true"/>
+        <categoryLink id="f080-f7dd-5e93-0580" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
         <categoryLink id="cb45-fb46-bb0f-cadc" name="Small" hidden="false" targetId="976e-2c74-2a99-dce4" primary="false"/>
         <categoryLink id="3439-5b46-13fa-a667" name="Pet" hidden="false" targetId="5882-d50c-bf48-6cbf" primary="false"/>
         <categoryLink id="7470-2d6f-561d-cd57" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
@@ -1399,9 +1400,9 @@
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9a0c-73a1-3e99-94e3" name="Bike-gobz" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="9a0c-73a1-3e99-94e3" name="Bika-gobz" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="db1d-5482-1b89-d960" name="Bike-gobz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+        <profile id="db1d-5482-1b89-d960" name="Bika-gobz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
             <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">2</characteristic>
             <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">1</characteristic>
@@ -1420,12 +1421,13 @@
         <infoLink id="3753-29b3-6f75-081a" name="Agile" hidden="false" targetId="3d6f-9e28-bc29-9139" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="dde0-6e86-264e-cee9" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
-        <categoryLink id="1a77-13e3-53f9-b87d" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="dde0-6e86-264e-cee9" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
         <categoryLink id="601b-ae34-da59-1f5b" name="Goblin" hidden="false" targetId="c377-399d-c098-4a83" primary="false"/>
         <categoryLink id="3d43-3a12-2062-5b3a" name="Fragile" hidden="false" targetId="56a5-b46b-a6cf-a29a" primary="false"/>
-        <categoryLink id="2ff3-c341-f5b3-dea6" name="Small" hidden="false" targetId="976e-2c74-2a99-dce4" primary="false"/>
-        <categoryLink id="0214-3c8f-8a78-78a3" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="false"/>
+        <categoryLink id="eeec-b221-e2a3-cfd5" name="Mounted" hidden="false" targetId="381b-1d1c-1d0b-0693" primary="false"/>
+        <categoryLink id="4617-b30a-e842-2936" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
+        <categoryLink id="6676-6015-31f2-a6b3" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="true"/>
+        <categoryLink id="5b07-7156-fb4d-d0b2" name="Fast" hidden="false" targetId="a520-8150-7aef-b15a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="1c69-29d2-403f-0c58" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -1461,12 +1463,12 @@
         <infoLink id="d24d-b613-26f5-c93f" name="Agile" hidden="false" targetId="3d6f-9e28-bc29-9139" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="3fee-f6a9-941b-ec2f" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="true"/>
+        <categoryLink id="3fee-f6a9-941b-ec2f" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
         <categoryLink id="e0c1-340d-99ef-cda6" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
         <categoryLink id="6ff3-be71-016e-5343" name="Goblin" hidden="false" targetId="c377-399d-c098-4a83" primary="false"/>
         <categoryLink id="8380-4ecb-0c9f-5fe7" name="Fragile" hidden="false" targetId="56a5-b46b-a6cf-a29a" primary="false"/>
         <categoryLink id="d694-e0a0-f4c7-6ec8" name="Small" hidden="false" targetId="976e-2c74-2a99-dce4" primary="false"/>
-        <categoryLink id="a919-0325-c93b-3fc5" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="false"/>
+        <categoryLink id="a919-0325-c93b-3fc5" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="fb30-5e74-2e77-0bce" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -1510,10 +1512,10 @@
       <categoryLinks>
         <categoryLink id="3212-dd4d-5809-69d5" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
         <categoryLink id="b7bd-5ed9-1f0c-0c57" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="9a6d-37fe-9fb4-70b6" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="9a6d-37fe-9fb4-70b6" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
         <categoryLink id="7d78-0ff4-3ed5-7af9" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
         <categoryLink id="fd12-fb3d-2bed-0bd4" name="Slow" hidden="false" targetId="e720-6b39-10eb-f0d7" primary="false"/>
-        <categoryLink id="bcb9-3b37-3373-3592" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="false"/>
+        <categoryLink id="bcb9-3b37-3373-3592" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="true"/>
         <categoryLink id="5744-9608-bdea-5af5" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
         <categoryLink id="7318-2325-6ba7-0683" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
         <categoryLink id="9df6-9265-930e-fd5f" name="Fast" hidden="false" targetId="a520-8150-7aef-b15a" primary="false"/>
@@ -1579,9 +1581,9 @@ If a friendly Model with the &apos;Engineer&apos; keyword is within 1&quot; of t
       <categoryLinks>
         <categoryLink id="dc58-c731-edde-cba4" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
         <categoryLink id="a975-f866-21c2-de5a" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
-        <categoryLink id="ff57-bfe7-2950-bae4" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="true"/>
+        <categoryLink id="ff57-bfe7-2950-bae4" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
         <categoryLink id="3c79-1e92-2f86-f4e9" name="Slow" hidden="false" targetId="e720-6b39-10eb-f0d7" primary="false"/>
-        <categoryLink id="47b5-a3be-ac8b-7b50" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="false"/>
+        <categoryLink id="47b5-a3be-ac8b-7b50" name="Gearhedz" hidden="false" targetId="d15d-f4b9-edac-0c07" primary="true"/>
         <categoryLink id="006e-1980-48d8-0e4f" name="Bulky" hidden="false" targetId="1590-958c-9778-75fb" primary="false"/>
         <categoryLink id="b37f-840c-8730-3939" name="Steadfast" hidden="false" targetId="1db6-c967-f964-eada" primary="false"/>
         <categoryLink id="cf68-354f-f164-5a8e" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
