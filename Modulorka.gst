@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="5" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="6" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -1151,6 +1151,25 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="26eb-359c-365b-ec52" name="Rokkit-Pak" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="fb07-ef28-74eb-a42f" name="Rokkit-Pak" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a904-5a5c-9977-8b65" name="Flyin&apos; Eadbutt" hidden="false" targetId="42bd-092f-bcd1-9e10" type="profile"/>
+        <infoLink id="3e14-4fd0-dad2-d9d6" name="Gotta Go Fasta" hidden="false" targetId="8a72-a9c1-267b-fe6c" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8c45-070b-5126-1278" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e179-021a-8344-3d9f" name="Weapons" hidden="false" collective="false" import="true">
@@ -1638,6 +1657,28 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="74af-f50f-bb62-78f3" name="Rokkit-Pak" hidden="true" collective="false" import="true" targetId="26eb-359c-365b-ec52" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09e6-55ad-80f3-b415" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a433-87d4-46e8-8010" name="Gearhedz Gear" hidden="true" collective="false" import="true">
@@ -2028,6 +2069,22 @@ The Gob-Buddy Action can only use weapons purchased specially for it. It inherit
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds the &apos;Rash&apos; and &apos;Offbalance&apos; Keywords to this Model.
 Removes the &apos;Slow&apos; and &apos;Steadfast&apos; Keywords from this Model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8a72-a9c1-267b-fe6c" name="Gotta Go Fasta" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds the &apos;Rash&apos; Keyword to this Model. Removes the &apos;Cautious&apos; Keyword.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="42bd-092f-bcd1-9e10" name="Flyin&apos; Eadbutt" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Choose an enemy model on the battlefield which is in line of sight of this model and is not vertically obstructed, and roll a D6. 
+
+On a roll of 4-6, this model instantly moves into base to base contact with the targeted enemy model and performs a clobba attack. This attack gets a +1 boost to this model&apos;s Clobba score. 
+On a roll of 2-3, this model overshoots the target by 8&quot;. 
+On a roll of 1, the rocket misfires and nothing happens. 
+
+No matter the outcome, the model&apos;s turn is concluded after the ability is resolved.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
