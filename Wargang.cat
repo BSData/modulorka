@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
-    <entryLink id="e871-e837-c9a4-e8cb" name="Dirk Bikaz" hidden="false" collective="false" import="true" targetId="5a56-b7ce-b0b3-36a1" type="selectionEntry"/>
+    <entryLink id="e871-e837-c9a4-e8cb" name="Dirt Bikaz" hidden="false" collective="false" import="true" targetId="5a56-b7ce-b0b3-36a1" type="selectionEntry"/>
     <entryLink id="3f11-c5d0-9a05-c408" name="Speed-Boss" hidden="false" collective="false" import="true" targetId="5e8b-b45e-afda-8718" type="selectionEntry"/>
     <entryLink id="7141-1c91-c414-c8bf" name="Speed Kultistz" hidden="false" collective="false" import="true" targetId="bd69-72f4-aeb6-a357" type="selectionEntry"/>
     <entryLink id="7d73-fe75-3160-ec85" name="Arma-Boss" hidden="false" collective="false" import="true" targetId="b6ed-5dd9-03cf-abde" type="selectionEntry"/>
@@ -33,6 +33,8 @@
     <entryLink id="69eb-f0a6-7fb6-062e" name="Rokkaladz" hidden="false" collective="false" import="true" targetId="6b57-524a-7500-2242" type="selectionEntry"/>
     <entryLink id="9e29-c671-f10c-e467" name="Da Macheen" hidden="false" collective="false" import="true" targetId="f883-5c07-9e67-0815" type="selectionEntry"/>
     <entryLink id="6732-9b09-238b-408c" name="Bika-gobz" hidden="false" collective="false" import="true" targetId="9a0c-73a1-3e99-94e3" type="selectionEntry"/>
+    <entryLink id="b9c9-fc06-e44d-7d01" name="Boi" hidden="false" collective="false" import="true" targetId="d692-8991-8528-39cd" type="selectionEntry"/>
+    <entryLink id="f2a7-8e65-7159-7d52" name="Kratorc" hidden="false" collective="false" import="true" targetId="4bfd-b0a3-d13a-ce8f" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="5a56-b7ce-b0b3-36a1" name="Dirt Bikaz" hidden="false" collective="false" import="true" type="model">
@@ -856,7 +858,7 @@
         <categoryLink id="11c0-737e-f73b-6428" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c197-2ed4-1696-c92c" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+        <entryLink id="c197-2ed4-1696-c92c" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
           <constraints>
             <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d066-6d4c-1225-4b93" type="max"/>
           </constraints>
@@ -918,7 +920,7 @@
         <categoryLink id="e107-e698-2bce-c58d" name="Spek-Ops" hidden="false" targetId="5748-94ea-1f98-ce73" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="7a2b-5290-e5bc-5da4" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+        <entryLink id="7a2b-5290-e5bc-5da4" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
           <constraints>
             <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c285-e8ed-0be6-a055" type="max"/>
           </constraints>
@@ -997,7 +999,7 @@
         <categoryLink id="a085-96a6-fa38-a9f9" name="Spek-Ops" hidden="false" targetId="5748-94ea-1f98-ce73" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="8099-6902-78f0-3648" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+        <entryLink id="8099-6902-78f0-3648" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
           <constraints>
             <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ae5f-ab67-58ae-ebaf" type="max"/>
           </constraints>
@@ -1058,7 +1060,7 @@
         <categoryLink id="dd1c-5717-445c-3f97" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="00e0-3478-79eb-e4fd" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+        <entryLink id="00e0-3478-79eb-e4fd" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
           <constraints>
             <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8fcc-c143-1d19-11d9" type="max"/>
           </constraints>
@@ -1138,7 +1140,7 @@
         <categoryLink id="e510-8e19-0ad6-51f3" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c5b3-6f3c-35ab-dd60" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+        <entryLink id="c5b3-6f3c-35ab-dd60" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
           <constraints>
             <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3a7a-4dc7-f811-44bc" type="max"/>
           </constraints>
@@ -1232,7 +1234,7 @@
         <categoryLink id="6165-b726-7341-0b9c" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="7177-5798-c744-cbb0" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+        <entryLink id="7177-5798-c744-cbb0" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
           <constraints>
             <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="46ec-d419-488c-e65f" type="max"/>
           </constraints>
@@ -1306,7 +1308,7 @@
         <categoryLink id="1e0a-d7f2-80cc-3351" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5b9d-a7c1-256e-c23c" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+        <entryLink id="5b9d-a7c1-256e-c23c" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
           <constraints>
             <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca6f-2836-80be-4e75" type="max"/>
           </constraints>
@@ -1522,24 +1524,36 @@
         <categoryLink id="d6a2-b917-8bbf-a8ed" name="Offbalance" hidden="false" targetId="d844-c619-d2b2-2ce1" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6e79-0390-b4b5-fc27" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+        <entryLink id="6e79-0390-b4b5-fc27" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
           <constraints>
             <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8af4-67b7-6e90-e95b" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="7ef0-f1a8-df62-1ec8" name="Monowheel" hidden="false" collective="false" import="true" targetId="41e8-ed33-3b75-d811" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5256-022f-673d-1999" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ce97-4982-a304-bca9" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="d54b-1c27-b2c0-8452" name="Meka-Saw" hidden="false" collective="false" import="true" targetId="6d47-4b99-fae2-6a46" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="99d5-6c5b-30bf-2a8a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c3de-47d1-c555-3180" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="7b64-275b-3edb-744a" name="Rokkit-Rifle" hidden="false" collective="false" import="true" targetId="580c-ded9-ecd6-c8b6" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b472-9f41-9e8b-0bb7" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b6af-8146-0570-04b4" type="min"/>
@@ -1591,24 +1605,36 @@ If a friendly Model with the &apos;Engineer&apos; keyword is within 1&quot; of t
         <categoryLink id="ea57-0917-5b0d-2aa7" name="Mech" hidden="false" targetId="8ad5-49a9-b718-0bf5" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b982-4dfb-0ca0-b99b" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+        <entryLink id="b982-4dfb-0ca0-b99b" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
           <constraints>
             <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ad6-b58b-2354-4f46" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="9c7c-309e-df67-749e" name="Meka-Saw" hidden="false" collective="false" import="true" targetId="6d47-4b99-fae2-6a46" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bc46-2c17-06ef-7932" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f952-940d-469b-85ed" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="ddfb-7c13-0d4d-d23e" name="Meka-Klaw" hidden="false" collective="false" import="true" targetId="ef97-8315-1a94-7df7" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2252-31ee-1a78-47a4" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="510a-47c1-6f83-8a08" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="23e0-65c1-47d6-5c33" name="Cyba-Legz" hidden="false" collective="false" import="true" targetId="ec1b-5663-94d8-c1ef" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3433-c955-1f81-0cc9" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b617-ecfb-7c7e-28a6" type="min"/>
@@ -1617,6 +1643,144 @@ If a friendly Model with the &apos;Engineer&apos; keyword is within 1&quot; of t
       </entryLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="10.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4bfd-b0a3-d13a-ce8f" name="Kratorc" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="f50c-1d51-c343-38d3" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d692-8991-8528-39cd" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f50c-1d51-c343-38d3" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="eded-1eb7-5136-96a4" name="Hunta-Boss" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">2</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">4</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">6</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5efe-8cd3-7eb3-8584" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Bodyguard’ AI Archetype, and will escort and protect Boi.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="baab-0aae-85dc-2296" name="Charge!" hidden="false" targetId="8df4-bd28-a886-bfb7" type="profile"/>
+        <infoLink id="1eea-b9ff-a9fc-871e" name="Duo" hidden="false" targetId="72a1-808c-62a9-84a3" type="profile"/>
+        <infoLink id="52e1-86dc-f944-ab8e" name="Grief-Rage" hidden="false" targetId="95a3-4c29-eff2-b9e1" type="profile"/>
+        <infoLink id="7e5b-6b35-f137-fa0a" name="Marked Target" hidden="false" targetId="c2b3-6398-65c3-c0c1" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8918-d1e5-613e-1b54" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="5ade-10b0-c087-fe66" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="d892-c88f-fddd-b28c" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
+        <categoryLink id="97c3-f544-1ffe-0eb7" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="true"/>
+        <categoryLink id="a4e5-5f68-5701-22d0" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+        <categoryLink id="d661-2d69-345e-3378" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5bab-5256-6b14-0ecc" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="044b-17b9-37ae-701d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fa1f-a0cc-3530-d180" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8780-1aaf-0def-91aa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="553e-1554-273b-63e6" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="37ae-1a73-c2eb-b7ac" name="Boomaraxe" hidden="false" collective="false" import="true" targetId="bd3d-6e81-37e2-806b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9346-1db3-0705-06cf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="62b7-a9b4-4d9b-7a98" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d692-8991-8528-39cd" name="Boi" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="85e8-4c04-f096-5bfe" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4bfd-b0a3-d13a-ce8f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="85e8-4c04-f096-5bfe" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="307e-25ea-3881-3807" name="Boi" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">2</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">2</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fabc-015d-7eba-54fa" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Enthusiastic’ AI Archetype.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8125-2ab2-8b6d-76b8" name="Charge!" hidden="false" targetId="8df4-bd28-a886-bfb7" type="profile"/>
+        <infoLink id="1089-98a2-e64b-ee8a" name="Duo" hidden="false" targetId="72a1-808c-62a9-84a3" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c6b6-bf98-d975-ed73" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="78ca-1993-ac3c-6dbf" name="Goblin" hidden="false" targetId="c377-399d-c098-4a83" primary="false"/>
+        <categoryLink id="327d-e03f-3a93-66a1" name="Fragile" hidden="false" targetId="56a5-b46b-a6cf-a29a" primary="false"/>
+        <categoryLink id="8dc2-b48e-9237-bcf0" name="Small" hidden="false" targetId="976e-2c74-2a99-dce4" primary="false"/>
+        <categoryLink id="ba15-88a3-173f-64fb" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="true"/>
+        <categoryLink id="c1b3-c5fa-ee5e-5435" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+        <categoryLink id="2e1a-3a3f-cb0f-dbc9" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
+        <categoryLink id="f2d2-27ae-c8e6-32f9" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4219-6bd7-9b0c-218f" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5073-d229-4a5d-5b31" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="30b1-2148-2c8d-49c0" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ba77-3fa2-fff1-74ed" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c41b-11bc-e829-0a33" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d480-fe2d-10b0-c629" name="Hunta-Bow" hidden="false" collective="false" import="true" targetId="d2de-b9fd-eac6-5915" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6e68-de4d-379e-acbf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2fd1-62b2-e9d7-f30e" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1776,6 +1940,21 @@ This Model is then Out and removed from the table.
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">This model should not be deployed with regular units and must be kept in reserve. The controllign player gains one additional Gearhed at no additional points cost (though special weapons must still be purchased at cost), which is deployed normally. 
 
 For the duration of the game, whenever the controlling player has activated ANY friendly Gearhed Model which has Actions remaining, they may transofrm that Gearhed into GitzmoOrc. The transformed model is removed from play and replaced with GitzmoOrc. Any Wargear from the transofrmed Gearhed is discarded. Any Mission items carried by the transformed Gearhed are transferred to GitzmoOrc, and any States are carried over. THis ability ends GitzmoOrc&apos;s Turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="72a1-808c-62a9-84a3" name="Duo" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Kratorc and Boi must be taken as a pair and neither can be included in a Wargang individually.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c2b3-6398-65c3-c0c1" name="Marked Target" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">If Kratorc performs a successful melee attack on a model with Boi has successfully attacked in the same round, that attack has double power.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="95a3-4c29-eff2-b9e1" name="Grief-Rage" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">If Boi is Out at any point in the game, Kratorc immediately enters the Beastial State.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
