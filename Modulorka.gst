@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="6" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="7" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -1168,6 +1168,46 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bd3d-6e81-37e2-806b" name="Boomaraxe" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ea12-70a1-6569-0085" name="Boomaraxe" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">3</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e7a4-fc48-15d6-a3bc" name="Mjol-Not" hidden="false" targetId="bcbb-9c38-73f1-cab0" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d2de-b9fd-eac6-5915" name="Hunta-Bow" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f6e6-90fe-8037-de87" name="Hunta-Bow" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">12</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8485-4d22-eb2e-0bb0" name="Barbed Arrer" hidden="false" targetId="458d-7055-413b-4ad2" type="profile"/>
+        <infoLink id="da0d-2292-a57e-d0e5" name="Careful Shot" hidden="false" targetId="4a03-369a-2eb7-c6b9" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1431,6 +1471,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="0344-b529-f5b2-b6bc" name="Boomaraxe" hidden="false" collective="false" import="true" targetId="bd3d-6e81-37e2-806b" type="selectionEntry"/>
+        <entryLink id="665d-6046-9420-fdd4" name="Hunta-Bow" hidden="false" collective="false" import="true" targetId="d2de-b9fd-eac6-5915" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="1f7e-2a94-280d-1c35" name="Huntaz Goblin Weapons" hidden="true" collective="false" import="true">
@@ -1451,6 +1493,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <entryLink id="d5b4-a1cc-651f-1926" name="Buzz-Axe" hidden="false" collective="false" import="true" targetId="045d-1d16-825a-5606" type="selectionEntry"/>
         <entryLink id="6b88-b9a3-07a6-1d48" name="Buzz-Spear" hidden="false" collective="false" import="true" targetId="069d-d67d-648d-eabf" type="selectionEntry"/>
         <entryLink id="f60d-f15e-c0da-1461" name="Elephant Gun" hidden="false" collective="false" import="true" targetId="4592-1047-ca63-4ec7" type="selectionEntry"/>
+        <entryLink id="cf5c-8e7d-b1ea-82dd" name="Boomaraxe" hidden="false" collective="false" import="true" targetId="bd3d-6e81-37e2-806b" type="selectionEntry"/>
+        <entryLink id="e2df-dedb-8ccc-87f7" name="Hunta-Bow" hidden="false" collective="false" import="true" targetId="d2de-b9fd-eac6-5915" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="1cc0-6960-db89-9d3a" name="Gear" hidden="false" collective="false" import="true">
@@ -2085,6 +2129,21 @@ On a roll of 2-3, this model overshoots the target by 8&quot;.
 On a roll of 1, the rocket misfires and nothing happens. 
 
 No matter the outcome, the model&apos;s turn is concluded after the ability is resolved.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bcbb-9c38-73f1-cab0" name="Mjol-Not" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Volumetric Speshul Attack Rules and has a width of 1&quot;. </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="458d-7055-413b-4ad2" name="Barbed Arrer" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Models hit by this weapon have the &apos;Pinned&apos; State applied.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4a03-369a-2eb7-c6b9" name="Careful Shot" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon may perform an Attack that requires two Actions and has a +1 boost to the Aim roll.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
