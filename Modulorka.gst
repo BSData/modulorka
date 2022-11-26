@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="7" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="8" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -1210,6 +1210,25 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7be1-6b57-7dd9-350b" name="Jump-Pak" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ea26-be71-746a-7ab8" name="Jump-Pak" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b85e-582d-ec37-970e" name="Jet-Jumpa" hidden="false" targetId="0812-99d0-43de-bcc6" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="346d-325e-502b-ca90" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e179-021a-8344-3d9f" name="Weapons" hidden="false" collective="false" import="true">
@@ -1723,6 +1742,28 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="a04e-40a9-a5d0-17ff" name="Jump-Pak" hidden="true" collective="false" import="true" targetId="7be1-6b57-7dd9-350b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a433-87d4-46e8-8010" name="Gearhedz Gear" hidden="true" collective="false" import="true">
@@ -2144,6 +2185,17 @@ No matter the outcome, the model&apos;s turn is concluded after the ability is r
     <profile id="4a03-369a-2eb7-c6b9" name="Careful Shot" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon may perform an Attack that requires two Actions and has a +1 boost to the Aim roll.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0812-99d0-43de-bcc6" name="Jet-Jumpa" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Choose an empty point on the battlefield that is not vertically obstructed and roll a D6. 
+
+On a roll of 2-5, this Model instantly moves to this position. 
+On a roll of 1, this Model undershoots by 6&quot; and the Model is Pinned.
+On a roll of 6, this Model overshoots by 6&quot; and the Model is Pinned.
+
+Use of this Ability does not end the Model&apos;s turn. </characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
