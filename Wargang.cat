@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="e871-e837-c9a4-e8cb" name="Dirt Bikaz" hidden="false" collective="false" import="true" targetId="5a56-b7ce-b0b3-36a1" type="selectionEntry"/>
     <entryLink id="3f11-c5d0-9a05-c408" name="Speed-Boss" hidden="false" collective="false" import="true" targetId="5e8b-b45e-afda-8718" type="selectionEntry"/>
@@ -35,6 +35,7 @@
     <entryLink id="6732-9b09-238b-408c" name="Bika-gobz" hidden="false" collective="false" import="true" targetId="9a0c-73a1-3e99-94e3" type="selectionEntry"/>
     <entryLink id="b9c9-fc06-e44d-7d01" name="Boi" hidden="false" collective="false" import="true" targetId="d692-8991-8528-39cd" type="selectionEntry"/>
     <entryLink id="f2a7-8e65-7159-7d52" name="Kratorc" hidden="false" collective="false" import="true" targetId="4bfd-b0a3-d13a-ce8f" type="selectionEntry"/>
+    <entryLink id="d229-86fd-205c-5215" name="Da Vultur" hidden="false" collective="false" import="true" targetId="ac9f-1dc8-e16d-ad82" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="5a56-b7ce-b0b3-36a1" name="Dirt Bikaz" hidden="false" collective="false" import="true" type="model">
@@ -1781,6 +1782,77 @@ If a friendly Model with the &apos;Engineer&apos; keyword is within 1&quot; of t
       </entryLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ac9f-1dc8-e16d-ad82" name="Da Vultur" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="34d6-8305-9221-9f9e" name="Da Vultur" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">8</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5c6d-9b94-a8df-61f4" name="Diveboma" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Remove Da Vultur from the board for the remainder of the round. 
+
+After Activating Da Vultur in the next Round, choose an enemy model on the battlefield which is in line of sight of this model and is not vertically obstructed. Da vultur instantly moves into base to base contact with the targeted enemy model and performs a clobba attack. This attack gets a +1 boost to Da Vultur&apos;s Clobba score. Da Vultur is stunned after this attack is rexolved and its turn is concluded. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6c23-49a7-a88a-95ae" name="Agile" hidden="false" targetId="3d6f-9e28-bc29-9139" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3763-6060-ca6c-7f69" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="391d-ac3b-372d-8185" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="true"/>
+        <categoryLink id="b44f-bf0b-8f07-c9ea" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="77ef-1ffc-697f-1747" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
+        <categoryLink id="81dc-0f9c-cc65-d2ab" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
+        <categoryLink id="1872-dc55-494d-f819" name="Mech" hidden="false" targetId="8ad5-49a9-b718-0bf5" primary="false"/>
+        <categoryLink id="9bdd-67cc-ef06-60af" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+        <categoryLink id="5a9d-d7f7-72f6-dbc5" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+        <categoryLink id="6a9e-3b00-5197-2135" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
+        <categoryLink id="434f-914e-9e44-1d41" name="Steadfast" hidden="false" targetId="1db6-c967-f964-eada" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cfc5-414d-d1d8-bd4d" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1ed8-f7f4-20de-4703" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a464-437f-c8dc-4bb4" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5e75-a503-42d1-0ef6" name="Skoped Pistol" hidden="false" collective="false" import="true" targetId="f0e7-7dd5-d3cc-02a1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0140-6409-e1cb-de78" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a968-0761-f4f6-f1fa" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d0d3-5e6d-850e-b038" name="Bludga" hidden="false" collective="false" import="true" targetId="270a-d6cf-f4d5-0c87" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="05a2-da37-830c-edad" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4a64-c0f9-e7ef-704b" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="594c-a15c-22f3-3ea6" name="Rokkit-Pak" hidden="false" collective="false" import="true" targetId="26eb-359c-365b-ec52" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5efc-495c-c342-afb5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d61e-5f2d-bfc1-24da" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8036-cd55-4212-07ed" name="Cyba-Legz" hidden="false" collective="false" import="true" targetId="ec1b-5663-94d8-c1ef" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a3a0-3e7a-c471-6dad" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a755-6d7f-7464-57a2" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="11.0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
       </costs>
     </selectionEntry>
