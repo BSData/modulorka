@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="8" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="9" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -1229,6 +1229,71 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="2ce0-1bde-5891-2cb6" name="Flama" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ff19-ca7e-9e0e-8467" name="Flama" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">6</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">1</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e345-fa77-46ab-52c2" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
+        <infoLink id="e6d0-ca10-6b08-5d29" name="Flamethrowa" hidden="false" targetId="2110-d880-48d3-1429" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f44c-fdb1-a4b8-9293" name="Flama-Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="10ba-51d3-a288-1d5a" name="Flama-Pistol" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">4</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">1</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">1</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6906-a309-dce7-5901" name="Flamethrowa" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Volumetric Speshul Attack Rules and has a width of 1”. Models hit by this weapon have the ‘Burning’ state applied.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7565-dc74-9828-891a" name="Inferno" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">A model armed with two Flama-Pistols may attack with both in a single Shootin&apos; attack. This requires both to have sufficient Ammo, and both weapons expend Ammo in the Attack. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8f0a-a907-0540-3e2a" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c4c2-4614-ad81-0da9" name="Flama-Tank" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e9d3-9702-ec8c-1675" name="Flama-Tank" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="33fd-1246-fd5e-0459" name="Highly Flammable" hidden="false" targetId="ee13-6df2-487e-d282" type="profile"/>
+        <infoLink id="bd6a-b581-52e4-2eff" name="Flama-Fuel" hidden="false" targetId="b618-9692-9b54-d0c8" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e179-021a-8344-3d9f" name="Weapons" hidden="false" collective="false" import="true">
@@ -1247,7 +1312,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <entryLink id="1051-c5ca-30f5-3338" name="Huntaz Orc Weapons" hidden="false" collective="false" import="true" targetId="b8d8-d2b3-be1c-6b0b" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="ebbb-7420-58b6-fcca" name="Orc Generic Weapons" hidden="true" collective="false" import="true">
+    <selectionEntryGroup id="ebbb-7420-58b6-fcca" name="Generic Orc Weapons" hidden="true" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1267,9 +1332,10 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <entryLink id="4bc6-03d0-b51d-04c0" name="Megabludga" hidden="false" collective="false" import="true" targetId="85d8-cb12-c6a7-0b57" type="selectionEntry"/>
         <entryLink id="fe3e-3d6b-783a-dc68" name="Skoped Pistol" hidden="false" collective="false" import="true" targetId="f0e7-7dd5-d3cc-02a1" type="selectionEntry"/>
         <entryLink id="608d-bd39-b8d8-ad38" name="Pistol" hidden="false" collective="false" import="true" targetId="3561-25eb-3095-2224" type="selectionEntry"/>
+        <entryLink id="62a3-acff-d470-10cd" name="Flama" hidden="false" collective="false" import="true" targetId="2ce0-1bde-5891-2cb6" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="43dc-3596-0a7c-d32c" name="Goblin Generic Weapons" hidden="true" collective="false" import="true">
+    <selectionEntryGroup id="43dc-3596-0a7c-d32c" name="Generic Goblin Weapons" hidden="true" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1289,6 +1355,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <entryLink id="6c43-e388-6c2b-b0c5" name="Megabludga" hidden="false" collective="false" import="true" targetId="85d8-cb12-c6a7-0b57" type="selectionEntry"/>
         <entryLink id="1a76-19d4-21ec-0d0f" name="Skoped Pistol" hidden="false" collective="false" import="true" targetId="f0e7-7dd5-d3cc-02a1" type="selectionEntry"/>
         <entryLink id="132e-67fa-fced-ff4b" name="Pistol" hidden="false" collective="false" import="true" targetId="3561-25eb-3095-2224" type="selectionEntry"/>
+        <entryLink id="2e74-740b-4b9d-50fd" name="Flama" hidden="false" collective="false" import="true" targetId="2ce0-1bde-5891-2cb6" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="c9de-2a01-fce0-8ed9" name="Horde Goblin Weapons" hidden="true" collective="false" import="true">
@@ -1385,6 +1452,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
       <entryLinks>
         <entryLink id="189e-80fb-ac6b-5eba" name="Molotov" hidden="false" collective="false" import="true" targetId="0625-b7c0-b732-883f" type="selectionEntry"/>
         <entryLink id="d5e2-cb30-85eb-66eb" name="Boom-Stick" hidden="false" collective="false" import="true" targetId="6dc0-5339-e7b7-6855" type="selectionEntry"/>
+        <entryLink id="aca5-9734-bcc6-e19f" name="Flama-Pistol" hidden="false" collective="false" import="true" targetId="f44c-fdb1-a4b8-9293" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="8f4d-b5f7-bac7-826b" name="Rokkaz Orc Weapons" hidden="true" collective="false" import="true">
@@ -1443,6 +1511,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
       <entryLinks>
         <entryLink id="67e6-578c-5558-c3b8" name="Molotov" hidden="false" collective="false" import="true" targetId="0625-b7c0-b732-883f" type="selectionEntry"/>
         <entryLink id="9e6b-2e23-b1f7-9a7e" name="Boom-Stick" hidden="false" collective="false" import="true" targetId="6dc0-5339-e7b7-6855" type="selectionEntry"/>
+        <entryLink id="07ff-ee2b-0cbe-15fe" name="Flama-Pistol" hidden="false" collective="false" import="true" targetId="f44c-fdb1-a4b8-9293" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="b8d8-d2b3-be1c-6b0b" name="Huntaz Orc Weapons" hidden="true" collective="false" import="true">
@@ -1521,6 +1590,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <entryLink id="6d1d-277b-c9a8-a110" name="Weapons" hidden="false" collective="false" import="true" targetId="e179-021a-8344-3d9f" type="selectionEntryGroup"/>
         <entryLink id="3d32-62fb-fdf7-abdf" name="Misc Gear" hidden="false" collective="false" import="true" targetId="8e06-3553-989d-f740" type="selectionEntryGroup"/>
         <entryLink id="bcc1-0f8e-0b51-6f93" name="Gearhedz Gear" hidden="false" collective="false" import="true" targetId="a433-87d4-46e8-8010" type="selectionEntryGroup"/>
+        <entryLink id="5ea1-0ead-527d-4be7" name="Speedkult Gear" hidden="false" collective="false" import="true" targetId="adc0-a12a-b1ce-2bb8" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="9620-5edb-1173-f4e9" name="Vehicle Gear" hidden="false" collective="false" import="true">
@@ -1832,6 +1902,31 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
           </modifiers>
         </entryLink>
         <entryLink id="a36c-f4ef-fe06-cda4" name="Portal-Kannon" hidden="false" collective="false" import="true" targetId="f528-de49-c3a9-f41f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="adc0-a12a-b1ce-2bb8" name="Speedkult Gear" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09e6-55ad-80f3-b415" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink id="da0f-2030-e525-3de6" name="Flama-Tank" hidden="false" collective="false" import="true" targetId="c4c2-4614-ad81-0da9" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -2196,6 +2291,20 @@ On a roll of 1, this Model undershoots by 6&quot; and the Model is Pinned.
 On a roll of 6, this Model overshoots by 6&quot; and the Model is Pinned.
 
 Use of this Ability does not end the Model&apos;s turn. </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b618-9692-9b54-d0c8" name="Flama-Fuel" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Each turn, this model may take a free Reload action for one Flama weapon. This does not cost an action or end the model&apos;s turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ee13-6df2-487e-d282" name="Highly Flammable" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Add the &apos;Explosive&apos; keyword to this model. 
+
+When this model is targeted with a Shootin&apos; attack, if the enemy player rolls a natural 5+ on the aim test, this model explodes. Perform a ranged area attack radiating from the center of this model, which automatically hits all models in the radius, including this model. 
+
+This Model has an explosive radius of 1&quot; and has a power of 1. Models hit have the &apos;Burning&apos; state applied.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
