@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="9" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="11" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -1292,6 +1292,48 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
       </infoLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="582f-fa2b-61fb-bf6d" name="Grog" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c973-22ac-3c3c-205f" name="Grog" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3927-a26c-9bdb-f044" name="Drink Up &amp; Shrug It Off" hidden="false" targetId="671f-782f-692f-6cd4" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ba04-f7bf-62e9-e714" name="Fire-Axe" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3e01-37a3-5cb3-352a" name="Fire-Axe" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">1</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="413b-7d7c-b071-0e54" name="Burnin&apos; Blade" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Area of Effect Speshul Attack Rules. Models hit by this weapon have the &apos;Burning&apos; state applied.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6740-a8d5-3868-94bf" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
+        <infoLink id="f5af-7b20-feaa-a542" name="Brutal" hidden="false" targetId="a1cc-4f61-81b6-24ba" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1453,6 +1495,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <entryLink id="189e-80fb-ac6b-5eba" name="Molotov" hidden="false" collective="false" import="true" targetId="0625-b7c0-b732-883f" type="selectionEntry"/>
         <entryLink id="d5e2-cb30-85eb-66eb" name="Boom-Stick" hidden="false" collective="false" import="true" targetId="6dc0-5339-e7b7-6855" type="selectionEntry"/>
         <entryLink id="aca5-9734-bcc6-e19f" name="Flama-Pistol" hidden="false" collective="false" import="true" targetId="f44c-fdb1-a4b8-9293" type="selectionEntry"/>
+        <entryLink id="0c4f-5baa-8a2e-f383" name="Fire-Axe" hidden="false" collective="false" import="true" targetId="ba04-f7bf-62e9-e714" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="8f4d-b5f7-bac7-826b" name="Rokkaz Orc Weapons" hidden="true" collective="false" import="true">
@@ -1512,6 +1555,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <entryLink id="67e6-578c-5558-c3b8" name="Molotov" hidden="false" collective="false" import="true" targetId="0625-b7c0-b732-883f" type="selectionEntry"/>
         <entryLink id="9e6b-2e23-b1f7-9a7e" name="Boom-Stick" hidden="false" collective="false" import="true" targetId="6dc0-5339-e7b7-6855" type="selectionEntry"/>
         <entryLink id="07ff-ee2b-0cbe-15fe" name="Flama-Pistol" hidden="false" collective="false" import="true" targetId="f44c-fdb1-a4b8-9293" type="selectionEntry"/>
+        <entryLink id="0439-1acb-1a7b-aba9" name="Fire-Axe" hidden="false" collective="false" import="true" targetId="ba04-f7bf-62e9-e714" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="b8d8-d2b3-be1c-6b0b" name="Huntaz Orc Weapons" hidden="true" collective="false" import="true">
@@ -1734,7 +1778,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="9c3b-a751-2541-2951" name="Supa-Speakaz" hidden="true" collective="false" import="true" targetId="2e67-d1fe-20b6-f58e" type="selectionEntry">
+        <entryLink id="9c3b-a751-2541-2951" name="Grog" hidden="true" collective="false" import="true" targetId="582f-fa2b-61fb-bf6d" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -1820,6 +1864,27 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="7595-112a-90bb-520f" name="Supa-Speakaz" hidden="true" collective="false" import="true" targetId="2e67-d1fe-20b6-f58e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd85-eeb7-abcd-329b" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -2305,6 +2370,12 @@ Use of this Ability does not end the Model&apos;s turn. </characteristic>
 When this model is targeted with a Shootin&apos; attack, if the enemy player rolls a natural 5+ on the aim test, this model explodes. Perform a ranged area attack radiating from the center of this model, which automatically hits all models in the radius, including this model. 
 
 This Model has an explosive radius of 1&quot; and has a power of 1. Models hit have the &apos;Burning&apos; state applied.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="671f-782f-692f-6cd4" name="Drink Up &amp; Shrug It Off" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model has +1 Armor, up to a maximum of 1. 
+When this Model activates, the controlling Player must roll a D6. The result must be higher than the turn number, or else this model is immediately Downed.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
