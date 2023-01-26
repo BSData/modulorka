@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="11" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="12" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -75,6 +75,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
     <categoryEntry id="d844-c619-d2b2-2ce1" name="Offbalance" hidden="false"/>
     <categoryEntry id="8ad5-49a9-b718-0bf5" name="Mech" hidden="false"/>
     <categoryEntry id="a346-2e75-0214-ab8a" name="Pyratz" hidden="false"/>
+    <categoryEntry id="93df-2160-73a9-cb37" name="Doc" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b001-9d67-598a-8478" name="Wargang" hidden="false">
@@ -1336,6 +1337,105 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="28eb-3494-5b96-8615" name="Medi-Bag" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ce3f-6f19-5874-edab" name="Medi-Bag" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2e01-f3bc-ed19-d223" name="Doc Gear" hidden="false" targetId="2db2-81bc-dcc1-fd28" type="profile"/>
+        <infoLink id="a733-be0a-fd7c-bdf0" name="Keep Da Doc Movin&apos;" hidden="false" targetId="fa05-0c39-0778-d164" type="profile"/>
+        <infoLink id="8ee3-cc17-73d9-d14a" name="Hand Me A Scalpel" hidden="false" targetId="cbca-f6b0-0605-302d" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4a31-cc45-d675-d9ae" name="Doc" hidden="false" targetId="93df-2160-73a9-cb37" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4cd7-0655-190b-b317" name="Syringe" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="33a9-23f9-f39f-c566" name="Syringe" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3244-eb06-7490-8a42" name="Heal" hidden="false" targetId="ef8e-7e51-6248-dc19" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5a75-339c-d551-9952" name="Doc" hidden="false" targetId="93df-2160-73a9-cb37" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2d3d-d209-b203-36c4" name="Medi-Pak" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="02c3-a7f0-705c-2709" name="Medi-Pak" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="09bf-fc84-4182-ac0d" name="Doc Gear" hidden="false" targetId="2db2-81bc-dcc1-fd28" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="96b9-2071-234b-1909" name="Doc" hidden="false" targetId="93df-2160-73a9-cb37" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9811-ddd1-b8ce-5f9f" name="Syringe-Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d9dd-0d6b-81f5-5229" name="Syringe-Gun" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">12</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">1</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="757d-e5f6-bbe0-9a74" name="Ranged Heal" hidden="false" targetId="aef9-1811-e16c-85b0" type="profile"/>
+        <infoLink id="77f8-be4e-b5f4-bd57" name="Tranquilize" hidden="false" targetId="fa77-1ebb-6358-a4d9" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a0b2-b1d2-5a90-1943" name="Medi-Klaw" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a69d-bc13-4254-a371" name="Medi-Klaw" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">0</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">1</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f66d-06e9-3302-e30a" name="Heal" hidden="false" targetId="ef8e-7e51-6248-dc19" type="profile"/>
+        <infoLink id="a599-8e91-e994-f147" name="Critical Hitta" hidden="false" targetId="ea7f-84eb-fb60-478b" type="profile"/>
+        <infoLink id="fbe5-4b08-07fa-55c8" name="Kombined Arms" hidden="false" targetId="dd45-4d77-3b13-ec83" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e179-021a-8344-3d9f" name="Weapons" hidden="false" collective="false" import="true">
@@ -1458,6 +1558,24 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <entryLink id="a157-a332-4b96-43fc" name="Mega-Spanna" hidden="false" collective="false" import="true" targetId="ee7e-6366-13ce-09ba" type="selectionEntry"/>
         <entryLink id="c774-f2c6-8f72-8ba4" name="Toolz" hidden="false" collective="false" import="true" targetId="cfc2-91ed-b8b4-917d" type="selectionEntry"/>
         <entryLink id="1c1f-80be-7ff9-3395" name="Grinda-Saw" hidden="false" collective="false" import="true" targetId="9b29-58b7-3fe5-2eba" type="selectionEntry"/>
+        <entryLink id="51de-c453-f389-438e" name="Medi-Klaw" hidden="true" collective="false" import="true" targetId="a0b2-b1d2-5a90-1943" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="f819-9741-47f3-d1cc" name="Syringe-Gun" hidden="true" collective="false" import="true" targetId="9811-ddd1-b8ce-5f9f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="42fb-4fb5-511c-6c5a" name="Rokkaz Goblin Weapons" hidden="true" collective="false" import="true">
@@ -1536,6 +1654,24 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <entryLink id="f950-c3f6-7934-403a" name="Plazma-Blasta" hidden="false" collective="false" import="true" targetId="65b8-c795-a4a0-a69f" type="selectionEntry"/>
         <entryLink id="32a7-47a4-5a6b-c809" name="Mega-Spanna" hidden="false" collective="false" import="true" targetId="ee7e-6366-13ce-09ba" type="selectionEntry"/>
         <entryLink id="5de5-7543-2016-9cdd" name="Blowtorch" hidden="false" collective="false" import="true" targetId="89da-f015-7611-6807" type="selectionEntry"/>
+        <entryLink id="f6c8-cab1-8651-ade6" name="Medi-Klaw" hidden="true" collective="false" import="true" targetId="a0b2-b1d2-5a90-1943" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="6dcc-b6af-0f73-19ee" name="Syringe-Gun" hidden="true" collective="false" import="true" targetId="9811-ddd1-b8ce-5f9f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="7a61-c77f-7ac4-40c0" name="Speedkult Goblin Weapons" hidden="true" collective="false" import="true">
@@ -1899,6 +2035,41 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="1389-d7eb-9fc2-3137" name="Medi-Bag" hidden="true" collective="false" import="true" targetId="28eb-3494-5b96-8615" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="2fb2-84fd-d874-6e61" name="Syringe" hidden="true" collective="false" import="true" targetId="4cd7-0655-190b-b317" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a433-87d4-46e8-8010" name="Gearhedz Gear" hidden="true" collective="false" import="true">
@@ -1967,6 +2138,20 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
           </modifiers>
         </entryLink>
         <entryLink id="a36c-f4ef-fe06-cda4" name="Portal-Kannon" hidden="false" collective="false" import="true" targetId="f528-de49-c3a9-f41f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="4729-dfca-8f5c-2d53" name="Medi-Pak" hidden="false" collective="false" import="true" targetId="2d3d-d209-b203-36c4" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -2376,6 +2561,36 @@ This Model has an explosive radius of 1&quot; and has a power of 1. Models hit h
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model has +1 Armor, up to a maximum of 1. 
 When this Model activates, the controlling Player must roll a D6. The result must be higher than the turn number, or else this model is immediately Downed.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cbca-f6b0-0605-302d" name="Hand Me A Scalpel" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Any friendly Models within a 2&quot; raidus of this Model, including the model equipped with this item, may reroll any dice throws for the &apos;Heal&apos; and &apos;Ranged Heal&apos; ability. Each model may only reroll one dice throw per turn irrespective of how many Medi-Bags they are in range of.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2db2-81bc-dcc1-fd28" name="Doc Gear" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Grants this Model the &apos;Doc&apos; Keyword.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fa05-0c39-0778-d164" name="Keep Da Doc Movin&apos;" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Any friendly Models with the &apos;Doc&apos; Keyword within a 2&quot; radius of this Model ignore the effects of the &apos;Slow&apos; Keyword.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ef8e-7e51-6248-dc19" name="Heal" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Target a friendly Model within 1&quot; of the &apos;Orc&apos; or &apos;Goblin&apos; Keywords, and roll a D6. On a 4+ restore 2 HP of lost health to the target. This ability cannot increase a Model&apos;s HP beyodn its value at the start of the game.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="aef9-1811-e16c-85b0" name="Ranged Heal" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Target a friendly Model within 12&quot;, in line of sight, and with the &apos;Orc&apos; or &apos;Goblin&apos; Keywords, then roll a D6. On a 4+ restore 2 HP of lost health to the target. This ability cannot increase a Model&apos;s HP beyond its value at the start of the game.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fa77-1ebb-6358-a4d9" name="Tranquilize" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">On rolling a natural 6 on an Aim test with this weapon, the target is also stunned.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
