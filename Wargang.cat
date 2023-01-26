@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="e871-e837-c9a4-e8cb" name="Dirt Bikaz" hidden="false" collective="false" import="true" targetId="5a56-b7ce-b0b3-36a1" type="selectionEntry"/>
     <entryLink id="3f11-c5d0-9a05-c408" name="Speed-Boss" hidden="false" collective="false" import="true" targetId="5e8b-b45e-afda-8718" type="selectionEntry"/>
@@ -41,6 +41,17 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="5a56-b7ce-b0b3-36a1" name="Dirt Bikaz" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="9f59-b942-4859-04a4" name="Dirt Bikaz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
@@ -83,6 +94,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="bd69-72f4-aeb6-a357" name="Speed Kultistz" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="12cb-f295-eefa-e2fc" name="Speed Kultistz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
@@ -122,6 +144,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="5e8b-b45e-afda-8718" name="Speed-Boss" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="322f-4233-f2c3-91eb" name="Speed-Boss" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
@@ -162,6 +195,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="a1da-dd0f-2757-5795" name="Ladz" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="ad73-5a5d-7770-e5ce" name="Ladz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
@@ -201,6 +245,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6a11-d5d5-cdc1-35a7" name="Gob-Ladz" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="d685-d183-7ea3-8570" name="Gob-Ladz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
@@ -242,6 +297,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="b6ed-5dd9-03cf-abde" name="Arma-Boss" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="afec-541d-8f96-5910" name="Arma-Boss" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
@@ -323,6 +389,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f74a-cf68-fb52-b763" name="Gearhedz" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d3d-d209-b203-36c4" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="2d1e-b4ea-97a7-aa47" name="Gearhedz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
@@ -362,6 +440,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="46b4-b701-cbe6-4965" name="Geargobz" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d3d-d209-b203-36c4" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="c513-9f12-56ea-acab" name="Geargobz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
@@ -403,6 +493,18 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="0365-6b50-3ecd-def7" name="Gearboss" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d3d-d209-b203-36c4" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="94dd-88e9-ea87-b836" name="Gearboss" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
@@ -445,6 +547,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6b57-524a-7500-2242" name="Rokkaladz" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="281d-6a38-389e-a324" name="Rokkaladz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
@@ -484,6 +597,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6d7a-8272-5122-fa72" name="Rokkaboss" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="58ba-6c16-facc-e2e7" name="Rokkaboss" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
@@ -525,6 +649,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="69d2-9b40-8a20-1819" name="Hunta Brawlaz" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="7f0b-075d-261b-b893" name="Hunta Brawlaz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
@@ -564,6 +699,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1332-48e8-18d0-0adb" name="Hunta-Gobs" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="17e1-ec5e-75d0-7a80" name="Hunta-Gobs" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
@@ -605,6 +751,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="bf5e-5c10-0aeb-8d18" name="Hunta-Boss" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="984c-2fd1-8b3f-be0f" name="Hunta-Boss" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
@@ -646,6 +803,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f083-6e10-10c8-12b7" name="Warr-Lock" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7b81-e598-aa53-de95" type="max"/>
       </constraints>
@@ -692,6 +860,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="0387-a11d-d3db-9368" name="Hunta Cavalry" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="980b-1105-19ea-a8f7" type="max"/>
       </constraints>
@@ -786,6 +965,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="2dfc-b7c4-8e04-b996" name="Gob-Wrangla" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4438-276a-bccc-e410" type="max"/>
       </constraints>
@@ -1406,6 +1596,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9a0c-73a1-3e99-94e3" name="Bika-gobz" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="db1d-5482-1b89-d960" name="Bika-gobz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
@@ -1453,6 +1654,17 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="0bc2-378d-b9ec-e56a" name="Speedgobz" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="f2fd-d145-994b-12fa" name="Speedgobz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
