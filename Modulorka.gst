@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="12" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="13" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -533,10 +533,14 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
             <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
           </characteristics>
         </profile>
+        <profile id="4500-90bf-dfb7-6b34" name="Bloodkurdlin&apos; Skream" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Perform an Aim test against an any Model with the ‘Troops’ Keyword, within Range 8”.
+If successful, apply the ‘Fleeing’ State to that Model.
+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="2ec5-8d11-157b-437d" name="Bloodkurdlin&apos; Skream" hidden="false" targetId="a4eb-432b-de0a-e882" type="profile"/>
-      </infoLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
@@ -867,22 +871,6 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c431-54a6-25bf-4df8" name="Beast-Brainz" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="0128-8a44-103f-2a80" name="Beast-Brainz" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
-          <characteristics>
-            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="66d0-f360-faf4-cc55" name="Wot Was I Doin?" hidden="false" targetId="200c-951c-c223-f339" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="ba37-0e64-d7ef-a965" name="Cyba-Eye" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="b632-7f6d-f87f-c8db" name="Cyba-Eye" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
@@ -899,9 +887,9 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ec1b-5663-94d8-c1ef" name="Cyba-Legz" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ec1b-5663-94d8-c1ef" name="Supa-Legz" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="2a17-0d88-5a53-c4c8" name="Cyba-Legz" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+        <profile id="2a17-0d88-5a53-c4c8" name="Supa-Legz" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
           <characteristics>
             <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
           </characteristics>
@@ -910,6 +898,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
       <infoLinks>
         <infoLink id="2e34-a8e7-b7de-7e48" name="Supa-Stompa" hidden="false" targetId="89b8-acf3-0330-dee8" type="profile"/>
         <infoLink id="7f83-7a80-9651-19bf" name="Mekalegz" hidden="false" targetId="7ec3-afdd-1550-3c56" type="profile"/>
+        <infoLink id="3d71-455c-2757-d3dd" name="Leg-Fix" hidden="false" targetId="c84d-88de-136a-c819" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
@@ -939,10 +928,12 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
             <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">1</characteristic>
           </characteristics>
         </profile>
+        <profile id="c1a2-1092-4640-3aa2" name="Ammo Mule" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Using this action allows this Model to fully replenish the ammo for one weapon on one friendly Model within 2”.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="592b-9c33-ab60-3ed1" name="Ammo Mule" hidden="false" targetId="f4d8-686e-5f1c-ece4" type="profile"/>
-      </infoLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
@@ -1142,6 +1133,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
       <infoLinks>
         <infoLink id="2055-b625-635d-0cb1" name="Mekalegz" hidden="false" targetId="7ec3-afdd-1550-3c56" type="profile"/>
         <infoLink id="0043-7dd9-3ce2-de94" name="Unicycle" hidden="false" targetId="9af8-2feb-5d55-542c" type="profile"/>
+        <infoLink id="1a93-ef39-744f-ac10" name="Leg-Fix" hidden="false" targetId="c84d-88de-136a-c819" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0de7-9424-3bee-1b93" name="Offbalance" hidden="false" targetId="d844-c619-d2b2-2ce1" primary="false"/>
@@ -1182,10 +1174,12 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
             <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
           </characteristics>
         </profile>
+        <profile id="383b-a0e8-4d63-056b" name="Mjol-Not" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Volumetric Speshul Attack Rules and has a width of 1&quot;. </characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="e7a4-fc48-15d6-a3bc" name="Mjol-Not" hidden="false" targetId="bcbb-9c38-73f1-cab0" type="profile"/>
-      </infoLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
@@ -1393,6 +1387,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9811-ddd1-b8ce-5f9f" name="Syringe-Gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1436,6 +1431,187 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f7c8-9d22-d99f-8b90" name="Boosta-Legz" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0693-8d8d-021b-86ff" name="Boosta-Legz" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ff4e-488c-6ad4-266e" name="Floaty-Boy" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds the &apos;Hover&apos; and &apos;Offbalance&apos; Keywords to this Model.
+
+Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="15db-a21e-01f5-7288" name="Leg-Fix" hidden="false" targetId="c84d-88de-136a-c819" type="profile"/>
+        <infoLink id="4fa7-d5ec-cfce-9275" name="Mekalegz" hidden="false" targetId="7ec3-afdd-1550-3c56" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c287-b86d-5440-f988" name="Trak-Legz" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="05af-1773-99a8-cedd" name="Trak-Legz" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="196a-39a8-8e91-edf0" name="Tank-Boy" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds the &apos;Vehicle&apos; and &apos;Steadfast&apos; Keywords to this Model. 
+
+Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d900-7425-9511-4059" name="Ram" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model has an Attack Cross-section of 1&quot;.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ed6d-3a85-dfe9-0beb" name="Leg-Fix" hidden="false" targetId="c84d-88de-136a-c819" type="profile"/>
+        <infoLink id="96bc-7811-23fd-0c05" name="Mekalegz" hidden="false" targetId="7ec3-afdd-1550-3c56" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8a9f-86ed-f044-5832" name="Cyba-Body" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0103-e8d9-9d0d-7b6c" name="Cyba-Body" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5f8e-36f9-5622-7e5f" name="Supa-Targetin&apos;" hidden="false" targetId="8296-c8ec-d72d-7e57" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d665-4581-77b1-0bb0" name="Mech" hidden="false" targetId="8ad5-49a9-b718-0bf5" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9bea-1579-9cee-df0b" name="Gun-Arm" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="88d0-12ea-3fad-78cf" name="Gun-Arm" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3d00-1bbb-7876-cb4e" name="Arm-Fix" hidden="false" targetId="9752-74dd-4263-ad27" type="profile"/>
+        <infoLink id="cd37-9cb5-4341-dad2" name="Shootin&apos; Arm" hidden="false" targetId="0e15-cfec-4f49-295f" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5ad5-e8b0-a7a1-b9d4" name="Meka-Armz" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6355-111f-d6df-d639" name="Meka-Armz" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="cda4-5938-0568-6cfb" name="Arm-Fix" hidden="false" targetId="9752-74dd-4263-ad27" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fc58-3881-451f-5ee3" name="Rage-Wirez" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4385-9a61-68b3-c6ee" name="Rage-Wirez" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="40ac-99cc-d96e-1eac" name="Beserka-Brain" hidden="false" targetId="8fb2-e32f-7ea7-0331" type="profile"/>
+        <infoLink id="f16e-7c07-9be4-c838" name="Mekabrainz" hidden="false" targetId="e821-61b6-a069-be50" type="profile"/>
+        <infoLink id="7fbe-50ee-3e49-9d01" name="Brain-Fix" hidden="false" targetId="c219-5867-3929-283b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c344-8c7b-98cb-aad0" name="Cyba-Brain" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c244-f994-0045-9b62" name="Cyba-Brain" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e9b7-c157-b129-cbc4" name="Macheen-Mind" hidden="false" targetId="7c88-2723-2a54-810b" type="profile"/>
+        <infoLink id="fddb-0cdd-9385-48f0" name="Mekabrainz" hidden="false" targetId="e821-61b6-a069-be50" type="profile"/>
+        <infoLink id="186b-d3d5-ab49-f614" name="Brain-Fix" hidden="false" targetId="c219-5867-3929-283b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1ffb-e8f8-3694-c1ab" name="Beast-Brainz" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4f33-f604-db18-f172" name="Beast-Brainz" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="213f-0c8d-9d4d-0c43" name="Monsta-Mind" hidden="false" targetId="af93-d042-0472-40f2" type="profile"/>
+        <infoLink id="6b6a-395e-4a35-2d19" name="Mekabrainz" hidden="false" targetId="e821-61b6-a069-be50" type="profile"/>
+        <infoLink id="2d79-af69-a04f-fcb8" name="Brain-Fix" hidden="false" targetId="c219-5867-3929-283b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ae82-e926-d868-5324" name="Xtendo-Armz" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="69dc-0cbd-db93-189c" name="Xtendo-Armz" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="92b5-480a-7635-e099" name="Go-Go Xtendo-Armz" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Extends the range of all weapons by 1&quot;.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="667d-3ce9-2705-f959" name="Arm-Fix" hidden="false" targetId="9752-74dd-4263-ad27" type="profile"/>
+        <infoLink id="7678-3cb2-68fa-0646" name="Toolz" hidden="false" targetId="0368-30e6-a401-ddb6" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e179-021a-8344-3d9f" name="Weapons" hidden="false" collective="false" import="true">
@@ -1452,6 +1628,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <entryLink id="18c5-fdee-ac9d-9e6e" name="Speedkult Orc Weapons" hidden="false" collective="false" import="true" targetId="62e2-45a0-2682-9513" type="selectionEntryGroup"/>
         <entryLink id="f687-2678-071c-0da3" name="Huntaz Goblin Weapons" hidden="false" collective="false" import="true" targetId="1f7e-2a94-280d-1c35" type="selectionEntryGroup"/>
         <entryLink id="1051-c5ca-30f5-3338" name="Huntaz Orc Weapons" hidden="false" collective="false" import="true" targetId="b8d8-d2b3-be1c-6b0b" type="selectionEntryGroup"/>
+        <entryLink id="ad50-76cb-7215-6911" name="Mech Weapons" hidden="false" collective="false" import="true" targetId="06c8-579a-f8a0-c0a3" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="ebbb-7420-58b6-fcca" name="Generic Orc Weapons" hidden="true" collective="false" import="true">
@@ -1771,6 +1948,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <entryLink id="3d32-62fb-fdf7-abdf" name="Misc Gear" hidden="false" collective="false" import="true" targetId="8e06-3553-989d-f740" type="selectionEntryGroup"/>
         <entryLink id="bcc1-0f8e-0b51-6f93" name="Gearhedz Gear" hidden="false" collective="false" import="true" targetId="a433-87d4-46e8-8010" type="selectionEntryGroup"/>
         <entryLink id="5ea1-0ead-527d-4be7" name="Speedkult Gear" hidden="false" collective="false" import="true" targetId="adc0-a12a-b1ce-2bb8" type="selectionEntryGroup"/>
+        <entryLink id="c1d5-c146-d51d-7092" name="Mech Gear" hidden="false" collective="false" import="true" targetId="77e7-3bdf-c517-ace5" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="9620-5edb-1173-f4e9" name="Vehicle Gear" hidden="false" collective="false" import="true">
@@ -1804,16 +1982,23 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
-                    <conditionGroup type="and">
+                    <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                       </conditions>
                       <conditionGroups>
-                        <conditionGroup type="or">
+                        <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
                           </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
                     </conditionGroup>
@@ -1821,20 +2006,83 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="ce31-b575-6410-e31d" name="Cyba-Legz" hidden="true" collective="false" import="true" targetId="ec1b-5663-94d8-c1ef" type="selectionEntry">
+            <entryLink id="ce31-b575-6410-e31d" name="Supa-Legz" hidden="true" collective="false" import="true" targetId="ec1b-5663-94d8-c1ef" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
-                    <conditionGroup type="and">
+                    <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                       </conditions>
                       <conditionGroups>
-                        <conditionGroup type="or">
+                        <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
                           </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="5da0-1fd0-1e2e-6660" name="Trak-Legz" hidden="true" collective="false" import="true" targetId="c287-b86d-5440-f988" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="4d2d-9a95-8933-6b25" name="Boosta-Legz" hidden="true" collective="false" import="true" targetId="f7c8-9d22-d99f-8b90" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
                     </conditionGroup>
@@ -1844,16 +2092,14 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="a4f5-a6f0-e3f4-0334" name="Beast-Brainz" hidden="true" collective="false" import="true" targetId="c431-54a6-25bf-4df8" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                  </conditions>
+        <selectionEntryGroup id="198a-de6f-23fc-da08" name="Mekabrainz" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="714b-1d81-6408-6473" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="55a2-00da-95b4-107f" name="Rage-Wirez" hidden="true" collective="false" import="true" targetId="fc58-3881-451f-5ee3" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -1862,11 +2108,41 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="b18e-11fc-1534-12db" name="Beast-Brainz" hidden="true" collective="false" import="true" targetId="1ffb-e8f8-3694-c1ab" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="0ad1-3f5b-c841-14d8" name="Cyba-Brain" hidden="true" collective="false" import="true" targetId="c344-8c7b-98cb-aad0" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
         <entryLink id="bb83-63f6-3445-ce93" name="Cyba-Eye" hidden="true" collective="false" import="true" targetId="ba37-0e64-d7ef-a965" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -1908,6 +2184,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2070,6 +2347,73 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="4f41-76ed-c554-bb00" name="Cyba-Body" hidden="false" collective="false" import="true" targetId="8a9f-86ed-f044-5832" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="c944-a02c-ccf1-5e0d" name="Gun-Arm" hidden="true" collective="false" import="true" targetId="9bea-1579-9cee-df0b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="4c2f-66b4-ca3d-1055" name="Meka-Armz" hidden="true" collective="false" import="true" targetId="5ad5-e8b0-a7a1-b9d4" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="4a00-312c-b479-2e1f" name="Xtendo-Armz" hidden="true" collective="false" import="true" targetId="ae82-e926-d868-5324" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="a5b5-7038-d223-b5f9" name="Gun-Arm Ranged Weapons" hidden="false" collective="false" import="true" targetId="b37d-cf8a-ebd4-0561" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bea-1579-9cee-df0b" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a433-87d4-46e8-8010" name="Gearhedz Gear" hidden="true" collective="false" import="true">
@@ -2089,6 +2433,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2103,6 +2448,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2184,6 +2530,250 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b37d-cf8a-ebd4-0561" name="Gun-Arm Ranged Weapons" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="increment" field="a7ea-8932-5231-323b" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bea-1579-9cee-df0b" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a7ea-8932-5231-323b" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="ab29-f771-b75c-3474" name="Plazma-Blasta" hidden="true" collective="false" import="true" targetId="65b8-c795-a4a0-a69f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="d8aa-483f-9935-8f98" name="Plazma-Pistol" hidden="true" collective="false" import="true" targetId="b40b-1df3-8a1c-2bb2" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="23a0-4e49-1c43-5929" name="Syringe-Gun" hidden="true" collective="false" import="true" targetId="9811-ddd1-b8ce-5f9f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="df25-b32a-4d01-70da" name="Flama" hidden="false" collective="false" import="true" targetId="2ce0-1bde-5891-2cb6" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="7e79-57ca-2925-da94" name="Skoped Pistol" hidden="false" collective="false" import="true" targetId="f0e7-7dd5-d3cc-02a1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="c759-0f3c-9325-61f4" name="Rokkit-Rifle" hidden="false" collective="false" import="true" targetId="580c-ded9-ecd6-c8b6" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="4b36-2b0c-35d3-81ad" name="Pistol" hidden="false" collective="false" import="true" targetId="3561-25eb-3095-2224" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="d8d4-737c-05f6-d4dd" name="Launcha-Rifle" hidden="false" collective="false" import="true" targetId="beb0-78d3-2736-249a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="50ac-f06c-ffcd-f4bc" name="Flama-Rifle" hidden="false" collective="false" import="true" targetId="63cc-6c31-848c-5a44" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="d403-6140-9aa6-bfc6" name="Machine Gun" hidden="true" collective="false" import="true" targetId="9a73-47b0-4982-5fc5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="b132-6e6f-17a2-763a" name="Rifle" hidden="true" collective="false" import="true" targetId="d255-4856-c408-4b28" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="038e-759f-10a4-c370" name="Elephant Gun" hidden="true" collective="false" import="true" targetId="4592-1047-ca63-4ec7" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0fb-c1e5-a83d-28d9" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="8aa6-7cc7-6b5b-f1a2" name="Hunta-Bow" hidden="true" collective="false" import="true" targetId="d2de-b9fd-eac6-5915" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0fb-c1e5-a83d-28d9" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="57ca-f8a5-60a9-f75d" name="Flama-Pistol" hidden="false" collective="false" import="true" targetId="f44c-fdb1-a4b8-9293" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09e6-55ad-80f3-b415" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="06c8-579a-f8a0-c0a3" name="Mech Weapons" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink id="bf8b-70ef-e5c8-5d15" name="Meka-Klaw" hidden="false" collective="false" import="true" targetId="ef97-8315-1a94-7df7" type="selectionEntry"/>
+        <entryLink id="a09b-4a26-bc40-c673" name="Meka-Fist" hidden="false" collective="false" import="true" targetId="3032-7340-2ef2-9bdb" type="selectionEntry"/>
+        <entryLink id="1ab9-f197-bf5a-95a1" name="Meka-Pierca" hidden="false" collective="false" import="true" targetId="e989-bba6-a7e4-4ca6" type="selectionEntry"/>
+        <entryLink id="0ded-4725-6e63-23be" name="Meka-Saw" hidden="false" collective="false" import="true" targetId="6d47-4b99-fae2-6a46" type="selectionEntry"/>
+        <entryLink id="c2fc-96f5-2a5d-6fee" name="Flama" hidden="false" collective="false" import="true" targetId="2ce0-1bde-5891-2cb6" type="selectionEntry"/>
+        <entryLink id="5db9-1398-2e3c-93ce" name="Launcha-Rifle" hidden="false" collective="false" import="true" targetId="beb0-78d3-2736-249a" type="selectionEntry"/>
+        <entryLink id="7885-6f80-c475-4b46" name="Flama-Rifle" hidden="false" collective="false" import="true" targetId="63cc-6c31-848c-5a44" type="selectionEntry"/>
+        <entryLink id="e97a-8583-4da1-4296" name="Rokkit-Rifle" hidden="false" collective="false" import="true" targetId="580c-ded9-ecd6-c8b6" type="selectionEntry"/>
+        <entryLink id="9d09-7f66-4620-104e" name="Bullit-Spitta" hidden="false" collective="false" import="true" targetId="6ae9-30af-f217-47d1" type="selectionEntry"/>
+        <entryLink id="2082-1c4b-c23e-7e13" name="Machine Gun" hidden="true" collective="false" import="true" targetId="9a73-47b0-4982-5fc5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="0070-689d-573e-ee7e" name="Plazma-Blasta" hidden="true" collective="false" import="true" targetId="65b8-c795-a4a0-a69f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="4930-d829-5dee-ec58" name="Elephant Gun" hidden="false" collective="false" import="true" targetId="4592-1047-ca63-4ec7" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0fb-c1e5-a83d-28d9" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="77e7-3bdf-c517-ace5" name="Mech Gear" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="d96d-05e2-127f-7df9" name="Gun-Arm" hidden="true" collective="false" import="true" targetId="9bea-1579-9cee-df0b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2302,13 +2892,6 @@ If successful, the target and all other units with the ‘On Foot’ keyword, in
 </characteristic>
       </characteristics>
     </profile>
-    <profile id="a4eb-432b-de0a-e882" name="Bloodkurdlin&apos; Skream" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-      <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Perform an Aim test against an any Model with the ‘Troops’ Keyword, within Range 8”.
-If successful, apply the ‘Fleeing’ State to that Model.
-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="0933-7d37-7207-980b" name="Burn" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">Models hit by this weapon have the ‘Burning’ state applied.</characteristic>
@@ -2388,12 +2971,6 @@ Removes the ‘Fast’ and ’Rash’ keywords from this Model.
 </characteristic>
       </characteristics>
     </profile>
-    <profile id="200c-951c-c223-f339" name="Wot Was I Doin?" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-      <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Add the ‘Stupid’ keyword to this Model.
-Apply the ‘Bestial’ state to this Model.</characteristic>
-      </characteristics>
-    </profile>
     <profile id="8296-c8ec-d72d-7e57" name="Supa-Targetin&apos;" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">Targets in Full Cover have only a -1 aim penalty.
@@ -2404,7 +2981,7 @@ Enemy Models in the ‘Concealed’ state may be targeted by this Model.</charac
     <profile id="89b8-acf3-0330-dee8" name="Supa-Stompa" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds the ‘Steadfast’ Keyword to this Model.
-Removes the ‘Fast’ and ‘Rash’ Keywords from this Model.
+Removes the ‘Fast’ and ‘Offbalance’ Keywords from this Model.
 This Model can Leap Down from any height. </characteristic>
       </characteristics>
     </profile>
@@ -2417,11 +2994,6 @@ This Model can Leap Down from any height. </characteristic>
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds the keyword &apos;Leader&apos; to the Model. 
 Models which already have the ‘Leader’ keyword may equip this gear for no points cost.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="f4d8-686e-5f1c-ece4" name="Ammo Mule" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-      <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Using this action allows this Model to fully replenish the ammo for one weapon on one friendly Model within 2”.</characteristic>
       </characteristics>
     </profile>
     <profile id="e3ff-9f99-e7a3-8b23" name="Amp It Up" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
@@ -2517,11 +3089,6 @@ On a roll of 1, the rocket misfires and nothing happens.
 No matter the outcome, the model&apos;s turn is concluded after the ability is resolved.</characteristic>
       </characteristics>
     </profile>
-    <profile id="bcbb-9c38-73f1-cab0" name="Mjol-Not" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-      <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Volumetric Speshul Attack Rules and has a width of 1&quot;. </characteristic>
-      </characteristics>
-    </profile>
     <profile id="458d-7055-413b-4ad2" name="Barbed Arrer" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">Models hit by this weapon have the &apos;Pinned&apos; State applied.</characteristic>
@@ -2591,6 +3158,68 @@ When this Model activates, the controlling Player must roll a D6. The result mus
     <profile id="fa77-1ebb-6358-a4d9" name="Tranquilize" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">On rolling a natural 6 on an Aim test with this weapon, the target is also stunned.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c84d-88de-136a-c819" name="Leg-Fix" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This gear negates the effect of any Leg injuries.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6c98-73df-8005-fdb7" name="More Macheen Than Orc" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds 2 HP to this model.
+
+Adds the Keyword &apos;Mech&apos;.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8f04-822e-3794-f579" name="Torso-Fix" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This gear negates the effect of any Torso injuries.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9752-74dd-4263-ad27" name="Arm-Fix" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This gear negates the effect of any Arm injuries.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0e15-cfec-4f49-295f" name="Shootin&apos; Arm" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This model may equip any one Ranged Weapon for 0 Carry.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c219-5867-3929-283b" name="Brain-Fix" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This gear negates the effect of any Brain injuries.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e821-61b6-a069-be50" name="Mekabrainz" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">A model may only equip one Gear item with the &apos;Mekabrainz&apos; Passive.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8fb2-e32f-7ea7-0331" name="Beserka-Brain" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Apply the &apos;Bestial&apos; state to this Model.
+
+This model is invulnerable to the &apos;Fleeing&apos; state.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7c88-2723-2a54-810b" name="Macheen-Mind" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This model acts according to the &apos;Enthusiastic&apos; AI Archetype. 
+
+If a friendly Model with the &apos;Engineer&apos; keyword is within 1&quot; of this Model, you may control this Model directly ignoring its AI archetype. 
+
+This model is invulnerable to the &apos;Stun&apos; state.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="af93-d042-0472-40f2" name="Monsta-Mind" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds the &apos;Stupid&apos; keyword ot this Model. Removes the &apos;Leader&apos; keyword from this model. 
+
+Adds 2 HP to this model.
+
+This Model acts according to the &apos;Aggressive&apos; AI Archetype.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
