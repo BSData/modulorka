@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="13" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="15" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -76,6 +76,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
     <categoryEntry id="8ad5-49a9-b718-0bf5" name="Mech" hidden="false"/>
     <categoryEntry id="a346-2e75-0214-ab8a" name="Pyratz" hidden="false"/>
     <categoryEntry id="93df-2160-73a9-cb37" name="Doc" hidden="false"/>
+    <categoryEntry id="a126-ae98-f1a8-3bd7" name="Explosive" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b001-9d67-598a-8478" name="Wargang" hidden="false">
@@ -432,8 +433,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="f0c8-85af-df08-f568" name="Spray and Pray" hidden="false" targetId="e922-cf95-65d9-63d4" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9a73-47b0-4982-5fc5" name="Machine Gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -558,13 +559,13 @@ If successful, apply the ‘Fleeing’ State to that Model.
         </profile>
         <profile id="d2ff-0abd-afd6-7a06" name="Area of Effect" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
           <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Area of Effect special attack rules with a 2” radius. The model attacking with this weapon is automatically hit.</characteristic>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Area of Effect special attack rules with a 2” radius. If the attack succeeds, the model attacking with this weapon is automatically hit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="65c3-52a7-b65f-9b75" name="Armor Puncha" hidden="false" targetId="6bf3-fbf2-a063-d8a6" type="profile"/>
         <infoLink id="6fe4-8d84-293c-d5b4" name="Disposabul" hidden="false" targetId="6fc1-f9f5-608e-152a" type="profile"/>
+        <infoLink id="f1f3-d78b-4344-bf9a" name="Swing &amp; A Miss" hidden="false" targetId="3c96-2e85-a9ec-b3d9" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
@@ -1612,6 +1613,225 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="6f81-9930-056c-16cd" name="Bazooka" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f4ec-72d3-3ef9-f7ba" name="Bazooka" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">12</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="cf42-72a2-5b2c-095f" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
+        <infoLink id="bfb7-747b-6a3a-113d" name="Flamethrowa" hidden="false" targetId="2110-d880-48d3-1429" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9bfe-d206-a1d5-c635" name="Bazooka-Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6c47-b1da-369c-60b0" name="Bazooka-Rifle (A)" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">2-22</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bd7c-242c-8104-72cd" name="Bazooka-Rifle (B)" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">12</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ef6-3730-8427-87a8" name="Mode (B) - Rokkit Launcha" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Ignore 2 points of Armor twhen this weapon successfully attacks. If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywrods, the attack gains an additional 2 Power. 
+Ammo for this weapon cannot be replenished. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8c54-d590-4b1b-dee2" name="Mode (A) - Stoppin&apos; Powah" hidden="false" targetId="0823-8cb7-a998-e59a" type="profile"/>
+        <infoLink id="b83f-7064-6e8e-da7c" name="Kustom Rifle" hidden="false" targetId="a0b8-e6d7-baf5-c6fa" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="266f-2b53-1802-f1a0" name="Grenade-Launcha" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3ba7-63ac-7046-6709" name="Grenade-Launcha" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">12</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6641-1683-ea54-6a8a" name="Area of Effect" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Area of Effect special attack rules with a 2&quot; radius.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c253-08b0-6a9a-0dea" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6db4-2b94-ac0b-7872" name="Bazooka-Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d310-7ebe-aa4f-834b" name="Bazooka-Pistol" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">12</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">1</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f18f-c461-e118-f846" name="Rokkit-Barrage" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">A model armed wtih two Bazooka-Pistoles may attack with both in a single Shootin&apos; attack. This requires both to have sufficient Ammo, and both weapons expend Ammo in the attack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="cb84-a21c-920b-ef7c" name="Anti-Armor" hidden="false" targetId="fdce-66f1-96a1-5921" type="profile"/>
+        <infoLink id="72ed-2db3-5263-8550" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3582-a4ec-a9d1-71d4" name="Trigga-Bomb" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4a0e-19d7-a0a4-5679" name="Trigga-Bomb" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9994-e4fe-86e4-52ea" name="Bomb-Drop" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Place a single Trigga-Bomb marker on the ground in base-to-base contact with this model. This can only be placed on stable, traversable terrain. There are no limits to how many Trigga-Bombs can be deployed. 
+
+Trigga-Bombs can be targeted by any model, and if hit will Explode.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcbf-c3a1-8959-3f32" name="Klik-Boom!" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">All Trigga-Bombs placed by this model immediately Explode.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5009-a75b-28d5-1082" name="Explosive" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Placed Trigga-Bombs have an explosive radius of 2&quot;, have a power of 2, and ignore 2 Armor.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="e702-29e8-41e7-ffea" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f2ea-3643-7411-867c" name="Land-Mine" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b090-f9b8-6bdf-ecce" name="Land-Mine" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9afe-701f-ba58-759a" name="Mine-Lay" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Place a single Land-Mine marker on the ground in base-to-base contact with this model. This can only be placed on stable, traversable terrain. There are no limits to how many Land-Mines can be deployed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ba7a-df1c-fabc-cee5" name="Explosive" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Placed Land-Mines have an explosive radius of 2&quot;, have a power of 2, and ignore 2 Armor. 
+
+Placed Land-Mines will immediately explode if any model moves when within a 2&quot; radius of the center of the Land-Mine marker. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6c9f-734c-9ed2-d6a6" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3dd7-492e-2039-87f0" name="Rokkit-Hamma" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1b32-d33b-8932-00f8" name="Rokkit-Hamma" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">0</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">4</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8fe5-a748-3ae9-d61b" name="Armorhamma" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">If the attack succeeds, the model attacking with this weapon is also automatically hit. Ignore 2 points of Armor when this weapon successfully attacks.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8654-263a-1484-c3ac" name="Disposabul" hidden="false" targetId="6fc1-f9f5-608e-152a" type="profile"/>
+        <infoLink id="d2be-ed0b-f4b7-730e" name="Swing &amp; A Miss" hidden="false" targetId="3c96-2e85-a9ec-b3d9" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f034-b81c-d904-ba07" name="Boom-Bow" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="03df-014b-46f6-6d72" name="Boom-Bow" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">12</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2cff-13af-a032-aea0" name="Careful Shot" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon may perform an Attack that requires two Actions and has a +1 boost to the Aim roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3e51-9b09-0315-321a" name="Anti-Armor" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Ignore 2 points of Armor when this weapon successfully attacks.
+If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the attack gains an additional 2 Power.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="23b2-705a-426f-4175" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e179-021a-8344-3d9f" name="Weapons" hidden="false" collective="false" import="true">
@@ -1652,6 +1872,8 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
         <entryLink id="fe3e-3d6b-783a-dc68" name="Skoped Pistol" hidden="false" collective="false" import="true" targetId="f0e7-7dd5-d3cc-02a1" type="selectionEntry"/>
         <entryLink id="608d-bd39-b8d8-ad38" name="Pistol" hidden="false" collective="false" import="true" targetId="3561-25eb-3095-2224" type="selectionEntry"/>
         <entryLink id="62a3-acff-d470-10cd" name="Flama" hidden="false" collective="false" import="true" targetId="2ce0-1bde-5891-2cb6" type="selectionEntry"/>
+        <entryLink id="ea63-d790-7ac6-821c" name="Bazooka" hidden="false" collective="false" import="true" targetId="6f81-9930-056c-16cd" type="selectionEntry"/>
+        <entryLink id="b704-cadc-6b23-dcb4" name="Bazooka-Rifle" hidden="false" collective="false" import="true" targetId="9bfe-d206-a1d5-c635" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="43dc-3596-0a7c-d32c" name="Generic Goblin Weapons" hidden="true" collective="false" import="true">
@@ -1675,6 +1897,8 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
         <entryLink id="1a76-19d4-21ec-0d0f" name="Skoped Pistol" hidden="false" collective="false" import="true" targetId="f0e7-7dd5-d3cc-02a1" type="selectionEntry"/>
         <entryLink id="132e-67fa-fced-ff4b" name="Pistol" hidden="false" collective="false" import="true" targetId="3561-25eb-3095-2224" type="selectionEntry"/>
         <entryLink id="2e74-740b-4b9d-50fd" name="Flama" hidden="false" collective="false" import="true" targetId="2ce0-1bde-5891-2cb6" type="selectionEntry"/>
+        <entryLink id="4085-2ca3-07bc-264b" name="Bazooka" hidden="false" collective="false" import="true" targetId="6f81-9930-056c-16cd" type="selectionEntry"/>
+        <entryLink id="1121-c55a-ae70-f92b" name="Bazooka-Rifle" hidden="false" collective="false" import="true" targetId="9bfe-d206-a1d5-c635" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="c9de-2a01-fce0-8ed9" name="Horde Goblin Weapons" hidden="true" collective="false" import="true">
@@ -1694,6 +1918,7 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
         <entryLink id="ea32-678a-4339-dc5b" name="Machine Gun" hidden="false" collective="false" import="true" targetId="9a73-47b0-4982-5fc5" type="selectionEntry"/>
         <entryLink id="36af-531d-d805-15c1" name="Grenade" hidden="false" collective="false" import="true" targetId="8c24-e8dc-2a9d-fa1e" type="selectionEntry"/>
         <entryLink id="cdf3-1824-783d-7a59" name="Rifle" hidden="false" collective="false" import="true" targetId="d255-4856-c408-4b28" type="selectionEntry"/>
+        <entryLink id="72c9-0b60-7c9f-c4cd" name="Grenade-Launcha" hidden="false" collective="false" import="true" targetId="266f-2b53-1802-f1a0" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="c38c-eb66-67d2-18f8" name="Horde Orc Weapons" hidden="true" collective="false" import="true">
@@ -1713,6 +1938,7 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
         <entryLink id="a6f7-9d78-a898-f76f" name="Machine Gun" hidden="false" collective="false" import="true" targetId="9a73-47b0-4982-5fc5" type="selectionEntry"/>
         <entryLink id="3111-b4fb-b129-2e61" name="Rifle" hidden="false" collective="false" import="true" targetId="d255-4856-c408-4b28" type="selectionEntry"/>
         <entryLink id="99d2-04fb-7e5d-92ed" name="Grenade" hidden="false" collective="false" import="true" targetId="8c24-e8dc-2a9d-fa1e" type="selectionEntry"/>
+        <entryLink id="a7e2-ed55-92c7-100e" name="Grenade-Launcha" hidden="false" collective="false" import="true" targetId="266f-2b53-1802-f1a0" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="040f-531a-ce24-146d" name="Gearhedz Orc Weapons" hidden="true" collective="false" import="true">
@@ -1791,6 +2017,7 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
         <entryLink id="d5e2-cb30-85eb-66eb" name="Boom-Stick" hidden="false" collective="false" import="true" targetId="6dc0-5339-e7b7-6855" type="selectionEntry"/>
         <entryLink id="aca5-9734-bcc6-e19f" name="Flama-Pistol" hidden="false" collective="false" import="true" targetId="f44c-fdb1-a4b8-9293" type="selectionEntry"/>
         <entryLink id="0c4f-5baa-8a2e-f383" name="Fire-Axe" hidden="false" collective="false" import="true" targetId="ba04-f7bf-62e9-e714" type="selectionEntry"/>
+        <entryLink id="6435-4b57-c939-530e" name="Rokkit-Hamma" hidden="false" collective="false" import="true" targetId="3dd7-492e-2039-87f0" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="8f4d-b5f7-bac7-826b" name="Rokkaz Orc Weapons" hidden="true" collective="false" import="true">
@@ -1869,6 +2096,7 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
         <entryLink id="9e6b-2e23-b1f7-9a7e" name="Boom-Stick" hidden="false" collective="false" import="true" targetId="6dc0-5339-e7b7-6855" type="selectionEntry"/>
         <entryLink id="07ff-ee2b-0cbe-15fe" name="Flama-Pistol" hidden="false" collective="false" import="true" targetId="f44c-fdb1-a4b8-9293" type="selectionEntry"/>
         <entryLink id="0439-1acb-1a7b-aba9" name="Fire-Axe" hidden="false" collective="false" import="true" targetId="ba04-f7bf-62e9-e714" type="selectionEntry"/>
+        <entryLink id="4f3e-dbf0-b713-3b10" name="Rokkit-Hamma" hidden="false" collective="false" import="true" targetId="3dd7-492e-2039-87f0" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="b8d8-d2b3-be1c-6b0b" name="Huntaz Orc Weapons" hidden="true" collective="false" import="true">
@@ -1918,6 +2146,7 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
         </entryLink>
         <entryLink id="0344-b529-f5b2-b6bc" name="Boomaraxe" hidden="false" collective="false" import="true" targetId="bd3d-6e81-37e2-806b" type="selectionEntry"/>
         <entryLink id="665d-6046-9420-fdd4" name="Hunta-Bow" hidden="false" collective="false" import="true" targetId="d2de-b9fd-eac6-5915" type="selectionEntry"/>
+        <entryLink id="5bbb-8b72-40dc-082a" name="Boom-Bow" hidden="false" collective="false" import="true" targetId="f034-b81c-d904-ba07" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="1f7e-2a94-280d-1c35" name="Huntaz Goblin Weapons" hidden="true" collective="false" import="true">
@@ -1940,6 +2169,7 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
         <entryLink id="f60d-f15e-c0da-1461" name="Elephant Gun" hidden="false" collective="false" import="true" targetId="4592-1047-ca63-4ec7" type="selectionEntry"/>
         <entryLink id="cf5c-8e7d-b1ea-82dd" name="Boomaraxe" hidden="false" collective="false" import="true" targetId="bd3d-6e81-37e2-806b" type="selectionEntry"/>
         <entryLink id="e2df-dedb-8ccc-87f7" name="Hunta-Bow" hidden="false" collective="false" import="true" targetId="d2de-b9fd-eac6-5915" type="selectionEntry"/>
+        <entryLink id="b728-5301-781f-7c63" name="Boom-Bow" hidden="false" collective="false" import="true" targetId="f034-b81c-d904-ba07" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="1cc0-6960-db89-9d3a" name="Gear" hidden="false" collective="false" import="true">
@@ -1969,6 +2199,16 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
         <entryLink id="df43-787f-983b-07c1" name="Ammo-Krate" hidden="false" collective="false" import="true" targetId="f018-3177-fdaf-fb50" type="selectionEntry"/>
         <entryLink id="b871-05fd-dd7a-7b5b" name="Orc Rida" hidden="false" collective="false" import="true" targetId="3241-1a3e-dbe7-e62c" type="selectionEntry"/>
         <entryLink id="1169-d007-153e-7787" name="Gob-Buddy" hidden="false" collective="false" import="true" targetId="dee5-84af-0dd3-de34" type="selectionEntry"/>
+        <entryLink id="777c-594e-407a-fa06" name="Bazooka" hidden="false" collective="false" import="true" targetId="6f81-9930-056c-16cd" type="selectionEntry"/>
+        <entryLink id="e1b3-ce28-29f5-68b1" name="Grenade-Launcha" hidden="true" collective="false" import="true" targetId="266f-2b53-1802-f1a0" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="8e06-3553-989d-f740" name="Misc Gear" hidden="false" collective="false" import="true">
@@ -2414,6 +2654,50 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="dadd-bd70-2bb0-d4cd" name="Trigga-Bomb" hidden="true" collective="false" import="true" targetId="3582-a4ec-a9d1-71d4" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="528c-cf62-d76a-ff3a" name="Land-Mine" hidden="true" collective="false" import="true" targetId="f2ea-3643-7411-867c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="a433-87d4-46e8-8010" name="Gearhedz Gear" hidden="true" collective="false" import="true">
@@ -2702,6 +2986,19 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
             <modifier type="set" field="9378-4835-dc32-2b6f" value="0.0"/>
           </modifiers>
         </entryLink>
+        <entryLink id="a725-80d8-8db3-2583" name="Bullit-Spitta" hidden="false" collective="false" import="true" targetId="6ae9-30af-f217-47d1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="06c8-579a-f8a0-c0a3" name="Mech Weapons" hidden="true" collective="false" import="true">
@@ -2761,25 +3058,33 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
             </modifier>
           </modifiers>
         </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="77e7-3bdf-c517-ace5" name="Mech Gear" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="d96d-05e2-127f-7df9" name="Gun-Arm" hidden="true" collective="false" import="true" targetId="9bea-1579-9cee-df0b" type="selectionEntry">
+        <entryLink id="cb22-b8d8-6c62-0eff" name="Bazooka" hidden="false" collective="false" import="true" targetId="6f81-9930-056c-16cd" type="selectionEntry"/>
+        <entryLink id="6334-a135-3b86-6c39" name="Bazooka-Rifle" hidden="false" collective="false" import="true" targetId="9bfe-d206-a1d5-c635" type="selectionEntry"/>
+        <entryLink id="27be-581e-cea8-c5bb" name="Grenade-Launcha" hidden="true" collective="false" import="true" targetId="266f-2b53-1802-f1a0" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="77e7-3bdf-c517-ace5" name="Mech Gear" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink id="d96d-05e2-127f-7df9" name="Gun-Arm" hidden="false" collective="false" import="true" targetId="9bea-1579-9cee-df0b" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -3220,6 +3525,16 @@ This model is invulnerable to the &apos;Stun&apos; state.</characteristic>
 Adds 2 HP to this model.
 
 This Model acts according to the &apos;Aggressive&apos; AI Archetype.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fdce-66f1-96a1-5921" name="Anti-Armor" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Ignore 2 points of Armor when this weapon successfully attacks. If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the attack gains an additional 2 power.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3c96-2e85-a9ec-b3d9" name="Swing &amp; A Miss" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Ammo is expended only when this weapon successfully hits.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
