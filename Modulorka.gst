@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="15" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="17" battleScribeVersion="2.03" authorName="Car_Tag" authorContact="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -77,6 +77,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
     <categoryEntry id="a346-2e75-0214-ab8a" name="Pyratz" hidden="false"/>
     <categoryEntry id="93df-2160-73a9-cb37" name="Doc" hidden="false"/>
     <categoryEntry id="a126-ae98-f1a8-3bd7" name="Explosive" hidden="false"/>
+    <categoryEntry id="ce31-63e9-6928-32d3" name="W.A.R.G." hidden="false"/>
+    <categoryEntry id="3586-2d90-1bb9-2ea9" name="Feeble" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b001-9d67-598a-8478" name="Wargang" hidden="false">
@@ -152,10 +154,10 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="7ef2-14c2-629e-9c17" name="Stoppin&apos; Powah" hidden="false" targetId="c42e-9d5e-c2c9-fa9c" type="profile"/>
+        <infoLink id="7ef2-14c2-629e-9c17" name="Careful Shot" hidden="false" targetId="4a03-369a-2eb7-c6b9" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
       </costs>
     </selectionEntry>
@@ -437,7 +439,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9a73-47b0-4982-5fc5" name="Machine Gun" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9a73-47b0-4982-5fc5" name="Macheen Gun" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="f320-910d-380a-6d2c" name="Machine Gun" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
           <characteristics>
@@ -447,10 +449,14 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
             <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
           </characteristics>
         </profile>
+        <profile id="41af-21b2-c501-df61" name="RAT-RAT-RAT!" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon always attacks two times per action. Roll a D6 for each attack. All attacks must target the same Model.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="a093-be37-104d-d235" name="BRRRRRRRRRRR!" hidden="false" targetId="b50f-0b5b-3c10-9e88" type="profile"/>
-        <infoLink id="39f1-fd0d-2b76-9326" name="Stoppin&apos; Powah" hidden="false" targetId="c42e-9d5e-c2c9-fa9c" type="profile"/>
+        <infoLink id="39f1-fd0d-2b76-9326" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
@@ -1832,6 +1838,110 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="42c1-8124-1c6e-35c9" name="Bullit-Bombarda" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="cfc4-77c3-37a9-6916" name="Bullit-Bombarda" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">8-30</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a280-959d-9bba-16c7" name="Bombarda" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the &apos;Dangerzone&apos; Special Attack Rules, and has a radius of 2&quot;.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="47dc-c309-0eab-c59d" name="Plazma-Bombarda" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0233-56a4-2482-71fa" name="Plazma-Bombarda" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">8-30</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">D2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bab3-566f-8cd0-ef92" name="Bombarda" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the &apos;Dangerzone&apos; Special Attack Rules, and has a radius of 1&quot;. Power rolls should be made for each individual unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1b14-5318-941b-e643" name="Plazma" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Models hit by this weapon have the &apos;Burning&apos; state applied.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8746-6674-66f9-be1e" name="Kannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="7f0b-2383-8235-a55f" name="Kannon" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">2-22</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="977c-e8a0-4839-3319" name="Armor Puncha" hidden="false" targetId="6bf3-fbf2-a063-d8a6" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cdf1-a3b3-8b7c-3403" name="Minigun" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1414-bc00-3c93-9a45" name="Minigun" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">2-22	</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d3a7-2f43-9558-009c" name="BRRRRRRRRRRR!" hidden="false" targetId="b50f-0b5b-3c10-9e88" type="profile"/>
+        <infoLink id="c70e-8bad-7959-72c0" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
+        <infoLink id="a547-5d75-bde8-c739" name="Stoppin&apos; Powah" hidden="false" targetId="c42e-9d5e-c2c9-fa9c" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f6c2-7f36-aecb-94f4" name="Auto-Loada" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="459f-8657-c2aa-faf1" name="Auto-Loada" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4bcd-0bd2-159b-310f" name="Auto-Reload" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Every round, this Model may fully replenish the ammo for one of its equipped weapons without requiring an action.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e179-021a-8344-3d9f" name="Weapons" hidden="false" collective="false" import="true">
@@ -1874,6 +1984,7 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <entryLink id="62a3-acff-d470-10cd" name="Flama" hidden="false" collective="false" import="true" targetId="2ce0-1bde-5891-2cb6" type="selectionEntry"/>
         <entryLink id="ea63-d790-7ac6-821c" name="Bazooka" hidden="false" collective="false" import="true" targetId="6f81-9930-056c-16cd" type="selectionEntry"/>
         <entryLink id="b704-cadc-6b23-dcb4" name="Bazooka-Rifle" hidden="false" collective="false" import="true" targetId="9bfe-d206-a1d5-c635" type="selectionEntry"/>
+        <entryLink id="c97b-4503-d929-1c81" name="Macheen Gun" hidden="false" collective="false" import="true" targetId="9a73-47b0-4982-5fc5" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="43dc-3596-0a7c-d32c" name="Generic Goblin Weapons" hidden="true" collective="false" import="true">
@@ -1899,6 +2010,7 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <entryLink id="2e74-740b-4b9d-50fd" name="Flama" hidden="false" collective="false" import="true" targetId="2ce0-1bde-5891-2cb6" type="selectionEntry"/>
         <entryLink id="4085-2ca3-07bc-264b" name="Bazooka" hidden="false" collective="false" import="true" targetId="6f81-9930-056c-16cd" type="selectionEntry"/>
         <entryLink id="1121-c55a-ae70-f92b" name="Bazooka-Rifle" hidden="false" collective="false" import="true" targetId="9bfe-d206-a1d5-c635" type="selectionEntry"/>
+        <entryLink id="6892-00d4-b5b1-2d2f" name="Macheen Gun" hidden="false" collective="false" import="true" targetId="9a73-47b0-4982-5fc5" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="c9de-2a01-fce0-8ed9" name="Horde Goblin Weapons" hidden="true" collective="false" import="true">
@@ -1915,10 +2027,10 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink id="ea32-678a-4339-dc5b" name="Machine Gun" hidden="false" collective="false" import="true" targetId="9a73-47b0-4982-5fc5" type="selectionEntry"/>
         <entryLink id="36af-531d-d805-15c1" name="Grenade" hidden="false" collective="false" import="true" targetId="8c24-e8dc-2a9d-fa1e" type="selectionEntry"/>
         <entryLink id="cdf3-1824-783d-7a59" name="Rifle" hidden="false" collective="false" import="true" targetId="d255-4856-c408-4b28" type="selectionEntry"/>
         <entryLink id="72c9-0b60-7c9f-c4cd" name="Grenade-Launcha" hidden="false" collective="false" import="true" targetId="266f-2b53-1802-f1a0" type="selectionEntry"/>
+        <entryLink id="9575-db19-aeb3-7ad9" name="Minigun" hidden="false" collective="false" import="true" targetId="cdf1-a3b3-8b7c-3403" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="c38c-eb66-67d2-18f8" name="Horde Orc Weapons" hidden="true" collective="false" import="true">
@@ -1935,10 +2047,10 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink id="a6f7-9d78-a898-f76f" name="Machine Gun" hidden="false" collective="false" import="true" targetId="9a73-47b0-4982-5fc5" type="selectionEntry"/>
         <entryLink id="3111-b4fb-b129-2e61" name="Rifle" hidden="false" collective="false" import="true" targetId="d255-4856-c408-4b28" type="selectionEntry"/>
         <entryLink id="99d2-04fb-7e5d-92ed" name="Grenade" hidden="false" collective="false" import="true" targetId="8c24-e8dc-2a9d-fa1e" type="selectionEntry"/>
         <entryLink id="a7e2-ed55-92c7-100e" name="Grenade-Launcha" hidden="false" collective="false" import="true" targetId="266f-2b53-1802-f1a0" type="selectionEntry"/>
+        <entryLink id="6770-7569-e128-9062" name="Minigun" hidden="false" collective="false" import="true" targetId="cdf1-a3b3-8b7c-3403" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="040f-531a-ce24-146d" name="Gearhedz Orc Weapons" hidden="true" collective="false" import="true">
@@ -1979,6 +2091,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="e015-c75b-0494-753e" name="Bullit-Bombarda" hidden="false" collective="false" import="true" targetId="42c1-8124-1c6e-35c9" type="selectionEntry"/>
+        <entryLink id="4e7e-0a4c-a80d-febb" name="Plazma-Bombarda" hidden="false" collective="false" import="true" targetId="47dc-c309-0eab-c59d" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="42fb-4fb5-511c-6c5a" name="Rokkaz Goblin Weapons" hidden="true" collective="false" import="true">
@@ -2076,6 +2190,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="a1cc-b7e3-a39b-f7d7" name="Bullit-Bombarda" hidden="false" collective="false" import="true" targetId="42c1-8124-1c6e-35c9" type="selectionEntry"/>
+        <entryLink id="16d4-e8c5-3fed-59eb" name="Plazma-Bombarda" hidden="false" collective="false" import="true" targetId="47dc-c309-0eab-c59d" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="7a61-c77f-7ac4-40c0" name="Speedkult Goblin Weapons" hidden="true" collective="false" import="true">
@@ -2185,15 +2301,7 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
       <entryLinks>
         <entryLink id="4bfa-a615-f1e8-12a4" name="Bullit-Spitta" hidden="false" collective="false" import="true" targetId="6ae9-30af-f217-47d1" type="selectionEntry"/>
         <entryLink id="56f0-64e9-1a1d-4fe3" name="Doza-Blade" hidden="false" collective="false" import="true" targetId="ad1a-93af-aafc-7a2b" type="selectionEntry"/>
-        <entryLink id="e0f1-a3b6-d7e2-5f5c" name="Machine Gun" hidden="true" collective="false" import="true" targetId="9a73-47b0-4982-5fc5" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
+        <entryLink id="e0f1-a3b6-d7e2-5f5c" name="Macheen Gun" hidden="true" collective="false" import="true" targetId="9a73-47b0-4982-5fc5" type="selectionEntry"/>
         <entryLink id="9331-a09e-6608-c992" name="Ram-Barz" hidden="false" collective="false" import="true" targetId="b35b-86ec-3e8f-21aa" type="selectionEntry"/>
         <entryLink id="0edf-fe3e-f4ab-c5a0" name="Vehicle Armor" hidden="false" collective="false" import="true" targetId="f09a-a0c0-ba41-943a" type="selectionEntry"/>
         <entryLink id="df43-787f-983b-07c1" name="Ammo-Krate" hidden="false" collective="false" import="true" targetId="f018-3177-fdaf-fb50" type="selectionEntry"/>
@@ -2209,6 +2317,35 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="858f-e18a-de0f-4e5f" name="Bullit-Bombarda" hidden="false" collective="false" import="true" targetId="42c1-8124-1c6e-35c9" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="4e20-18ef-fc4e-d354" name="Plazma-Bombarda" hidden="false" collective="false" import="true" targetId="47dc-c309-0eab-c59d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="cb4e-b1ae-5f1d-b6ac" name="Kannon" hidden="false" collective="false" import="true" targetId="8746-6674-66f9-be1e" type="selectionEntry"/>
+        <entryLink id="8fcf-8f2b-1218-3600" name="Minigun" hidden="false" collective="false" import="true" targetId="cdf1-a3b3-8b7c-3403" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="424a-49c5-e942-864e" name="Auto-Loada" hidden="false" collective="false" import="true" targetId="f6c2-7f36-aecb-94f4" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="8e06-3553-989d-f740" name="Misc Gear" hidden="false" collective="false" import="true">
@@ -3019,19 +3156,7 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <entryLink id="7885-6f80-c475-4b46" name="Flama-Rifle" hidden="false" collective="false" import="true" targetId="63cc-6c31-848c-5a44" type="selectionEntry"/>
         <entryLink id="e97a-8583-4da1-4296" name="Rokkit-Rifle" hidden="false" collective="false" import="true" targetId="580c-ded9-ecd6-c8b6" type="selectionEntry"/>
         <entryLink id="9d09-7f66-4620-104e" name="Bullit-Spitta" hidden="false" collective="false" import="true" targetId="6ae9-30af-f217-47d1" type="selectionEntry"/>
-        <entryLink id="2082-1c4b-c23e-7e13" name="Machine Gun" hidden="true" collective="false" import="true" targetId="9a73-47b0-4982-5fc5" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
+        <entryLink id="2082-1c4b-c23e-7e13" name="Macheen Gun" hidden="true" collective="false" import="true" targetId="9a73-47b0-4982-5fc5" type="selectionEntry"/>
         <entryLink id="0070-689d-573e-ee7e" name="Plazma-Blasta" hidden="true" collective="false" import="true" targetId="65b8-c795-a4a0-a69f" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -3061,6 +3186,35 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <entryLink id="cb22-b8d8-6c62-0eff" name="Bazooka" hidden="false" collective="false" import="true" targetId="6f81-9930-056c-16cd" type="selectionEntry"/>
         <entryLink id="6334-a135-3b86-6c39" name="Bazooka-Rifle" hidden="false" collective="false" import="true" targetId="9bfe-d206-a1d5-c635" type="selectionEntry"/>
         <entryLink id="27be-581e-cea8-c5bb" name="Grenade-Launcha" hidden="true" collective="false" import="true" targetId="266f-2b53-1802-f1a0" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="0cde-3384-716b-0963" name="Bullit-Bombarda" hidden="false" collective="false" import="true" targetId="42c1-8124-1c6e-35c9" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="18e7-50e8-d264-3091" name="Plazma-Bombarda" hidden="false" collective="false" import="true" targetId="47dc-c309-0eab-c59d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="417f-e68a-1227-1561" name="Kannon" hidden="false" collective="false" import="true" targetId="8746-6674-66f9-be1e" type="selectionEntry"/>
+        <entryLink id="62af-ac68-f63c-c971" name="Skoped Pistol" hidden="false" collective="false" import="true" targetId="f0e7-7dd5-d3cc-02a1" type="selectionEntry"/>
+        <entryLink id="b536-764d-323c-2add" name="Minigun" hidden="false" collective="false" import="true" targetId="cdf1-a3b3-8b7c-3403" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -3261,7 +3415,7 @@ This weapon only expends Ammo when used in a Shootin’ attack, but once ammo is
     </profile>
     <profile id="3d6f-9e28-bc29-9139" name="Agile" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model may take an additional Movin’ action after attacking or using an ability, even if it has exhausted all its actions that turn.</characteristic>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model may move 3&quot; after attacking or using an ability, even if its turn is concluded and/or it has exhausted all its actions that turn. </characteristic>
       </characteristics>
     </profile>
     <profile id="2277-cb69-f627-57fd" name="Mounted (Speedkultistz)" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
@@ -3401,7 +3555,7 @@ No matter the outcome, the model&apos;s turn is concluded after the ability is r
     </profile>
     <profile id="4a03-369a-2eb7-c6b9" name="Careful Shot" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
       <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon may perform an Attack that requires two Actions and has a +1 boost to the Aim roll.</characteristic>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon may perform a Shootin&apos; Attack which adds +1 to the Aim roll - but which requires two consecutive actions.</characteristic>
       </characteristics>
     </profile>
     <profile id="0812-99d0-43de-bcc6" name="Jet-Jumpa" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
