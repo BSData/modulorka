@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="17" battleScribeVersion="2.03" authorName="Car_Tag" authorContact="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="18" battleScribeVersion="2.03" authorName="Car_Tag" authorContact="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -90,6 +90,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <categoryLink id="89d6-53a8-c3b3-011e" name="Speedkult" hidden="false" targetId="09e6-55ad-80f3-b415" primary="false"/>
         <categoryLink id="f460-3112-f1b9-5fb8" name="Pyratz" hidden="false" targetId="a346-2e75-0214-ab8a" primary="false"/>
         <categoryLink id="ae04-53d4-d493-a167" name="Monsta" hidden="false" targetId="1537-8b19-1962-9051" primary="false"/>
+        <categoryLink id="aedd-6538-3cfa-8a61" name="W.A.R.G." hidden="false" targetId="ce31-63e9-6928-32d3" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
