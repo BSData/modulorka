@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="18" battleScribeVersion="2.03" authorName="Car_Tag" authorContact="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="22" battleScribeVersion="2.03" authorName="Car_Tag" authorContact="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -356,7 +356,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="580c-ded9-ecd6-c8b6" name="Rokkit-Rifle" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="580c-ded9-ecd6-c8b6" name="Rokkit-Rifle" hidden="true" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="0093-ab2e-aa3d-7ef6" name="Rokkit-Rifle (A)" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
           <characteristics>
@@ -1941,6 +1941,109 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
       </profiles>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="24fe-fe0d-1437-e14b" name="Skrap-Launcha" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1df8-c59b-843c-06ea" name="Skrap-Launcha" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">8</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6844-c0a6-9e05-01ab" name="Blast Radius" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Area of Effect special attack rules with a D3&quot; radius.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6cea-3572-f5ad-9d35" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f608-0e54-31a1-4a84" name="Zappa-Blasta" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="aa2a-3d63-55b1-2475" name="Zappa-Blasta" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">2-22</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">D3</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a8c5-fbeb-b436-3acf" name="Overcharge" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">On rolling a natural 6 on an Aim test with this weapon, the result of the Power roll is doubled. Both the Target and the Model holding this weapon are hit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a642-b5ef-8527-ba69" name="Rebel-Radio" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c1e7-940d-01a5-490a" name="Rebel-Radio" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bf90-52be-7926-95e9" name="Reinforsementz" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Place a brand new Rebel model in any location within your deployment zone. This model is considered activated for the current round immediately upon placement. This model can be equipped with any loadout of your choice, as long as no points are spent on Wargear.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4647-5cc4-ab72-864f" name="Buzz-Sword" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="96b6-2ff5-4154-1d69" name="Buzz-Sword" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">0</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">1</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8f95-f676-a0b6-b37f" name="Critical Hitta" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">When this weapon is used in a Clobba attack, a natural role of 6 results in a hit with double Power.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3bdb-662e-8247-a056" name="Rally-Banna" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="28ff-a3c2-229a-284d" name="Rally-Banna" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ed5-be75-f36b-2d35" name="Call Ta Aktion" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Choose up to two friendly Rebel models that are currently in line-of-sight of this model. Immediately position them so that they are in direct contact with this model&apos;s base. If there is insufficient space to place a Rebel model, it does not move.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -1986,6 +2089,9 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <entryLink id="ea63-d790-7ac6-821c" name="Bazooka" hidden="false" collective="false" import="true" targetId="6f81-9930-056c-16cd" type="selectionEntry"/>
         <entryLink id="b704-cadc-6b23-dcb4" name="Bazooka-Rifle" hidden="false" collective="false" import="true" targetId="9bfe-d206-a1d5-c635" type="selectionEntry"/>
         <entryLink id="c97b-4503-d929-1c81" name="Macheen Gun" hidden="false" collective="false" import="true" targetId="9a73-47b0-4982-5fc5" type="selectionEntry"/>
+        <entryLink id="7362-8bd2-d28e-079c" name="Zappa-Blasta" hidden="false" collective="false" import="true" targetId="f608-0e54-31a1-4a84" type="selectionEntry"/>
+        <entryLink id="2f4a-4a77-4bdd-8008" name="Skrap-Launcha" hidden="false" collective="false" import="true" targetId="24fe-fe0d-1437-e14b" type="selectionEntry"/>
+        <entryLink id="7631-5bfa-9b48-d851" name="Buzz-Sword" hidden="false" collective="false" import="true" targetId="4647-5cc4-ab72-864f" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="43dc-3596-0a7c-d32c" name="Generic Goblin Weapons" hidden="true" collective="false" import="true">
@@ -2012,6 +2118,9 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <entryLink id="4085-2ca3-07bc-264b" name="Bazooka" hidden="false" collective="false" import="true" targetId="6f81-9930-056c-16cd" type="selectionEntry"/>
         <entryLink id="1121-c55a-ae70-f92b" name="Bazooka-Rifle" hidden="false" collective="false" import="true" targetId="9bfe-d206-a1d5-c635" type="selectionEntry"/>
         <entryLink id="6892-00d4-b5b1-2d2f" name="Macheen Gun" hidden="false" collective="false" import="true" targetId="9a73-47b0-4982-5fc5" type="selectionEntry"/>
+        <entryLink id="32c6-b12f-3e32-90f3" name="Zappa-Blasta" hidden="false" collective="false" import="true" targetId="f608-0e54-31a1-4a84" type="selectionEntry"/>
+        <entryLink id="dea2-38c4-8a0e-f0e4" name="Skrap-Launcha" hidden="false" collective="false" import="true" targetId="24fe-fe0d-1437-e14b" type="selectionEntry"/>
+        <entryLink id="c76e-426f-9977-6c57" name="Buzz-Sword" hidden="false" collective="false" import="true" targetId="4647-5cc4-ab72-864f" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="c9de-2a01-fce0-8ed9" name="Horde Goblin Weapons" hidden="true" collective="false" import="true">
@@ -2296,6 +2405,7 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <entryLink id="bcc1-0f8e-0b51-6f93" name="Gearhedz Gear" hidden="false" collective="false" import="true" targetId="a433-87d4-46e8-8010" type="selectionEntryGroup"/>
         <entryLink id="5ea1-0ead-527d-4be7" name="Speedkult Gear" hidden="false" collective="false" import="true" targetId="adc0-a12a-b1ce-2bb8" type="selectionEntryGroup"/>
         <entryLink id="c1d5-c146-d51d-7092" name="Mech Gear" hidden="false" collective="false" import="true" targetId="77e7-3bdf-c517-ace5" type="selectionEntryGroup"/>
+        <entryLink id="2cb7-2f53-a719-db71" name="WARG Gear" hidden="false" collective="false" import="true" targetId="2f68-0bcb-dca6-6afc" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="9620-5edb-1173-f4e9" name="Vehicle Gear" hidden="false" collective="false" import="true">
@@ -2347,6 +2457,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
           </modifiers>
         </entryLink>
         <entryLink id="424a-49c5-e942-864e" name="Auto-Loada" hidden="false" collective="false" import="true" targetId="f6c2-7f36-aecb-94f4" type="selectionEntry"/>
+        <entryLink id="957b-bcf8-33df-47e0" name="Zappa-Blasta" hidden="false" collective="false" import="true" targetId="f608-0e54-31a1-4a84" type="selectionEntry"/>
+        <entryLink id="5f5e-3e5c-51bf-d447" name="Skrap-Launcha" hidden="false" collective="false" import="true" targetId="24fe-fe0d-1437-e14b" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="8e06-3553-989d-f740" name="Misc Gear" hidden="false" collective="false" import="true">
@@ -3224,6 +3336,9 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="a391-0cf4-b051-74c3" name="Skrap-Launcha" hidden="false" collective="false" import="true" targetId="24fe-fe0d-1437-e14b" type="selectionEntry"/>
+        <entryLink id="5458-f236-b93e-fec6" name="Zappa-Blasta" hidden="false" collective="false" import="true" targetId="f608-0e54-31a1-4a84" type="selectionEntry"/>
+        <entryLink id="88d7-3d3d-1b6f-2ecf" name="Buzz-Sword" hidden="false" collective="false" import="true" targetId="4647-5cc4-ab72-864f" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="77e7-3bdf-c517-ace5" name="Mech Gear" hidden="true" collective="false" import="true">
@@ -3240,6 +3355,47 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
       </modifiers>
       <entryLinks>
         <entryLink id="d96d-05e2-127f-7df9" name="Gun-Arm" hidden="false" collective="false" import="true" targetId="9bea-1579-9cee-df0b" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="2f68-0bcb-dca6-6afc" name="WARG Gear" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce31-63e9-6928-32d3" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink id="7b9f-51cb-825c-167d" name="Rebel-Radio" hidden="true" collective="false" import="true" targetId="a642-b5ef-8527-ba69" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="665f-0987-feb2-fb26" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="da96-fe98-f98b-f2b6" name="Rally-Banna" hidden="true" collective="false" import="true" targetId="3bdb-662e-8247-a056" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="665f-0987-feb2-fb26" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
