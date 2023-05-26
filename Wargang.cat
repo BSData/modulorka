@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="e871-e837-c9a4-e8cb" name="Dirt Bikaz" hidden="false" collective="false" import="true" targetId="5a56-b7ce-b0b3-36a1" type="selectionEntry"/>
     <entryLink id="3f11-c5d0-9a05-c408" name="Speed-Boss" hidden="false" collective="false" import="true" targetId="5e8b-b45e-afda-8718" type="selectionEntry"/>
@@ -2676,7 +2676,7 @@ Next, for every affected Model, the player controlling the Boss-Bika must roll a
         <categoryLink id="9953-363a-8b38-b97c" name="Slow" hidden="false" targetId="e720-6b39-10eb-f0d7" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="073f-8222-2554-5f8a" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+        <entryLink id="073f-8222-2554-5f8a" name="Vehicle Gear" hidden="false" collective="false" import="true" targetId="9620-5edb-1173-f4e9" type="selectionEntryGroup">
           <constraints>
             <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a13e-edd5-aca2-8f0a" type="max"/>
           </constraints>
