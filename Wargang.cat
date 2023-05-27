@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="e871-e837-c9a4-e8cb" name="Dirt Bikaz" hidden="false" collective="false" import="true" targetId="5a56-b7ce-b0b3-36a1" type="selectionEntry"/>
     <entryLink id="3f11-c5d0-9a05-c408" name="Speed-Boss" hidden="false" collective="false" import="true" targetId="5e8b-b45e-afda-8718" type="selectionEntry"/>
@@ -402,9 +402,9 @@
       <profiles>
         <profile id="5962-fdcb-fbe0-09d4" name="Truck" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
           <characteristics>
-            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">2</characteristic>
             <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">2</characteristic>
-            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">6</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">8</characteristic>
             <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
           </characteristics>
@@ -1024,10 +1024,14 @@
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
           </characteristics>
         </profile>
+        <profile id="b47b-fa32-6fc0-8c6e" name="Mounted (Hunta Brawla)" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model uses the rules associated with the ‘Mounted’ Keyword.  </characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="0829-0ddf-babd-560b" name="Charge!" hidden="false" targetId="8df4-bd28-a886-bfb7" type="profile"/>
-        <infoLink id="b92e-833b-5f77-49e4" name="Mounted (Hunta Brawla)" hidden="false" targetId="f4af-f73a-ef57-eab1" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4fb4-ef0b-552d-7c7a" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
@@ -1090,11 +1094,22 @@
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
           </characteristics>
         </profile>
+        <profile id="698d-b666-bd3a-515d" name="Mounted (Hunta Boss)" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model uses the rules associated with the ‘Mounted’ Keyword.  </characteristic>
+          </characteristics>
+        </profile>
+        <profile id="283a-3f30-67d6-04e9" name="Beast Ram" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Draw an 6” long straight line. 1” wide. Move the Rammonsta along this line. If the line intersects terrain or a Model with the ‘Steadfast’ keyword, the line ends at the intersection, and the Rammonsta is stunned after their turn ends. 
+For any enemy Model intersecting this line, the player who controls them must move them 2” perpendicular to the Rammonsta’s path. 
+Next, for every affected Model, the player controlling the Rammonsta must roll a D6. If the result is higher than the affected Model’s Clobba score, that Model is hit and takes 2 HP damage - otherwise it is unaffected.
+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="bedb-7719-7a0f-838a" name="Charge!" hidden="false" targetId="8df4-bd28-a886-bfb7" type="profile"/>
-        <infoLink id="378b-4f32-35d3-67d0" name="Mounted (Hunta Brawla)" hidden="false" targetId="f4af-f73a-ef57-eab1" type="profile"/>
-        <infoLink id="0d00-874d-a6e1-50b9" name="Beast Ram" hidden="false" targetId="b615-d092-0433-6254" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6317-96db-92b0-7285" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
@@ -1105,6 +1120,7 @@
         <categoryLink id="429d-cdde-4271-36a6" name="Mounted" hidden="false" targetId="381b-1d1c-1d0b-0693" primary="false"/>
         <categoryLink id="6d13-2555-624e-57a3" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
         <categoryLink id="bfcb-4219-27e0-6e91" name="Fast" hidden="false" targetId="a520-8150-7aef-b15a" primary="false"/>
+        <categoryLink id="bcdc-ec9d-f23d-22ee" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8902-f566-66e6-b536" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -1120,7 +1136,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="10.0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1646,7 +1662,7 @@
           <characteristics>
             <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
             <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">4</characteristic>
-            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">4</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">5</characteristic>
             <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">1</characteristic>
           </characteristics>
@@ -1889,7 +1905,7 @@
           <characteristics>
             <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
             <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
-            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">4</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">5</characteristic>
             <characteristic name="Carry" typeId="ed84-359d-45c5-618b">0</characteristic>
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">1</characteristic>
           </characteristics>
@@ -1915,6 +1931,7 @@
         <categoryLink id="7318-2325-6ba7-0683" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
         <categoryLink id="9df6-9265-930e-fd5f" name="Fast" hidden="false" targetId="a520-8150-7aef-b15a" primary="false"/>
         <categoryLink id="d6a2-b917-8bbf-a8ed" name="Offbalance" hidden="false" targetId="d844-c619-d2b2-2ce1" primary="false"/>
+        <categoryLink id="fee3-c62b-a2a0-c929" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="6e79-0390-b4b5-fc27" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -2406,7 +2423,7 @@ After Activating Da Vultur in the next Round, choose an enemy model on the battl
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="5.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="6.0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -2738,19 +2755,6 @@ Next, for every affected Model, the player controlling the Boss-Bika must roll a
     <profile id="74eb-fbf8-4ea6-4e85" name="Soulsucka" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">If this Model successfully hits with a Clobba attack, add 2 HP to this Model. </characteristic>
-      </characteristics>
-    </profile>
-    <profile id="f4af-f73a-ef57-eab1" name="Mounted (Hunta Brawla)" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-      <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model uses the rules associated with the ‘Mounted’ Keyword.  </characteristic>
-      </characteristics>
-    </profile>
-    <profile id="b615-d092-0433-6254" name="Beast Ram" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
-      <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Draw an 10” long straight line. 1” wide. Move the Rammonsta along this line. If the line intersects terrain or a Model with the ‘Steadfast’ keyword, the line ends at the intersection, and the Rammonsta is stunned after their turn ends. 
-For any enemy Model intersecting this line, the player who controls them must move them 2” perpendicular to the Rammonsta’s path. 
-Next, for every affected Model, the player controlling the Rammonsta must roll a D6. If the result is higher than the affected Model’s Clobba score, that Model is hit and takes 2 HP damage - otherwise it is unaffected.
-</characteristic>
       </characteristics>
     </profile>
     <profile id="1ed1-fa27-04ef-63b0" name="Gobwranglin" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
