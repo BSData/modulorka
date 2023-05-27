@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="22" battleScribeVersion="2.03" authorName="Car_Tag" authorContact="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="23" battleScribeVersion="2.03" authorName="Car_Tag" authorContact="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -79,6 +79,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
     <categoryEntry id="a126-ae98-f1a8-3bd7" name="Explosive" hidden="false"/>
     <categoryEntry id="ce31-63e9-6928-32d3" name="W.A.R.G." hidden="false"/>
     <categoryEntry id="3586-2d90-1bb9-2ea9" name="Feeble" hidden="false"/>
+    <categoryEntry id="588f-d35a-2b40-74bb" name="Sneaka" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b001-9d67-598a-8478" name="Wargang" hidden="false">
@@ -747,7 +748,7 @@ If successful, apply the ‘Fleeing’ State to that Model.
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4592-1047-ca63-4ec7" name="Elephant Gun" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4592-1047-ca63-4ec7" name="Elefant Gun" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="f4bb-1408-21d9-0129" name="Elephant Gun" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
           <characteristics>
@@ -809,7 +810,7 @@ If successful, apply the ‘Fleeing’ State to that Model.
       <profiles>
         <profile id="73a4-9671-a1b4-6a6d" name="Gob-Catcha" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">1</characteristic>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">0</characteristic>
             <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">1</characteristic>
             <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">1</characteristic>
             <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
@@ -828,7 +829,7 @@ If successful, apply the ‘Fleeing’ State to that Model.
       <profiles>
         <profile id="d155-fed4-911d-2c2e" name="Gob-Taza" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">1</characteristic>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">0</characteristic>
             <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">0</characteristic>
             <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">1</characteristic>
             <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
@@ -884,6 +885,11 @@ If successful, apply the ‘Fleeing’ State to that Model.
         <profile id="b632-7f6d-f87f-c8db" name="Cyba-Eye" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
           <characteristics>
             <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a2b6-3b44-57df-80e9" name="Eye-Fix" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This gear negates the effect of any Eye injuries.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1277,7 +1283,7 @@ If successful, apply the ‘Fleeing’ State to that Model.
         <infoLink id="8f0a-a907-0540-3e2a" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
       </costs>
     </selectionEntry>
@@ -1305,10 +1311,13 @@ If successful, apply the ‘Fleeing’ State to that Model.
             <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">1</characteristic>
           </characteristics>
         </profile>
+        <profile id="0876-cb52-d46b-2f19" name="GET A BUZZ ON" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model has +1 Armor, up to a maximum of 1. 
+When this Model activates, the controlling Player must roll a D6. The result must be higher than the turn number, or else this model is immediately Downed.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="3927-a26c-9bdb-f044" name="Drink Up &amp; Shrug It Off" hidden="false" targetId="671f-782f-692f-6cd4" type="profile"/>
-      </infoLinks>
       <costs>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
@@ -1499,10 +1508,18 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
             <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
           </characteristics>
         </profile>
+        <profile id="3645-5f60-b986-e80c" name="More Macheen than Orc" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds 3 HP to this model. 
+Adds the Keyword &apos;Mech&apos;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5956-1384-2ac7-39ef" name="Torso-Fix" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This gear negates the effect of any Torso injuries.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="5f8e-36f9-5622-7e5f" name="Supa-Targetin&apos;" hidden="false" targetId="8296-c8ec-d72d-7e57" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="d665-4581-77b1-0bb0" name="Mech" hidden="false" targetId="8ad5-49a9-b718-0bf5" primary="false"/>
       </categoryLinks>
@@ -1594,7 +1611,6 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
         <infoLink id="2d79-af69-a04f-fcb8" name="Brain-Fix" hidden="false" targetId="c219-5867-3929-283b" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1684,7 +1700,7 @@ Ammo for this weapon cannot be replenished. </characteristic>
             <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="6641-1683-ea54-6a8a" name="Area of Effect" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+        <profile id="6641-1683-ea54-6a8a" name="Blast Radius" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
           <characteristics>
             <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Area of Effect special attack rules with a 2&quot; radius.</characteristic>
           </characteristics>
@@ -2092,6 +2108,7 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <entryLink id="7362-8bd2-d28e-079c" name="Zappa-Blasta" hidden="false" collective="false" import="true" targetId="f608-0e54-31a1-4a84" type="selectionEntry"/>
         <entryLink id="2f4a-4a77-4bdd-8008" name="Skrap-Launcha" hidden="false" collective="false" import="true" targetId="24fe-fe0d-1437-e14b" type="selectionEntry"/>
         <entryLink id="7631-5bfa-9b48-d851" name="Buzz-Sword" hidden="false" collective="false" import="true" targetId="4647-5cc4-ab72-864f" type="selectionEntry"/>
+        <entryLink id="cd51-12d4-172a-e7cb" name="Rifle" hidden="false" collective="false" import="true" targetId="d255-4856-c408-4b28" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="43dc-3596-0a7c-d32c" name="Generic Goblin Weapons" hidden="true" collective="false" import="true">
@@ -2121,6 +2138,7 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <entryLink id="32c6-b12f-3e32-90f3" name="Zappa-Blasta" hidden="false" collective="false" import="true" targetId="f608-0e54-31a1-4a84" type="selectionEntry"/>
         <entryLink id="dea2-38c4-8a0e-f0e4" name="Skrap-Launcha" hidden="false" collective="false" import="true" targetId="24fe-fe0d-1437-e14b" type="selectionEntry"/>
         <entryLink id="c76e-426f-9977-6c57" name="Buzz-Sword" hidden="false" collective="false" import="true" targetId="4647-5cc4-ab72-864f" type="selectionEntry"/>
+        <entryLink id="0a6a-06de-3651-5ed1" name="Rifle" hidden="false" collective="false" import="true" targetId="d255-4856-c408-4b28" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="c9de-2a01-fce0-8ed9" name="Horde Goblin Weapons" hidden="true" collective="false" import="true">
@@ -2138,9 +2156,9 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
       </modifiers>
       <entryLinks>
         <entryLink id="36af-531d-d805-15c1" name="Grenade" hidden="false" collective="false" import="true" targetId="8c24-e8dc-2a9d-fa1e" type="selectionEntry"/>
-        <entryLink id="cdf3-1824-783d-7a59" name="Rifle" hidden="false" collective="false" import="true" targetId="d255-4856-c408-4b28" type="selectionEntry"/>
         <entryLink id="72c9-0b60-7c9f-c4cd" name="Grenade-Launcha" hidden="false" collective="false" import="true" targetId="266f-2b53-1802-f1a0" type="selectionEntry"/>
         <entryLink id="9575-db19-aeb3-7ad9" name="Minigun" hidden="false" collective="false" import="true" targetId="cdf1-a3b3-8b7c-3403" type="selectionEntry"/>
+        <entryLink id="bd1c-8541-0391-d64c" name="Bazooka-Pistol" hidden="false" collective="false" import="true" targetId="6db4-2b94-ac0b-7872" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="c38c-eb66-67d2-18f8" name="Horde Orc Weapons" hidden="true" collective="false" import="true">
@@ -2157,10 +2175,10 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink id="3111-b4fb-b129-2e61" name="Rifle" hidden="false" collective="false" import="true" targetId="d255-4856-c408-4b28" type="selectionEntry"/>
         <entryLink id="99d2-04fb-7e5d-92ed" name="Grenade" hidden="false" collective="false" import="true" targetId="8c24-e8dc-2a9d-fa1e" type="selectionEntry"/>
         <entryLink id="a7e2-ed55-92c7-100e" name="Grenade-Launcha" hidden="false" collective="false" import="true" targetId="266f-2b53-1802-f1a0" type="selectionEntry"/>
         <entryLink id="6770-7569-e128-9062" name="Minigun" hidden="false" collective="false" import="true" targetId="cdf1-a3b3-8b7c-3403" type="selectionEntry"/>
+        <entryLink id="2880-3e12-edb8-0864" name="Bazooka-Pistol" hidden="false" collective="false" import="true" targetId="6db4-2b94-ac0b-7872" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="040f-531a-ce24-146d" name="Gearhedz Orc Weapons" hidden="true" collective="false" import="true">
@@ -3355,6 +3373,33 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
       </modifiers>
       <entryLinks>
         <entryLink id="d96d-05e2-127f-7df9" name="Gun-Arm" hidden="false" collective="false" import="true" targetId="9bea-1579-9cee-df0b" type="selectionEntry"/>
+        <entryLink id="38fc-26b5-18c7-98b4" name="Boss-Banna" hidden="true" collective="false" import="true" targetId="8adf-ee6b-7143-1c63" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="fda5-738e-1874-bcf7" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bfc-f1ce-6f54-8142" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="f639-e2b5-37c9-f532" name="Sheeld-Dynamo" hidden="false" collective="false" import="true" targetId="91a2-9fea-46f0-3c44" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="736d-9a92-91cd-c32c" name="Meka-Grabbaz" hidden="false" collective="false" import="true" targetId="af0a-9bb1-7f97-e4c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="2f68-0bcb-dca6-6afc" name="WARG Gear" hidden="true" collective="false" import="true">
@@ -3462,7 +3507,7 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
     </profile>
     <profile id="4bda-d2d1-d9a2-b341" name="Bulldoza" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This vehicle has a minimum Attack Cross-section of 3”.</characteristic>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This vehicle adds 1&quot; to its Attack Cross-section.</characteristic>
       </characteristics>
     </profile>
     <profile id="e922-cf95-65d9-63d4" name="Spray and Pray" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
@@ -3614,9 +3659,8 @@ Models which already have the ‘Leader’ keyword may equip this gear for no po
     </profile>
     <profile id="e3ff-9f99-e7a3-8b23" name="Amp It Up" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">The range of all Rokkaz Abilities is increased by 8.
-Adds the ‘Slow’ and ‘Bulky’ Keywords to the Model.
-</characteristic>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">The range of all Abilities and Volumetric Attacks from Rokka classes or Wargear equipped by this model is increased by 6.
+Adds the &apos;Slow&apos; and &apos;Bulky&apos; Keywords to the Model.</characteristic>
       </characteristics>
     </profile>
     <profile id="0376-e71f-7eab-9553" name="Gettup Blasta" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
@@ -3643,7 +3687,7 @@ Whilst the Sheeld-bubble is functional all Models with the ‘On Foot’ Keyword
     </profile>
     <profile id="ecf2-af1a-5386-f34a" name="Hand Me A Spanna" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Any friendly Models within a 2” radius of this Model, including the Model equipped with this item, may reroll any dice throws for the ‘Fixit’ ability. Each Model may only reroll one dice throw per turn irrespective of how many Toolboxes they are in range of.</characteristic>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Any friendly Models within a 2” radius of this Model, including the Model equipped with this item, may reroll any dice throws for the ‘Fixit’ and &apos;Megafixit&apos; ability. Each Model may only reroll one dice throw per turn irrespective of how many Toolboxes they are in range of.</characteristic>
       </characteristics>
     </profile>
     <profile id="1884-fcd7-2cef-72ee" name="Keep &apos;Em Movin&apos;" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
@@ -3738,12 +3782,6 @@ Use of this Ability does not end the Model&apos;s turn. </characteristic>
 When this model is targeted with a Shootin&apos; attack, if the enemy player rolls a natural 5+ on the aim test, this model explodes. Perform a ranged area attack radiating from the center of this model, which automatically hits all models in the radius, including this model. 
 
 This Model has an explosive radius of 1&quot; and has a power of 1. Models hit have the &apos;Burning&apos; state applied.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="671f-782f-692f-6cd4" name="Drink Up &amp; Shrug It Off" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-      <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model has +1 Armor, up to a maximum of 1. 
-When this Model activates, the controlling Player must roll a D6. The result must be higher than the turn number, or else this model is immediately Downed.</characteristic>
       </characteristics>
     </profile>
     <profile id="cbca-f6b0-0605-302d" name="Hand Me A Scalpel" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
