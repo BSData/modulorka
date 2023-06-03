@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="18" battleScribeVersion="2.03" authorName="Car_Tag" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="23" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="19" battleScribeVersion="2.03" authorName="Car_Tag" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="23" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -48,6 +48,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
     <entryLink id="0645-f75f-7a27-4eca" name="Gob-Tank" hidden="false" collective="false" import="true" targetId="0555-1f93-35cd-fad1" type="selectionEntry"/>
     <entryLink id="d01c-b007-48b8-f2aa" name="King Ronak" hidden="false" collective="false" import="true" targetId="8272-10ce-d14e-ce64" type="selectionEntry"/>
     <entryLink id="b94b-49ce-2cf0-8f05" name="Kommandant" hidden="false" collective="false" import="true" targetId="924a-0423-86dd-34e9" type="selectionEntry"/>
+    <entryLink id="b990-97af-cee9-36d5" name="Rehabilitataz" hidden="false" collective="false" import="true" targetId="ecdd-cc69-42fa-0cb2" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="5a56-b7ce-b0b3-36a1" name="Dirt Bikaz" hidden="false" collective="false" import="true" type="model">
@@ -2851,6 +2852,60 @@ Ronak can only use this Ability once per game.</characteristic>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4.0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ecdd-cc69-42fa-0cb2" name="Rehabilitataz" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2184-5aff-be33-c48b" name="Rehabilitataz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">6</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ca44-6cd2-9239-70ef" name="Da Revolushun Wil Liv On!" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">When this model is Out, roll a D6. ON a 2+, place a new Rebel Model anywhere inside your Deployment Zone and mark it as activated for this round. This model can be equipped with any loadout of your choice, as long as no points are spent on wargear.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3344-6689-3d3c-646f" name="Mounted (Rebel)" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model uses the rules associated with the &apos;Mounted&apos; Keyword.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="973c-e5ca-b7b4-1bd1" name="Outta Kontrol" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This model will enter the &apos;Furious&apos; state if the player rolls a natural 1 when controlling this model. If the player rolls a natural 1 whilst controlling this model when it is in the &apos;Furious&apos; State, it will enter the &apos;Bestial&apos; state.
+
+When this model is in the &apos;Furious&apos; or &apos;Bestial&apos; states, it will target both friendly and enemy models with equal priority. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="f1ae-a9a5-7bb2-e7dc" name="W.A.R.G." hidden="false" targetId="ce31-63e9-6928-32d3" primary="true"/>
+        <categoryLink id="5353-e0e2-806a-30c0" name="Bulky" hidden="false" targetId="1590-958c-9778-75fb" primary="false"/>
+        <categoryLink id="e515-e507-7ad8-62d6" name="Goblin" hidden="false" targetId="c377-399d-c098-4a83" primary="false"/>
+        <categoryLink id="78dd-bef5-7718-2763" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
+        <categoryLink id="1fa0-a383-5b47-22a5" name="Mounted" hidden="false" targetId="381b-1d1c-1d0b-0693" primary="false"/>
+        <categoryLink id="9ce4-99d0-4383-d758" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e2a0-8f24-d751-cf4f" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2757-f788-7036-28ec" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8aed-b992-757b-d617" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8245-7808-6409-d17d" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="239d-b151-be94-12a2" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
