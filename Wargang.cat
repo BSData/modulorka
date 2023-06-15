@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="19" battleScribeVersion="2.03" authorName="Car_Tag" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="23" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="20" battleScribeVersion="2.03" authorName="Car_Tag" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -49,6 +49,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
     <entryLink id="d01c-b007-48b8-f2aa" name="King Ronak" hidden="false" collective="false" import="true" targetId="8272-10ce-d14e-ce64" type="selectionEntry"/>
     <entryLink id="b94b-49ce-2cf0-8f05" name="Kommandant" hidden="false" collective="false" import="true" targetId="924a-0423-86dd-34e9" type="selectionEntry"/>
     <entryLink id="b990-97af-cee9-36d5" name="Rehabilitataz" hidden="false" collective="false" import="true" targetId="ecdd-cc69-42fa-0cb2" type="selectionEntry"/>
+    <entryLink id="8d82-14d6-ed66-10a0" name="Gunna-Team" hidden="false" collective="false" import="true" targetId="584a-063a-ada7-61f2" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="5a56-b7ce-b0b3-36a1" name="Dirt Bikaz" hidden="false" collective="false" import="true" type="model">
@@ -2616,7 +2617,7 @@ Next, for every affected Model, the player controlling the Boss-Bika must roll a
         </profile>
         <profile id="8db2-2704-5a40-b5b4" name="Da Revolushun Wil Liv On!" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
           <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">When this model is Out, roll a D6. ON a 2+, place a new Rebel Model anywhere inside your Deployment Zone and mark it as activated for this round. This model can be equipped with any loadout of your choice, as long as no points are spent on wargear.</characteristic>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">When this model is Out, roll a D6. On a 2+, place a new Rebel Model anywhere inside your Deployment Zone and mark it as activated for this round. This model can be equipped with any loadout of your choice, as long as no points are spent on wargear.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2689,7 +2690,7 @@ Next, for every affected Model, the player controlling the Boss-Bika must roll a
         </profile>
         <profile id="9363-3280-df5a-4c03" name="Da Revolushun Wil Liv On!" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
           <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">When this model is Out, roll a D6. ON a 2+, place a new Rebel Model anywhere inside your Deployment Zone and mark it as activated for this round. This model can be equipped with any loadout of your choice, as long as no points are spent on wargear.</characteristic>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">When this model is Out, roll a D6. On a 2+, place a new Rebel Model anywhere inside your Deployment Zone and mark it as activated for this round. This model can be equipped with any loadout of your choice, as long as no points are spent on wargear.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2867,7 +2868,7 @@ Ronak can only use this Ability once per game.</characteristic>
         </profile>
         <profile id="ca44-6cd2-9239-70ef" name="Da Revolushun Wil Liv On!" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
           <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">When this model is Out, roll a D6. ON a 2+, place a new Rebel Model anywhere inside your Deployment Zone and mark it as activated for this round. This model can be equipped with any loadout of your choice, as long as no points are spent on wargear.</characteristic>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">When this model is Out, roll a D6. On a 2+, place a new Rebel Model anywhere inside your Deployment Zone and mark it as activated for this round. This model can be equipped with any loadout of your choice, as long as no points are spent on wargear.</characteristic>
           </characteristics>
         </profile>
         <profile id="3344-6689-3d3c-646f" name="Mounted (Rebel)" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
@@ -2906,6 +2907,60 @@ When this model is in the &apos;Furious&apos; or &apos;Bestial&apos; states, it 
       </entryLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="584a-063a-ada7-61f2" name="Gunna-Team" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="7e8d-d218-cd15-2055" name="Gunna-Team" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">1</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">1</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">4</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8fb0-08f3-a9f1-353a" name="Da Revolushun Wil Liv On!" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">When this model is Out, roll a D6. On a 2+, place a new Rebel Model anywhere inside your Deployment Zone and mark it as activated for this round. This model can be equipped with any loadout of your choice, as long as no points are spent on wargear.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5cdc-1f4e-edf6-d5f6" name="Fixed Pozishun" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">When this model is in the &apos;Pinned&apos; state, it gets a +3 bonus to Aim rolls. The controlling player can choose to have this model start the game in the &apos;Pinned&apos; state.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8b7e-94bc-1246-a1ba" name="Set-Up" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This ability immediately applies the &apos;Pinned&apos; state to this model and ends its turn. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="90b5-13a5-9f5f-b81f" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
+        <categoryLink id="8487-1ce9-ba52-435c" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="5d06-7082-74bf-228b" name="Goblin" hidden="false" targetId="c377-399d-c098-4a83" primary="false"/>
+        <categoryLink id="edf8-1bc4-6a25-cefe" name="W.A.R.G." hidden="false" targetId="ce31-63e9-6928-32d3" primary="true"/>
+        <categoryLink id="1a23-c174-3948-5005" name="Feeble" hidden="false" targetId="3586-2d90-1bb9-2ea9" primary="false"/>
+        <categoryLink id="e202-2033-b702-3e5c" name="Mech" hidden="false" targetId="8ad5-49a9-b718-0bf5" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0597-27d2-216f-1c99" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2299-9e3f-624a-76b4" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a77b-704d-56ba-edcb" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c231-5f39-be2b-3e3d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ffff-4692-1b91-eaa3" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
