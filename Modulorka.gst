@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="23" battleScribeVersion="2.03" authorName="Car_Tag" authorContact="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="24" battleScribeVersion="2.03" authorName="Car_Tag" authorContact="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -1612,6 +1612,7 @@ Adds the Keyword &apos;Mech&apos;.</characteristic>
       </infoLinks>
       <costs>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ae82-e926-d868-5324" name="Xtendo-Armz" hidden="false" collective="false" import="true" type="upgrade">
@@ -2062,6 +2063,33 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="6f74-9de3-0bee-f863" name="Mega-Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="875b-9e29-9f17-f02a" name="Mega-Rifle" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">12&quot; R
+0 M</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5764-fb40-0f48-0aed" name="Spray and Pray" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Aim rolls with this weapon suffer a -2 penalty.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ef09-e936-db33-8b4f" name="Hip Firin&apos;" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon shoots twice per action - both Shootin&apos; attacks share the same target. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e179-021a-8344-3d9f" name="Weapons" hidden="false" collective="false" import="true">
@@ -2109,6 +2137,20 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <entryLink id="2f4a-4a77-4bdd-8008" name="Skrap-Launcha" hidden="false" collective="false" import="true" targetId="24fe-fe0d-1437-e14b" type="selectionEntry"/>
         <entryLink id="7631-5bfa-9b48-d851" name="Buzz-Sword" hidden="false" collective="false" import="true" targetId="4647-5cc4-ab72-864f" type="selectionEntry"/>
         <entryLink id="cd51-12d4-172a-e7cb" name="Rifle" hidden="false" collective="false" import="true" targetId="d255-4856-c408-4b28" type="selectionEntry"/>
+        <entryLink id="08a1-4321-4e8c-6cd9" name="Mega-Rifle" hidden="true" collective="false" import="true" targetId="6f74-9de3-0bee-f863" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1590-958c-9778-75fb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="43dc-3596-0a7c-d32c" name="Generic Goblin Weapons" hidden="true" collective="false" import="true">
@@ -2139,6 +2181,20 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <entryLink id="dea2-38c4-8a0e-f0e4" name="Skrap-Launcha" hidden="false" collective="false" import="true" targetId="24fe-fe0d-1437-e14b" type="selectionEntry"/>
         <entryLink id="c76e-426f-9977-6c57" name="Buzz-Sword" hidden="false" collective="false" import="true" targetId="4647-5cc4-ab72-864f" type="selectionEntry"/>
         <entryLink id="0a6a-06de-3651-5ed1" name="Rifle" hidden="false" collective="false" import="true" targetId="d255-4856-c408-4b28" type="selectionEntry"/>
+        <entryLink id="8b0a-b854-41ea-6477" name="Mega-Rifle" hidden="true" collective="false" import="true" targetId="6f74-9de3-0bee-f863" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1590-958c-9778-75fb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="c9de-2a01-fce0-8ed9" name="Horde Goblin Weapons" hidden="true" collective="false" import="true">
