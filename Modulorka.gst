@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="24" battleScribeVersion="2.03" authorName="Car_Tag" authorContact="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="25" battleScribeVersion="2.03" authorName="Car_Tag" authorContact="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -1481,9 +1481,7 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
         </profile>
         <profile id="196a-39a8-8e91-edf0" name="Tank-Boy" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
           <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds the &apos;Vehicle&apos; and &apos;Steadfast&apos; Keywords to this Model. 
-
-Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds the &apos;Vehicle&apos; and &apos;Steadfast&apos; Keywords to this Model. Removes the &apos;On-Foot&apos;, &apos;Troops&apos;, and &apos;Hero&apos; Keywords from this Model. This Model can perform Clobba attacks, and be Pinned and Stunned even whilst using the Vehicle special rules. All other Vehicle special rules remain in play.</characteristic>
           </characteristics>
         </profile>
         <profile id="d900-7425-9511-4059" name="Ram" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
@@ -1871,6 +1869,11 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
             <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the &apos;Dangerzone&apos; Special Attack Rules, and has a radius of 2&quot;.</characteristic>
           </characteristics>
         </profile>
+        <profile id="9920-5c8e-7199-0499" name="Brace Fer Fire!" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model is Pinned after firing this weapon.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <costs>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
@@ -1895,6 +1898,11 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <profile id="1b14-5318-941b-e643" name="Plazma" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
           <characteristics>
             <characteristic name="Description" typeId="f9a7-df23-1898-0927">Models hit by this weapon have the &apos;Burning&apos; state applied.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5a37-5e76-2d25-7f1b" name="Brace Fer Fire!" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model is Pinned after firing this weapon.</characteristic>
           </characteristics>
         </profile>
       </profiles>
