@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="26" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="5124-c842-0c8d-b7a8" name="Modulorka" revision="27" battleScribeVersion="2.03" authorName="Car_Tag" type="gameSystem">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -505,17 +505,9 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0ea8-9ce8-cebf-d654" name="Axeblasta" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0ea8-9ce8-cebf-d654" name="Axe-Blasta" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="b7b3-9e4d-b242-61ad" name="Axeblasta (Melee)" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">0</characteristic>
-            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
-            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
-            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="3cfb-b618-3fb8-524a" name="Axeblasta (Ranged)" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+        <profile id="3cfb-b618-3fb8-524a" name="Axe-Blasta" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="3dd0-6944-32b1-358a">1-12</characteristic>
             <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
@@ -526,9 +518,10 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
       </profiles>
       <infoLinks>
         <infoLink id="93c7-e532-c723-ca84" name="Powah Chord" hidden="false" targetId="7487-688f-484b-3cf8" type="profile"/>
+        <infoLink name="Stoppin&apos; Powah" hidden="false" type="profile" id="562b-4571-5ba3-9823" targetId="c42e-9d5e-c2c9-fa9c"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
@@ -959,10 +952,18 @@ If successful, apply the ‘Fleeing’ State to that Model.</characteristic>
             <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">0</characteristic>
           </characteristics>
         </profile>
+        <profile id="1b50-75c8-ade5-ad56" name="Amp It Up" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds 6 to the range of any &apos;Powah Chord&apos; Abilities. 
+
+
+Adds 1 to the rantge of any &apos;Rokk Aura&apos; and &apos;Gettup Blasta&apos; Abilities.
+
+
+Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model. </characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="af37-08d2-c2cc-9044" name="Amp It Up" hidden="false" targetId="e3ff-9f99-e7a3-8b23" type="profile"/>
-      </infoLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
@@ -2140,7 +2141,7 @@ This Model can only make a single Movin&apos; action per turn.</characteristic>
             <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model has +1 armor, up to a maximum of 1. 
 
 
-Removes the &apos;Opentop&apos;, &apos;Fast&apos;, and &apos;Rash&apos; keywords from this Model. </characteristic>
+Removes the &apos;Opentop&apos;, &apos;Fast&apos;, and &apos;Rash&apos; keywords from this Model.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2178,6 +2179,88 @@ This Model can only make a single Movin&apos; action per turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry id="32ca-fa19-61d7-e67" name="Axe-Bazooka" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d38c-e8fa-c15b-ff60" name="Axe-Bazooka" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">22</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="911e-501-aff5-5f57" name="Anti-Armor" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Ignores 2 points of Armor when this weapon successfully attacks. 
+
+
+If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the attack gains an additional 2 Power.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="63f5-86e2-920c-cd93" name="Powah Chord" hidden="false" targetId="7487-688f-484b-3cf8" type="profile"/>
+        <infoLink name="Reload" hidden="false" type="profile" id="15b0-c110-ee89-9686" targetId="4d00-5507-8c21-c8ae"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="74ca-8ab-6944-dd01" name="Axe-Bludga" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b2d4-55d-12b3-f4f5" name="Axe-Bludga" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">1</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3ebf-61a8-fd8c-a525" name="Big Swinga" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Volumetric Speshul Attack Rules and has a width of 2&quot;. </characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Critical Hitta" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="4032-4be4-3e03-8b31">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">When this weapon is used in a Clobba attack, a natural roll of 6 results in a hit with double Power.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9fc4-64c4-67c4-f465" name="Powah Chord" hidden="false" targetId="7487-688f-484b-3cf8" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1650-7013-d8da-c3fa" name="Axe-Burna" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c787-d011-352-6758" name="Flamethrowa" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Volumetric Speshul Attack Rules and has a width of 1&quot;. Models hit by this weapon have the &apos;Burning&apos; state applied.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9f14-4209-a4f-a8ff" name="Axe-Burna" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">6</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">1</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="77ad-f056-f782-9587" name="Powah Chord" hidden="false" targetId="7487-688f-484b-3cf8" type="profile"/>
+        <infoLink name="Reload" hidden="false" type="profile" id="8bc5-7715-b39-cc7f" targetId="4d00-5507-8c21-c8ae"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2384,6 +2467,9 @@ This Model can only make a single Movin&apos; action per turn.</characteristic>
       <entryLinks>
         <entryLink id="4cc9-902e-a1e1-802a" name="Boom-Mic" hidden="false" collective="false" import="true" targetId="d334-16e2-2c03-025a" type="selectionEntry"/>
         <entryLink id="6646-230d-60cd-676b" name="Axeblasta" hidden="false" collective="false" import="true" targetId="0ea8-9ce8-cebf-d654" type="selectionEntry"/>
+        <entryLink id="d147-7e41-a620-646" name="Axe-Bazooka" hidden="false" collective="false" import="true" targetId="32ca-fa19-61d7-e67" type="selectionEntry"/>
+        <entryLink id="5537-6ad6-ef11-2128" name="Axe-Bludga" hidden="false" collective="false" import="true" targetId="74ca-8ab-6944-dd01" type="selectionEntry"/>
+        <entryLink id="f305-25e8-c51e-91f2" name="Axe-Burna" hidden="false" collective="false" import="true" targetId="1650-7013-d8da-c3fa" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="62e2-45a0-2682-9513" name="Speedkult Orc Weapons" hidden="true" collective="false" import="true">
@@ -2423,6 +2509,9 @@ This Model can only make a single Movin&apos; action per turn.</characteristic>
       <entryLinks>
         <entryLink id="fac5-3b14-2c6a-d838" name="Boom-Mic" hidden="false" collective="false" import="true" targetId="d334-16e2-2c03-025a" type="selectionEntry"/>
         <entryLink id="52d5-859e-8fba-311c" name="Axeblasta" hidden="false" collective="false" import="true" targetId="0ea8-9ce8-cebf-d654" type="selectionEntry"/>
+        <entryLink id="99d4-9853-f73-c9a7" name="Axe-Bazooka" hidden="false" collective="false" import="true" targetId="32ca-fa19-61d7-e67" type="selectionEntry"/>
+        <entryLink id="c6c9-2fb7-3c42-eb7e" name="Axe-Bludga" hidden="false" collective="false" import="true" targetId="74ca-8ab-6944-dd01" type="selectionEntry"/>
+        <entryLink id="6b60-387f-8f5c-9b21" name="Axe-Burna" hidden="false" collective="false" import="true" targetId="1650-7013-d8da-c3fa" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3871-7c85-26f0-9ac1" name="Gearhedz Goblin Weapons" hidden="true" collective="false" import="true">
@@ -3741,9 +3830,7 @@ This Model can only make a single Movin&apos; action per turn.</characteristic>
     </profile>
     <profile id="7487-688f-484b-3cf8" name="Powah Chord" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Perform an Aim test against an enemy target with the ‘On Foot’ keyword, within Range 8”.
-
-If successful, the target and all other units with the ‘On Foot’ keyword, in a 2&quot; radius (friendly and enemy) are pushed back 4”.</characteristic>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Perform an Aim test against an enemy target with the ‘On Foot’ keyword, within Range 8”. If successful, the target is pushed back 4”.</characteristic>
       </characteristics>
     </profile>
     <profile id="0933-7d37-7207-980b" name="Burn" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
@@ -3846,12 +3933,6 @@ This Model can Leap Down from any height.</characteristic>
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds the keyword &apos;Leader&apos; to the Model. 
 Models which already have the ‘Leader’ keyword may equip this gear for no points cost.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="e3ff-9f99-e7a3-8b23" name="Amp It Up" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-      <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">The range of all Abilities and Volumetric Attacks from Rokka classes or Wargear equipped by this model is increased by 6.
-Adds the &apos;Slow&apos; and &apos;Bulky&apos; Keywords to the Model.</characteristic>
       </characteristics>
     </profile>
     <profile id="0376-e71f-7eab-9553" name="Gettup Blasta" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
