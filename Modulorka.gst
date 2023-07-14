@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="5124-c842-0c8d-b7a8" name="Modulorka" revision="27" battleScribeVersion="2.03" authorName="Car_Tag" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="5124-c842-0c8d-b7a8" name="Modulorka" revision="29" battleScribeVersion="2.03" authorName="Car_Tag" type="gameSystem">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -80,6 +80,17 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
     <categoryEntry id="ce31-63e9-6928-32d3" name="W.A.R.G." hidden="false"/>
     <categoryEntry id="3586-2d90-1bb9-2ea9" name="Feeble" hidden="false"/>
     <categoryEntry id="588f-d35a-2b40-74bb" name="Sneaka" hidden="false"/>
+    <categoryEntry name="Character - Cautious" hidden="false" id="1365-576b-c8dd-e963"/>
+    <categoryEntry name="Character - Enthusiastic" hidden="false" id="295c-7752-3f2d-27c4"/>
+    <categoryEntry name="Character - Kunnin" hidden="false" id="65ce-d1f4-5439-8408"/>
+    <categoryEntry name="Character - Aggressive" hidden="false" id="9fb7-2a19-b9ef-b42d"/>
+    <categoryEntry name="Character - Infiltrator" hidden="false" id="a5f-1e2-f8f0-9e31"/>
+    <categoryEntry name="Character - Glory Seeker" hidden="false" id="9475-7585-b5a5-6409"/>
+    <categoryEntry name="Character - Bodyguard" hidden="false" id="4648-70b8-24c2-2450"/>
+    <categoryEntry name="Character - Defender" hidden="false" id="87a1-fee8-c301-4024"/>
+    <categoryEntry name="Character - Follower" hidden="false" id="8ac6-db28-3697-70d6"/>
+    <categoryEntry name="Character - Helper" hidden="false" id="c503-2e8d-cdbb-8b8e"/>
+    <categoryEntry name="Character - Jaded" hidden="false" id="f069-a545-f3fb-b277"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b001-9d67-598a-8478" name="Wargang" hidden="false">
@@ -235,6 +246,9 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Dual Wielda" hidden="false" type="profile" id="eba0-fce2-dedd-93e4" targetId="ecbd-bb33-bc1-77b6"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="ef97-8315-1a94-7df7" name="Meka-Klaw" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -607,6 +621,7 @@ If successful, apply the ‘Fleeing’ State to that Model.</characteristic>
       <infoLinks>
         <infoLink id="e05a-6164-24b0-374d" name="Fixit" hidden="false" targetId="6d00-b510-d1c0-6016" type="profile"/>
         <infoLink id="3662-c47a-083a-225d" name="Toolz" hidden="false" targetId="0368-30e6-a401-ddb6" type="profile"/>
+        <infoLink name="Dual Wielda" hidden="false" type="profile" id="97ab-b568-b137-7b5c" targetId="ecbd-bb33-bc1-77b6"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
@@ -773,6 +788,8 @@ If successful, apply the ‘Fleeing’ State to that Model.</characteristic>
       </profiles>
       <infoLinks>
         <infoLink id="c57b-b6a2-3c70-21ea" name="Brute Force" hidden="false" targetId="6e1a-9cb0-df4e-7437" type="profile"/>
+        <infoLink name="Dual Wielda" hidden="false" type="profile" id="7e28-e223-e657-f9f5" targetId="ecbd-bb33-bc1-77b6"/>
+        <infoLink name="Malfunkshun" hidden="false" type="profile" id="1dd8-a970-e583-50c0" targetId="de49-646f-1fc2-de10"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
@@ -792,6 +809,7 @@ If successful, apply the ‘Fleeing’ State to that Model.</characteristic>
       </profiles>
       <infoLinks>
         <infoLink id="6165-5202-32b2-e55b" name="Brute Force" hidden="false" targetId="6e1a-9cb0-df4e-7437" type="profile"/>
+        <infoLink name="Malfunkshun" hidden="false" type="profile" id="88d-1394-3257-a5a6" targetId="de49-646f-1fc2-de10"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
@@ -960,7 +978,7 @@ If successful, apply the ‘Fleeing’ State to that Model.</characteristic>
 Adds 1 to the rantge of any &apos;Rokk Aura&apos; and &apos;Gettup Blasta&apos; Abilities.
 
 
-Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model. </characteristic>
+Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2052,6 +2070,9 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Dual Wielda" hidden="false" type="profile" id="4024-4797-74c5-41af" targetId="ecbd-bb33-bc1-77b6"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="3bdb-662e-8247-a056" name="Rally-Banna" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -2220,7 +2241,7 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         </profile>
         <profile id="3ebf-61a8-fd8c-a525" name="Big Swinga" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
           <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Volumetric Speshul Attack Rules and has a width of 2&quot;. </characteristic>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Volumetric Speshul Attack Rules and has a width of 2&quot;.</characteristic>
           </characteristics>
         </profile>
         <profile name="Critical Hitta" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="4032-4be4-3e03-8b31">
@@ -4152,6 +4173,16 @@ This Model acts according to the &apos;Aggressive&apos; AI Archetype.</character
     <profile id="3c96-2e85-a9ec-b3d9" name="Swing &amp; A Miss" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">Ammo is expended only when this weapon successfully hits.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Dual Wielda" hidden="false" id="ecbd-bb33-bc1-77b6" typeName="Passive" typeId="82b5-7793-d995-c63c">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">If a Model is armed with two weapons with the Dual Wielda Passive, they can attack with both each turn - both attacks must target the same model, and both apply a -1 penalty to the Model&apos;s Clobba score.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Malfunkshun" hidden="false" id="de49-646f-1fc2-de10" typeName="Passive" typeId="82b5-7793-d995-c63c">
+      <characteristics>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">On rolling a natural 1 on a Clobba test with this weapon, apply the &apos;Disarmed&apos; State to the wielder.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

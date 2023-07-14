@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="99b4-968e-1f82-68aa" name="Wargang" revision="22" battleScribeVersion="2.03" authorName="Car_Tag" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="99b4-968e-1f82-68aa" name="Wargang" revision="24" battleScribeVersion="2.03" authorName="Car_Tag" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="24" type="catalogue">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -52,6 +52,9 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
     <entryLink id="8d82-14d6-ed66-10a0" name="Gunna-Team" hidden="false" collective="false" import="true" targetId="584a-063a-ada7-61f2" type="selectionEntry"/>
     <entryLink id="74a4-06ed-e70d-61c8" name="Gob-Tank" hidden="false" collective="false" import="true" targetId="0555-1f93-35cd-fad1" type="selectionEntry"/>
     <entryLink import="true" name="New Link" id="bcdc-ac7c-f2a1-f00e" type="selectionEntry" targetId="bd16-d2bf-28af-7fa9"/>
+    <entryLink import="true" name="Rokka-Boyz" hidden="false" type="selectionEntry" id="eed3-562e-4573-99ce" targetId="78d4-2efa-6489-955f"/>
+    <entryLink import="true" name="Rokk-Gobz" hidden="false" type="selectionEntry" id="cd4f-e797-aa3d-d2cd" targetId="5e1-d380-3648-6a07"/>
+    <entryLink import="true" name="Rokk-Star" hidden="false" type="selectionEntry" id="a221-c316-fc71-6180" targetId="d3b5-6f90-5eb1-5910"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="5a56-b7ce-b0b3-36a1" name="Dirt Bikaz" hidden="false" collective="false" import="true" type="model">
@@ -632,7 +635,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6b57-524a-7500-2242" name="Rokkaladz" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6b57-524a-7500-2242" name="Rokkaladz" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="add" field="category" value="93df-2160-73a9-cb37">
           <conditionGroups>
@@ -691,7 +694,7 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6d7a-8272-5122-fa72" name="Rokkaboss" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6d7a-8272-5122-fa72" name="Rokkaboss" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="add" field="category" value="93df-2160-73a9-cb37">
           <conditionGroups>
@@ -1223,11 +1226,6 @@ Next, for every affected Model, the player controlling the Rammonsta must roll a
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
           </characteristics>
         </profile>
-        <profile id="e37f-8caa-353e-6566" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-          <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Glory Seeker’ AI Archetype.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="858b-5c57-5700-9be7" name="Overwatch" hidden="false" targetId="21c6-d4b4-4766-7188" type="profile"/>
@@ -1242,6 +1240,7 @@ Next, for every affected Model, the player controlling the Rammonsta must roll a
         <categoryLink id="7c12-7eed-c06a-6a7f" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="true"/>
         <categoryLink id="efbe-c8c1-b8cf-9cf9" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="11c0-737e-f73b-6428" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+        <categoryLink targetId="9475-7585-b5a5-6409" id="c824-1bf8-669c-c1c1" primary="false" name="Character - Glory Seeker"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c197-2ed4-1696-c92c" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -1282,11 +1281,6 @@ Next, for every affected Model, the player controlling the Rammonsta must roll a
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
           </characteristics>
         </profile>
-        <profile id="5d48-d438-51ce-d5dd" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-          <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Infiltrator’ AI Archetype.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="fbc8-aa2a-b379-1fc5" name="Overwatch" hidden="false" targetId="21c6-d4b4-4766-7188" type="profile"/>
@@ -1304,6 +1298,7 @@ Next, for every affected Model, the player controlling the Rammonsta must roll a
         <categoryLink id="a8b1-a422-9d52-df86" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
         <categoryLink id="8090-9854-083e-571e" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
         <categoryLink id="e107-e698-2bce-c58d" name="Spek-Ops" hidden="false" targetId="5748-94ea-1f98-ce73" primary="false"/>
+        <categoryLink targetId="a5f-1e2-f8f0-9e31" id="7c2a-e8e2-fa3d-4796" primary="false" name="Character - Infiltrator"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="7a2b-5290-e5bc-5da4" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -1364,11 +1359,6 @@ Next, for every affected Model, the player controlling the Rammonsta must roll a
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
           </characteristics>
         </profile>
-        <profile id="d3df-8315-d49a-1cad" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-          <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Aggressive’ AI Archetype.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="5b65-a4a4-f5fd-8c68" name="Overwatch" hidden="false" targetId="21c6-d4b4-4766-7188" type="profile"/>
@@ -1383,6 +1373,7 @@ Next, for every affected Model, the player controlling the Rammonsta must roll a
         <categoryLink id="aa9d-275f-a444-b0e5" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
         <categoryLink id="3c51-0839-12a9-ad02" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
         <categoryLink id="a085-96a6-fa38-a9f9" name="Spek-Ops" hidden="false" targetId="5748-94ea-1f98-ce73" primary="false"/>
+        <categoryLink targetId="9fb7-2a19-b9ef-b42d" id="3755-5784-97c1-ba7d" primary="false" name="Character - Aggressive"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8099-6902-78f0-3648" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -1427,15 +1418,25 @@ Next, for every affected Model, the player controlling the Rammonsta must roll a
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
           </characteristics>
         </profile>
-        <profile id="4ea1-2ba0-25d6-6364" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+        <profile id="4ea1-2ba0-25d6-6364" name="Gotta Keep Rokkin&apos;" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
           <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Enthusiastic’ AI Archetype.</characteristic>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">If this Model does not attack or use an ability in its turn, it loses 1 HP on conclusion of the turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="&apos;Eadbang" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability" hidden="false" id="e397-ffb0-44d8-a5fa">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Perform an aim test against an enemy target, within Range 8&quot;
+
+
+If successful, and if there is another Model in melee range of the target, the target will attack the closest enemy Model with a Clobba attack, using any equipped weapon of the attacking player&apos;s choice. 
+
+
+The target does not count as being activated, even if the attack is successful. </characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="e9de-b300-8b1e-3328" name="Overwatch" hidden="false" targetId="21c6-d4b4-4766-7188" type="profile"/>
-        <infoLink id="fa6a-5a3b-d520-43fc" name="Datz Gotta Be A Dworf" hidden="false" targetId="c856-528a-0d46-220e" type="profile"/>
+        <infoLink id="e9de-b300-8b1e-3328" name="Unfazed" hidden="false" targetId="62f1-0d63-0b00-75f9" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="722e-73dc-504c-9a09" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
@@ -1444,6 +1445,7 @@ Next, for every affected Model, the player controlling the Rammonsta must roll a
         <categoryLink id="2d31-ce00-052c-5318" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="2212-a1a9-db7d-0b29" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
         <categoryLink id="dd1c-5717-445c-3f97" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="true"/>
+        <categoryLink targetId="295c-7752-3f2d-27c4" id="b704-abc4-5b98-9a57" primary="false" name="Character - Enthusiastic"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="00e0-3478-79eb-e4fd" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -1507,11 +1509,6 @@ Next, for every affected Model, the player controlling the Rammonsta must roll a
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
           </characteristics>
         </profile>
-        <profile id="bc59-fbd8-bfc3-4a2d" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-          <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Cautious’ AI Archetype.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="1c3e-9113-d089-0ec4" name="Unfazed" hidden="false" targetId="62f1-0d63-0b00-75f9" type="profile"/>
@@ -1524,6 +1521,7 @@ Next, for every affected Model, the player controlling the Rammonsta must roll a
         <categoryLink id="9b92-1254-b57b-23d2" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="384c-3ff4-dd92-d72e" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
         <categoryLink id="e510-8e19-0ad6-51f3" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="true"/>
+        <categoryLink targetId="1365-576b-c8dd-e963" id="3749-9e2a-b6fe-593" primary="false" name="Character - Cautious"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c5b3-6f3c-35ab-dd60" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -1600,11 +1598,6 @@ Next, for every affected Model, the player controlling the Rammonsta must roll a
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
           </characteristics>
         </profile>
-        <profile id="b151-fe2a-bd0b-0ed8" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-          <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Kunnin’ AI Archetype.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="996f-01f7-fc95-ef84" name="Charge!" hidden="false" targetId="8df4-bd28-a886-bfb7" type="profile"/>
@@ -1618,6 +1611,7 @@ Next, for every affected Model, the player controlling the Rammonsta must roll a
         <categoryLink id="708b-010b-73ae-a9b6" name="Gob-Wrangla" hidden="false" targetId="21c2-066c-e9d3-c267" primary="false"/>
         <categoryLink id="9c14-656b-afe4-194e" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="6165-b726-7341-0b9c" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+        <categoryLink targetId="65ce-d1f4-5439-8408" id="5b71-a0c0-ee04-4a9f" primary="false" name="Character - Kunnin"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="7177-5798-c744-cbb0" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -1675,11 +1669,6 @@ Next, for every affected Model, the player controlling the Rammonsta must roll a
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">1</characteristic>
           </characteristics>
         </profile>
-        <profile id="3b59-1da1-8b75-7410" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-          <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Enthusiastic’ AI Archetype.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="7c95-4aac-cbc5-a41d" name="Keep Yer &apos;Ed Down" hidden="false" targetId="8775-3315-ac69-c57e" type="profile"/>
@@ -1692,6 +1681,7 @@ Next, for every affected Model, the player controlling the Rammonsta must roll a
         <categoryLink id="bb43-e974-65c6-440a" name="Horde" hidden="false" targetId="5df4-b9fd-4669-a869" primary="true"/>
         <categoryLink id="f971-35d2-93dd-70ed" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="1e0a-d7f2-80cc-3351" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+        <categoryLink targetId="295c-7752-3f2d-27c4" id="26e4-f4c7-15db-2bce" primary="false" name="Character - Enthusiastic"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5b9d-a7c1-256e-c23c" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -1940,6 +1930,7 @@ Next, for every affected Model, the player controlling the Rammonsta must roll a
         <categoryLink id="9df6-9265-930e-fd5f" name="Fast" hidden="false" targetId="a520-8150-7aef-b15a" primary="false"/>
         <categoryLink id="d6a2-b917-8bbf-a8ed" name="Offbalance" hidden="false" targetId="d844-c619-d2b2-2ce1" primary="false"/>
         <categoryLink id="fee3-c62b-a2a0-c929" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+        <categoryLink targetId="295c-7752-3f2d-27c4" id="3c18-307a-7791-894d" primary="false" name="Character - Enthusiastic"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="6e79-0390-b4b5-fc27" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -2085,9 +2076,9 @@ If a friendly Model with the &apos;Engineer&apos; keyword is within 1&quot; of t
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
           </characteristics>
         </profile>
-        <profile id="5efe-8cd3-7eb3-8584" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+        <profile name="Bodyguard" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="4353-74b7-5fbb-f72a">
           <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Bodyguard’ AI Archetype, and will escort and protect Boi.</characteristic>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the &apos;Bodyguard&apos; AI Archetype, and will escort and protect Boi.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2104,6 +2095,7 @@ If a friendly Model with the &apos;Engineer&apos; keyword is within 1&quot; of t
         <categoryLink id="97c3-f544-1ffe-0eb7" name="Hunterz" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="true"/>
         <categoryLink id="a4e5-5f68-5701-22d0" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
         <categoryLink id="d661-2d69-345e-3378" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
+        <categoryLink targetId="4648-70b8-24c2-2450" id="406e-64aa-48af-27f7" primary="false" name="Character - Bodyguard"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5bab-5256-6b14-0ecc" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -2154,11 +2146,6 @@ If a friendly Model with the &apos;Engineer&apos; keyword is within 1&quot; of t
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
           </characteristics>
         </profile>
-        <profile id="fabc-015d-7eba-54fa" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-          <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the ‘Enthusiastic’ AI Archetype.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="8125-2ab2-8b6d-76b8" name="Charge!" hidden="false" targetId="8df4-bd28-a886-bfb7" type="profile"/>
@@ -2173,6 +2160,7 @@ If a friendly Model with the &apos;Engineer&apos; keyword is within 1&quot; of t
         <categoryLink id="c1b3-c5fa-ee5e-5435" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="2e1a-3a3f-cb0f-dbc9" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
         <categoryLink id="f2d2-27ae-c8e6-32f9" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
+        <categoryLink targetId="295c-7752-3f2d-27c4" id="25-29fc-cb5b-2430" primary="false" name="Character - Enthusiastic"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="4219-6bd7-9b0c-218f" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -2235,6 +2223,7 @@ After Activating Da Vultur in the next Round, choose an enemy model on the battl
         <categoryLink id="5a9d-d7f7-72f6-dbc5" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="6a9e-3b00-5197-2135" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
         <categoryLink id="434f-914e-9e44-1d41" name="Steadfast" hidden="false" targetId="1db6-c967-f964-eada" primary="false"/>
+        <categoryLink targetId="295c-7752-3f2d-27c4" id="6c68-85d7-816-e3c9" primary="false" name="Character - Enthusiastic"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="cfc5-414d-d1d8-bd4d" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
@@ -2284,11 +2273,6 @@ After Activating Da Vultur in the next Round, choose an enemy model on the battl
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
           </characteristics>
         </profile>
-        <profile id="2659-7275-7081-fdc1" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-          <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the &apos;Enthusiastic&apos; AI Archetype.</characteristic>
-          </characteristics>
-        </profile>
         <profile id="3694-c426-54fd-e876" name="Annoying" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
           <characteristics>
             <characteristic name="Description" typeId="f9a7-df23-1898-0927">If an enemy Model has Rudonk within attack range and line of sight, they must prioritize him above all other targets when performing any Shootin&apos; or Clobberin&apos; actions.</characteristic>
@@ -2307,6 +2291,7 @@ After Activating Da Vultur in the next Round, choose an enemy model on the battl
         <categoryLink id="669a-f59f-fae2-efc0" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="1320-3f82-c1d4-43b9" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
         <categoryLink id="8eb3-ca06-df5f-b25d" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
+        <categoryLink targetId="295c-7752-3f2d-27c4" id="bdea-e834-5dd6-221b" primary="false" name="Character - Enthusiastic"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="32bc-c962-dc94-fc6f" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -2337,11 +2322,6 @@ After Activating Da Vultur in the next Round, choose an enemy model on the battl
             <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
           </characteristics>
         </profile>
-        <profile id="21d3-9030-cfd2-afeb" name="Free Agent" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-          <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model acts according to the &apos;Enthusiastic&apos; AI Archetype.</characteristic>
-          </characteristics>
-        </profile>
         <profile id="fb83-a7ed-57bf-bfc8" name="Agile" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
           <characteristics>
             <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model may move 3&quot; after attacking or using an ability, even if its turn is concluded and/or it has exhausted all of its actions that turn.</characteristic>
@@ -2364,6 +2344,7 @@ After Activating Da Vultur in the next Round, choose an enemy model on the battl
         <categoryLink id="2e4d-5d1f-8f61-7511" name="Mercenary" hidden="false" targetId="a343-ae66-2205-9ccb" primary="false"/>
         <categoryLink id="7999-4d9b-d592-3a6f" name="Rare" hidden="false" targetId="e4f5-e340-e1d5-99ca" primary="false"/>
         <categoryLink id="7787-c648-b1ed-f8ff" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
+        <categoryLink targetId="295c-7752-3f2d-27c4" id="d173-f97-7c6-6a0d" primary="false" name="Character - Enthusiastic"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0158-6a16-cf1a-d6e8" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
@@ -2758,6 +2739,7 @@ Ronak can only use this Ability once per game.</characteristic>
         <categoryLink id="7cfa-4832-4d21-bf2c" name="New CategoryLink" hidden="false" targetId="c0fb-c1e5-a83d-28d9" primary="true"/>
         <categoryLink id="2efd-d7fb-92fa-489d" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
         <categoryLink id="346d-1a7b-3919-3152" name="Bulky" hidden="false" targetId="1590-958c-9778-75fb" primary="false"/>
+        <categoryLink targetId="295c-7752-3f2d-27c4" id="d775-4cac-b72f-cee6" primary="false" name="Character - Enthusiastic"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3b7f-4118-bea5-fc63" name="Gear" hidden="true" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
@@ -3061,6 +3043,7 @@ When this model is in the &apos;Furious&apos; or &apos;Bestial&apos; states, it 
         <categoryLink targetId="8bfc-f1ce-6f54-8142" id="9db2-5852-ee2d-a71f" primary="false"/>
         <categoryLink targetId="3586-2d90-1bb9-2ea9" id="2d83-cc72-2bc4-ffab" primary="false"/>
         <categoryLink targetId="ce31-63e9-6928-32d3" id="4208-7d79-f1bc-761c" primary="true"/>
+        <categoryLink targetId="65ce-d1f4-5439-8408" id="9b31-2e7b-459-379e" primary="false" name="Character - Kunnin"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="55a4-3ac3-d618-5e71" name="Fists" hidden="false" collective="false" import="true" targetId="270a-d6cf-f4d5-0c87" type="selectionEntry">
@@ -3118,6 +3101,187 @@ When this model is in the &apos;Furious&apos; or &apos;Bestial&apos; states, it 
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry id="78d4-2efa-6489-955f" name="Rokka-Boyz" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="8ad5-49a9-b718-0bf5">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8a9f-86ed-f044-5832" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="24b-3041-6d20-c0c1" name="Rokka-Boyz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">4</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ca57-a158-517a-e999" name="Unfazed" hidden="false" targetId="62f1-0d63-0b00-75f9" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c1c6-a5d6-2301-8010" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="8443-7fc-5ef5-aaaf" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
+        <categoryLink id="27c6-5f49-b79a-fdb4" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="5fed-4d09-5816-3c42" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bd92-9445-925b-f136" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="70a1-1dff-20ef-06c2" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5326-172e-64c6-f8ac" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4926-0073-17ef-8850" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="087c-f1fc-5471-b70e" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5e1-d380-3648-6a07" name="Rokk-Gobz" hidden="true" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="8ad5-49a9-b718-0bf5">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8a9f-86ed-f044-5832" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="1082-39c2-c01c-c7fd" name="Rokk-Gobz" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">2</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">1</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">2</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5878-92e7-7ca1-650c" name="Unfazed" hidden="false" targetId="62f1-0d63-0b00-75f9" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d632-2c72-81e7-3fae" name="New CategoryLink" hidden="false" targetId="665f-0987-feb2-fb26" primary="false"/>
+        <categoryLink id="87dd-cb83-584c-3641" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="21e9-e79-6af8-cb10" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="true"/>
+        <categoryLink targetId="c377-399d-c098-4a83" id="377b-8b8e-1aa6-872e" primary="false" name="Goblin"/>
+        <categoryLink targetId="56a5-b46b-a6cf-a29a" id="983-c0f2-6374-e28d" primary="false" name="Fragile"/>
+        <categoryLink targetId="976e-2c74-2a99-dce4" id="40a7-fdcf-26e4-de3c" primary="false" name="Small"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b76b-3bbc-5d62-a14" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="70a1-1dff-20ef-06c2" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8de5-9c88-e81d-f45b" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4926-0073-17ef-8850" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="087c-f1fc-5471-b70e" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d3b5-6f90-5eb1-5910" name="Rokk-Star" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="93df-2160-73a9-cb37">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28eb-3494-5b96-8615" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="8ad5-49a9-b718-0bf5">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8a9f-86ed-f044-5832" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="ead3-35c6-9668-2124" name="Rokkaboss" hidden="false" typeId="794d-c6bd-a194-0389" typeName="Model">
+          <characteristics>
+            <characteristic name="Aim" typeId="a3ff-412e-59d6-0e4a">3</characteristic>
+            <characteristic name="Clobba" typeId="4add-92b5-1b50-30ce">3</characteristic>
+            <characteristic name="HP" typeId="34e7-43e6-6dfa-59dc">8</characteristic>
+            <characteristic name="Carry" typeId="ed84-359d-45c5-618b">2</characteristic>
+            <characteristic name="Armor" typeId="3648-65f7-7ec9-79cf">0</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3b1d-7671-a7d5-3872" name="Unfazed" hidden="false" targetId="62f1-0d63-0b00-75f9" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3a32-c19b-8ceb-6bca" name="Orc" hidden="false" targetId="b121-a57f-6058-b9eb" primary="false"/>
+        <categoryLink id="ef08-879c-1097-ced1" name="On Foot" hidden="false" targetId="2e5c-9991-128e-3d2d" primary="false"/>
+        <categoryLink id="956a-7dfc-8da5-9160" name="Hero" hidden="false" targetId="2c1f-2fb4-4e6c-42ca" primary="false"/>
+        <categoryLink id="2b14-3645-aee5-7447" name="Leader" hidden="false" targetId="8bfc-f1ce-6f54-8142" primary="false"/>
+        <categoryLink id="dacb-799f-5fce-2f86" name="Bulky" hidden="false" targetId="1590-958c-9778-75fb" primary="false"/>
+        <categoryLink id="2b41-3294-e25a-43c9" name="Rokkaz" hidden="false" targetId="fd85-eeb7-abcd-329b" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b78e-fb27-96fa-f418" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b6f3-dae6-905a-5cea" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="28f8-4d2a-c5c6-db6a" name="Fists" hidden="false" collective="false" import="true" targetId="c664-a990-d2d8-6c2b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6d6d-f0cb-f90d-ff04" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a739-a867-29c6-dc2a" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="8"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -3222,7 +3386,7 @@ Kragnard repeats this until he runs out of actions, or there are no ‘Small’ 
     </profile>
     <profile id="ba7d-70d0-942b-c222" name="Just Walk Away" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">When using the Boom-Mic, the Ability Bloodkurdlin’ Skream has a 2” Area of Effect.</characteristic>
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">When using the Boom-Mic, the Ability Bloodkurdlin’ Skream affects all models within 1&quot; of the target.</characteristic>
       </characteristics>
     </profile>
     <profile id="b498-fe86-9af1-0989" name="Gob-Masta" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
