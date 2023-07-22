@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="5124-c842-0c8d-b7a8" name="Modulorka" revision="29" battleScribeVersion="2.03" authorName="Car_Tag" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="5124-c842-0c8d-b7a8" name="Modulorka" revision="31" battleScribeVersion="2.03" authorName="Car_Tag" type="gameSystem">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -200,9 +200,13 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
             <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
           </characteristics>
         </profile>
+        <profile name="Big Swinga" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="fd60-136e-b25b-31bc">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Volumetric Speshul Attack Rules and has a width of 2&quot;.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="d183-f48d-40f1-c7a4" name="Brutal" hidden="false" targetId="a1cc-4f61-81b6-24ba" type="profile"/>
         <infoLink id="5ab1-846a-48f3-e98b" name="Critical Hitta" hidden="false" targetId="ea7f-84eb-fb60-478b" type="profile"/>
       </infoLinks>
       <costs>
@@ -541,25 +545,37 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
     </selectionEntry>
     <selectionEntry id="d334-16e2-2c03-025a" name="Boom-Mic" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="b296-c877-3e44-8e6d" name="Boom-Mic" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
+        <profile id="b296-c877-3e44-8e6d" name="Boom-Mic" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
           <characteristics>
-            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">0</characteristic>
-            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">1</characteristic>
-            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">1</characteristic>
-            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">1</characteristic>
           </characteristics>
         </profile>
         <profile id="4500-90bf-dfb7-6b34" name="Bloodkurdlin&apos; Skream" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
           <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Perform an Aim test against an any Model with the ‘Troops’ Keyword, within Range 8”.
-If successful, apply the ‘Fleeing’ State to that Model.</characteristic>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Perform an Aim test against any Model with the ‘On-Foot’ Keyword, within Range 6”.
+If successful, apply the ‘Fleeing’ State to that Model.
+This Ability consumes 2 Actions.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rokkband" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="bbe5-bebb-e895-dfc0">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">If this Model&apos;s &apos;Rokk Aura&apos; overlaps with the &apos;Rokk Aura&apos; of another friendly Model, the effects of both abilities are shared by both &apos;Rokk Auras&apos;. This effect chains over multiple Rokk Auras, even if they do not directly overlap. 
+Only one instance of this gear may be equipped in a single Wargang.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rokk Aura: Rallying Cry" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="2561-e9bd-a84d-3ecf">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Friendly Models within a 1&quot; radius of this Model are automatically Rallied. </characteristic>
           </characteristics>
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="917f-662c-a38b-10bb" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="6dc0-5339-e7b7-6855" name="Boom-Stick" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -652,17 +668,25 @@ If successful, apply the ‘Fleeing’ State to that Model.</characteristic>
       <profiles>
         <profile id="0a9d-eaf5-6178-c474" name="Mega-Spanna" hidden="false" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">0</characteristic>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">1</characteristic>
             <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
             <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
             <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
           </characteristics>
         </profile>
+        <profile id="7dda-b42b-3af5-74ac" name="Megafixit" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Target a friendly Model within 1” with the ‘Vehicle’ or ‘Meca’ Keywords, and roll a D6. On a 4+ restore 2 HP of lost health to the target. This ability cannot increase a Model’s HP beyond its value at the start of the game.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Big Swinga" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="db3f-6115-a61b-11a7">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the Volumetric Speshul Attack Rules and has a width of 2&quot;.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="d968-45dc-35bc-f97c" name="Brutal" hidden="false" targetId="a1cc-4f61-81b6-24ba" type="profile"/>
         <infoLink id="f71e-72e0-6f25-6fb9" name="Toolz" hidden="false" targetId="0368-30e6-a401-ddb6" type="profile"/>
-        <infoLink id="995f-1800-4212-1a21" name="Fixit" hidden="false" targetId="6d00-b510-d1c0-6016" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
@@ -973,11 +997,7 @@ If successful, apply the ‘Fleeing’ State to that Model.</characteristic>
         <profile id="1b50-75c8-ade5-ad56" name="Amp It Up" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
           <characteristics>
             <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds 6 to the range of any &apos;Powah Chord&apos; Abilities. 
-
-
-Adds 1 to the rantge of any &apos;Rokk Aura&apos; and &apos;Gettup Blasta&apos; Abilities.
-
-
+Adds 1 to the range of any &apos;Rokk Aura&apos; and &apos;Gettup Blasta&apos; Abilities.
 Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characteristic>
           </characteristics>
         </profile>
@@ -994,10 +1014,12 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
             <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">1</characteristic>
           </characteristics>
         </profile>
+        <profile id="fae3-55e1-a439-3bc6" name="Gettup Blasta" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Any downed Models within 3”of this model, friendly or enemy, cannot be Rallyed.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="3106-202e-e84f-3067" name="Gettup Blasta" hidden="false" targetId="0376-e71f-7eab-9553" type="profile"/>
-      </infoLinks>
       <costs>
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
@@ -1765,8 +1787,7 @@ Ammo for this weapon cannot be replenished.</characteristic>
         </profile>
         <profile id="9994-e4fe-86e4-52ea" name="Bomb-Drop" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
           <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Place a single Trigga-Bomb marker on the ground in base-to-base contact with this model. This can only be placed on stable, traversable terrain. There are no limits to how many Trigga-Bombs can be deployed. 
-
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Place a single Trigga-Bomb marker on the ground in base-to-base contact with this model. This can only be placed on stable, traversable terrain. There are no limits to how many Trigga-Bombs can be deployed.
 Trigga-Bombs can be targeted by any model, and if hit will Explode.</characteristic>
           </characteristics>
         </profile>
@@ -2194,8 +2215,6 @@ Removes the &apos;Opentop&apos;, &apos;Fast&apos;, and &apos;Rash&apos; keywords
         <profile name="&apos;Eavy Kannon" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="da44-a526-9409-c748">
           <characteristics>
             <characteristic name="Description" typeId="f9a7-df23-1898-0927">Removes the &apos;Fast&apos; and &apos;Rash&apos; keywords from this Model. Adds the &apos;Slow&apos; keyword to this Model. 
-
-
 This Model can only make a single Movin&apos; action per turn.</characteristic>
           </characteristics>
         </profile>
@@ -2282,6 +2301,168 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
         <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gitar" hidden="false" id="dfda-9147-8c37-4920">
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
+      </costs>
+      <profiles>
+        <profile name="Gitar" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon" hidden="false" id="4c15-527d-8ca6-2607">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">0</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">1</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">1</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Hit Da Beat" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="6149-9c3f-186f-88ce">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Models hit by this weapon have the &apos;Dazed&apos; state applied.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Brass Knukkulz" hidden="false" id="3848-9c2-721-b4d6">
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
+      </costs>
+      <profiles>
+        <profile name="Brass Knukkulz" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon" hidden="false" id="86f2-7007-cf3d-6797">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">0</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">1</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Slugga" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="6bb3-634c-7a82-aee2">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">After a successful hit with this weapon on a Model in the &apos;Dazed&apos; state, it delivers a blow with double power.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="One-Two-Punch" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="4136-3f35-3826-d118">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">If a Model is equipped with two of this weapon, you may reroll once after attacking.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Downaz" hidden="false" id="1445-8533-d9a6-de45">
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
+      </costs>
+      <profiles>
+        <profile name="Downaz" typeId="03b8-0a17-23ad-c84f" typeName="Gear" hidden="false" id="cb06-a0a3-7e26-89e0">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Chill Pill" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability" hidden="false" id="4f87-13e4-1471-a1e1">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Target a friendly Model, including the Model equipped with this wargear, within 1&quot; with the &apos;Orc&apos; or &apos;Goblin&apos; Keywords. Roll a D6, and on a 4+ restore 2 HP of lost health to the target, remove the &apos;Disarmed&apos;, &apos;Pinned&apos;, &apos;Fleeing&apos;, &apos;Furious&apos;, &apos;Bestial&apos;, and/or &apos;Burning&apos; state effects and apply the &apos;Dazed&apos; state effect. 
+This ability cannot increase a Model&apos;s HP beyond its value at the start of the game.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Da Drumz" hidden="false" id="ad5b-6a70-60aa-579f">
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+      </costs>
+      <profiles>
+        <profile name="Da Drumz" typeId="03b8-0a17-23ad-c84f" typeName="Gear" hidden="false" id="1b06-ef08-3844-421f">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Drum Solo" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability" hidden="false" id="ef0a-9b3e-5ce1-9ba6">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Perform an Aim test against any Model with the &apos;On-Foot&apos; keyword, within Range 6&quot;. If successful, apply the &apos;Fleeing&apos; State to that Model. This Ability consumes 2 Actions.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rokk Aura: Marchin&apos; Beat" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="87db-d8e3-1e5a-6ea4">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Friendly Models behave as if they have the &apos;Rash&apos; Keyword provided they are within a 1&quot; radius of this Model.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rokkband" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="ab0a-6120-ab21-b070">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">If this Model&apos;s &apos;Rokk Aura&apos; overlaps with the &apos;Rokk Aura&apos; of another friendly Model, the effects of both abilities are shared by both &apos;Rokk Auras&apos;. This effect chains over multiple Rokk Auras, even if they do not directly overlap. 
+Only one instance of this gear may be equipped in a single Wargang.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d641-3540-16b5-7461" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Keytar" hidden="false" id="ebde-4c30-db15-30df">
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+      </costs>
+      <profiles>
+        <profile name="Keytar" typeId="03b8-0a17-23ad-c84f" typeName="Gear" hidden="false" id="585a-aabd-c8fd-aa70">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Brown Note" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability" hidden="false" id="eec7-8750-9bc3-788d">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Perform an Aim test against any Model with the &apos;On-Foot&apos; keyword, within Range 6&quot;. If successful, apply the &apos;Stunned&apos; State to that Model. This Ability consumes 2 Actions.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rokk Aura: Soothin&apos; Melody" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="8687-b698-1e4b-317">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Friendly Models within a 1&quot; radius of this Model automatically have the &apos;Fleeing&apos;, &apos;Disarmed&apos;, &apos;Dazed&apos;, and &apos;Furious&apos; states removed.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rokkband" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="c583-912f-3ae9-a55e">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">If this Model&apos;s &apos;Rokk Aura&apos; overlaps with the &apos;Rokk Aura&apos; of another friendly Model, the effects of both abilities are shared by both &apos;Rokk Auras&apos;. This effect chains over multiple Rokk Auras, even if they do not directly overlap. 
+Only one instance of this gear may be equipped in a single Wargang.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f1c8-d542-c7be-25e7" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Megabass" hidden="false" id="4956-eb57-adf5-2c08">
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+      </costs>
+      <profiles>
+        <profile name="Megabass" typeId="03b8-0a17-23ad-c84f" typeName="Gear" hidden="false" id="1e94-8560-3903-9cc8">
+          <characteristics>
+            <characteristic name="Carry" typeId="d27d-6354-52a1-c2bc">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Reverb-Blasta" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability" hidden="false" id="d139-b8bb-7396-460">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Perform an Aim test against any Model with the &apos;On-Foot&apos; keyword, within Range 6&quot;. If successful, apply the &apos;Disarmed&apos; State to that Model. This Ability consumes 2 Actions.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rokk Aura: Bass-Bubble" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="4092-4352-9a9d-43f0">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Friendly Models within a 1&quot; radius of this Model count as being in Partial Cover, even if they are Not in Cover.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rokkband" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="8140-c8b2-86af-355c">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">If this Model&apos;s &apos;Rokk Aura&apos; overlaps with the &apos;Rokk Aura&apos; of another friendly Model, the effects of both abilities are shared by both &apos;Rokk Auras&apos;. This effect chains over multiple Rokk Auras, even if they do not directly overlap. 
+Only one instance of this gear may be equipped in a single Wargang.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5c43-4357-7239-7792" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2491,6 +2672,16 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <entryLink id="d147-7e41-a620-646" name="Axe-Bazooka" hidden="false" collective="false" import="true" targetId="32ca-fa19-61d7-e67" type="selectionEntry"/>
         <entryLink id="5537-6ad6-ef11-2128" name="Axe-Bludga" hidden="false" collective="false" import="true" targetId="74ca-8ab-6944-dd01" type="selectionEntry"/>
         <entryLink id="f305-25e8-c51e-91f2" name="Axe-Burna" hidden="false" collective="false" import="true" targetId="1650-7013-d8da-c3fa" type="selectionEntry"/>
+        <entryLink import="true" name="Brass Knukkulz" hidden="true" type="selectionEntry" id="adee-fcad-9a50-c6bf" targetId="3848-9c2-721-b4d6">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Gitar" hidden="false" type="selectionEntry" id="c96e-b3c8-b545-afe" targetId="dfda-9147-8c37-4920"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="62e2-45a0-2682-9513" name="Speedkult Orc Weapons" hidden="true" collective="false" import="true">
@@ -2533,6 +2724,16 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <entryLink id="99d4-9853-f73-c9a7" name="Axe-Bazooka" hidden="false" collective="false" import="true" targetId="32ca-fa19-61d7-e67" type="selectionEntry"/>
         <entryLink id="c6c9-2fb7-3c42-eb7e" name="Axe-Bludga" hidden="false" collective="false" import="true" targetId="74ca-8ab-6944-dd01" type="selectionEntry"/>
         <entryLink id="6b60-387f-8f5c-9b21" name="Axe-Burna" hidden="false" collective="false" import="true" targetId="1650-7013-d8da-c3fa" type="selectionEntry"/>
+        <entryLink import="true" name="Brass Knukkulz" hidden="true" type="selectionEntry" id="9397-5558-4bfa-82fa" targetId="3848-9c2-721-b4d6">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Gitar" hidden="false" type="selectionEntry" id="1925-9907-1b58-2a20" targetId="dfda-9147-8c37-4920"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3871-7c85-26f0-9ac1" name="Gearhedz Goblin Weapons" hidden="true" collective="false" import="true">
@@ -2679,6 +2880,15 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <entryLink id="5ea1-0ead-527d-4be7" name="Speedkult Gear" hidden="false" collective="false" import="true" targetId="adc0-a12a-b1ce-2bb8" type="selectionEntryGroup"/>
         <entryLink id="c1d5-c146-d51d-7092" name="Mech Gear" hidden="false" collective="false" import="true" targetId="77e7-3bdf-c517-ace5" type="selectionEntryGroup"/>
         <entryLink id="2cb7-2f53-a719-db71" name="WARG Gear" hidden="false" collective="false" import="true" targetId="2f68-0bcb-dca6-6afc" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Rokkaz Gear" hidden="true" type="selectionEntryGroup" id="61e9-acc5-4427-2945" targetId="51ce-c98b-7dcf-604b">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd85-eeb7-abcd-329b" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="9620-5edb-1173-f4e9" name="Vehicle Gear" hidden="false" collective="false" import="true">
@@ -2955,48 +3165,6 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="9c3b-a751-2541-2951" name="Grog" hidden="true" collective="false" import="true" targetId="582f-fa2b-61fb-bf6d" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd85-eeb7-abcd-329b" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="0701-89b0-139b-10cb" name="Boombox" hidden="true" collective="false" import="true" targetId="8fcd-65ad-6970-43f0" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd85-eeb7-abcd-329b" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
         <entryLink id="4887-af0e-3d6d-1e83" name="Monsta Armor" hidden="true" collective="false" import="true" targetId="1f5a-bb0f-6be8-ed84" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -3041,27 +3209,6 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink id="7595-112a-90bb-520f" name="Supa-Speakaz" hidden="true" collective="false" import="true" targetId="2e67-d1fe-20b6-f58e" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd85-eeb7-abcd-329b" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
@@ -3747,6 +3894,161 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Rokkaz Gear" hidden="false" id="51ce-c98b-7dcf-604b">
+      <entryLinks>
+        <entryLink id="a902-2cd-4e8f-8d02" name="Boombox" hidden="true" collective="false" import="true" targetId="8fcd-65ad-6970-43f0" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="af45-272a-8daf-b035" name="Supa-Speakaz" hidden="true" collective="false" import="true" targetId="2e67-d1fe-20b6-f58e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Downaz" hidden="false" type="selectionEntry" id="469e-5eb9-a269-33ba" targetId="1445-8533-d9a6-de45">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="6469-6f0f-5aee-fa6a" name="Grog" hidden="true" collective="false" import="true" targetId="582f-fa2b-61fb-bf6d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Boom-Mic" hidden="true" type="selectionEntry" id="ba1e-6a31-5990-d5e8" targetId="d334-16e2-2c03-025a">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2e5c-9991-128e-3d2d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8bfc-f1ce-6f54-8142" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Da Drumz" hidden="true" type="selectionEntry" id="1aef-e643-6619-c07" targetId="ad5b-6a70-60aa-579f">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2e5c-9991-128e-3d2d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8bfc-f1ce-6f54-8142" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Megabass" hidden="true" type="selectionEntry" id="265c-ffe6-15d3-858" targetId="4956-eb57-adf5-2c08">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2e5c-9991-128e-3d2d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8bfc-f1ce-6f54-8142" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Keytar" hidden="true" type="selectionEntry" id="368c-de8e-40f0-598d" targetId="ebde-4c30-db15-30df">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2e5c-9991-128e-3d2d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8bfc-f1ce-6f54-8142" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile id="a1cc-4f61-81b6-24ba" name="Brutal" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
@@ -3849,7 +4151,7 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">Ammo for this weapon cannot be replenished and it may only be used once per game.</characteristic>
       </characteristics>
     </profile>
-    <profile id="7487-688f-484b-3cf8" name="Powah Chord" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
+    <profile id="7487-688f-484b-3cf8" name="Powah Chord" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">Perform an Aim test against an enemy target with the ‘On Foot’ keyword, within Range 8”. If successful, the target is pushed back 4”.</characteristic>
       </characteristics>
@@ -3956,11 +4258,6 @@ This Model can Leap Down from any height.</characteristic>
 Models which already have the ‘Leader’ keyword may equip this gear for no points cost.</characteristic>
       </characteristics>
     </profile>
-    <profile id="0376-e71f-7eab-9553" name="Gettup Blasta" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
-      <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Any downed Models within 3”of this model, friendly or enemy, cannot be Rallyed.</characteristic>
-      </characteristics>
-    </profile>
     <profile id="fc9c-dc57-bfd0-fa53" name="Sheeld-bubble" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">A protective Sheeld-bubble radiates 3” from the center of this Model.
@@ -4029,12 +4326,10 @@ Removes the &apos;Slow&apos; and &apos;Steadfast&apos; Keywords from this Model.
     </profile>
     <profile id="42bd-092f-bcd1-9e10" name="Flyin&apos; Eadbutt" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
       <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Choose an enemy model on the battlefield which is in line of sight of this model and is not vertically obstructed, and roll a D6. 
-
-On a roll of 4-6, this model instantly moves into base to base contact with the targeted enemy model and performs a clobba attack. This attack gets a +1 boost to this model&apos;s Clobba score. 
-On a roll of 2-3, this model overshoots the target by 8&quot;. 
-On a roll of 1, the rocket misfires and nothing happens. 
-
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Choose an enemy model on the battlefield which is in line of sight of this model and is not vertically obstructed, and roll a D6.
+On a roll of 4-6, this model instantly moves into base to base contact with the targeted enemy model and performs a clobba attack. This attack gets a +1 boost to this model&apos;s Clobba score.
+On a roll of 2-3, this model overshoots the target by 8&quot;.
+On a roll of 1, the rocket misfires and nothing happens.
 No matter the outcome, the model&apos;s turn is concluded after the ability is resolved.</characteristic>
       </characteristics>
     </profile>
@@ -4050,12 +4345,10 @@ No matter the outcome, the model&apos;s turn is concluded after the ability is r
     </profile>
     <profile id="0812-99d0-43de-bcc6" name="Jet-Jumpa" hidden="false" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability">
       <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Choose an empty point on the battlefield that is not vertically obstructed and roll a D6. 
-
-On a roll of 2-5, this Model instantly moves to this position. 
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Choose an empty point on the battlefield that is not vertically obstructed and roll a D6.
+On a roll of 2-5, this Model instantly moves to this position.
 On a roll of 1, this Model undershoots by 6&quot; and the Model is Pinned.
 On a roll of 6, this Model overshoots by 6&quot; and the Model is Pinned.
-
 Use of this Ability does not end the Model&apos;s turn.</characteristic>
       </characteristics>
     </profile>
@@ -4066,10 +4359,8 @@ Use of this Ability does not end the Model&apos;s turn.</characteristic>
     </profile>
     <profile id="ee13-6df2-487e-d282" name="Highly Flammable" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Add the &apos;Explosive&apos; keyword to this model. 
-
-When this model is targeted with a Shootin&apos; attack, if the enemy player rolls a natural 5+ on the aim test, this model explodes. Perform a ranged area attack radiating from the center of this model, which automatically hits all models in the radius, including this model. 
-
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Add the &apos;Explosive&apos; keyword to this model.
+When this model is targeted with a Shootin&apos; attack, if the enemy player rolls a natural 5+ on the aim test, this model explodes. Perform a ranged area attack radiating from the center of this model, which automatically hits all models in the radius, including this model.
 This Model has an explosive radius of 1&quot; and has a power of 1. Models hit have the &apos;Burning&apos; state applied.</characteristic>
       </characteristics>
     </profile>
@@ -4111,7 +4402,6 @@ This Model has an explosive radius of 1&quot; and has a power of 1. Models hit h
     <profile id="6c98-73df-8005-fdb7" name="More Macheen Than Orc" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds 2 HP to this model.
-
 Adds the Keyword &apos;Mech&apos;.</characteristic>
       </characteristics>
     </profile>
@@ -4143,25 +4433,20 @@ Adds the Keyword &apos;Mech&apos;.</characteristic>
     <profile id="8fb2-e32f-7ea7-0331" name="Beserka-Brain" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
         <characteristic name="Description" typeId="f9a7-df23-1898-0927">Apply the &apos;Bestial&apos; state to this Model.
-
 This model is invulnerable to the &apos;Fleeing&apos; state.</characteristic>
       </characteristics>
     </profile>
     <profile id="7c88-2723-2a54-810b" name="Macheen-Mind" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This model acts according to the &apos;Enthusiastic&apos; AI Archetype. 
-
-If a friendly Model with the &apos;Engineer&apos; keyword is within 1&quot; of this Model, you may control this Model directly ignoring its AI archetype. 
-
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">This model acts according to the &apos;Enthusiastic&apos; AI Archetype.
+If a friendly Model with the &apos;Engineer&apos; keyword is within 1&quot; of this Model, you may control this Model directly ignoring its AI archetype.
 This model is invulnerable to the &apos;Stun&apos; state.</characteristic>
       </characteristics>
     </profile>
     <profile id="af93-d042-0472-40f2" name="Monsta-Mind" hidden="false" typeId="82b5-7793-d995-c63c" typeName="Passive">
       <characteristics>
-        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds the &apos;Stupid&apos; keyword ot this Model. Removes the &apos;Leader&apos; keyword from this model. 
-
+        <characteristic name="Description" typeId="f9a7-df23-1898-0927">Adds the &apos;Stupid&apos; keyword ot this Model. Removes the &apos;Leader&apos; keyword from this model.
 Adds 2 HP to this model.
-
 This Model acts according to the &apos;Aggressive&apos; AI Archetype.</characteristic>
       </characteristics>
     </profile>
