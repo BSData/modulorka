@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="5124-c842-0c8d-b7a8" name="Modulorka" revision="31" battleScribeVersion="2.03" authorName="Car_Tag" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="5124-c842-0c8d-b7a8" name="Modulorka" revision="33" battleScribeVersion="2.03" authorName="Car_Tag" type="gameSystem">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -91,6 +91,9 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
     <categoryEntry name="Character - Follower" hidden="false" id="8ac6-db28-3697-70d6"/>
     <categoryEntry name="Character - Helper" hidden="false" id="c503-2e8d-cdbb-8b8e"/>
     <categoryEntry name="Character - Jaded" hidden="false" id="f069-a545-f3fb-b277"/>
+    <categoryEntry name="Giant" hidden="false" id="8b92-733a-5be-8a2"/>
+    <categoryEntry name="Xenophobic" hidden="false" id="495d-b987-889a-ebd1"/>
+    <categoryEntry name="Wurmmynd" hidden="false" id="70c1-e0d6-8408-a1bc"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b001-9d67-598a-8478" name="Wargang" hidden="false">
@@ -565,7 +568,7 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         </profile>
         <profile name="Rokk Aura: Rallying Cry" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="2561-e9bd-a84d-3ecf">
           <characteristics>
-            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Friendly Models within a 1&quot; radius of this Model are automatically Rallied. </characteristic>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Friendly Models within a 1&quot; radius of this Model are automatically Rallied.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2181,8 +2184,6 @@ This Model can only make a single Movin&apos; action per turn.</characteristic>
         <profile name="Boss-Armor" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="f3f8-e808-1505-f8e8">
           <characteristics>
             <characteristic name="Description" typeId="f9a7-df23-1898-0927">This Model has +1 armor, up to a maximum of 1. 
-
-
 Removes the &apos;Opentop&apos;, &apos;Fast&apos;, and &apos;Rash&apos; keywords from this Model.</characteristic>
           </characteristics>
         </profile>
@@ -2464,6 +2465,45 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5c43-4357-7239-7792" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Snipa-Rifle" hidden="false" id="9694-a0ce-6f47-734e">
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+      </costs>
+      <profiles>
+        <profile name="Snipa-Rifle" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon" hidden="false" id="5847-27aa-bb69-1adf">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">2-40</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">2</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">2</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Careful Shot" typeId="7ac1-9c35-a0e6-63aa" typeName="Ability" hidden="false" id="db41-2763-e1e-a341">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon may perform a Shootin&apos; Attack which adds +1 to the Aim roll - but which requires two consecutive actions.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sneaky Shot" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="5a19-2330-d974-efd0">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">If this model is in the &apos;Concealed&apos; State, the attack gains an additional 2 power.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Blitz-Banna" hidden="false" id="8051-21b1-9c78-b220">
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
+      </costs>
+      <profiles>
+        <profile name="Blitz-Banna" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="6efa-48b6-268e-3cc">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Friendly Models behave as if they have the &apos;Rash&apos; Keyword provided they are within a 2&quot; radius of this Model and have the &apos;On Foot&apos; Keyword.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e179-021a-8344-3d9f" name="Weapons" hidden="false" collective="false" import="true">
@@ -2525,6 +2565,20 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Snipa-Rifle" hidden="true" type="selectionEntry" id="ffd7-e3a4-94f4-6963" targetId="9694-a0ce-6f47-734e">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="43dc-3596-0a7c-d32c" name="Generic Goblin Weapons" hidden="true" collective="false" import="true">
@@ -2563,6 +2617,20 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1590-958c-9778-75fb" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Snipa-Rifle" hidden="true" type="selectionEntry" id="9467-3542-e921-9ee1" targetId="9694-a0ce-6f47-734e">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2667,7 +2735,6 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink id="4cc9-902e-a1e1-802a" name="Boom-Mic" hidden="false" collective="false" import="true" targetId="d334-16e2-2c03-025a" type="selectionEntry"/>
         <entryLink id="6646-230d-60cd-676b" name="Axeblasta" hidden="false" collective="false" import="true" targetId="0ea8-9ce8-cebf-d654" type="selectionEntry"/>
         <entryLink id="d147-7e41-a620-646" name="Axe-Bazooka" hidden="false" collective="false" import="true" targetId="32ca-fa19-61d7-e67" type="selectionEntry"/>
         <entryLink id="5537-6ad6-ef11-2128" name="Axe-Bludga" hidden="false" collective="false" import="true" targetId="74ca-8ab-6944-dd01" type="selectionEntry"/>
@@ -2719,7 +2786,6 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink id="fac5-3b14-2c6a-d838" name="Boom-Mic" hidden="false" collective="false" import="true" targetId="d334-16e2-2c03-025a" type="selectionEntry"/>
         <entryLink id="52d5-859e-8fba-311c" name="Axeblasta" hidden="false" collective="false" import="true" targetId="0ea8-9ce8-cebf-d654" type="selectionEntry"/>
         <entryLink id="99d4-9853-f73-c9a7" name="Axe-Bazooka" hidden="false" collective="false" import="true" targetId="32ca-fa19-61d7-e67" type="selectionEntry"/>
         <entryLink id="c6c9-2fb7-3c42-eb7e" name="Axe-Bludga" hidden="false" collective="false" import="true" targetId="74ca-8ab-6944-dd01" type="selectionEntry"/>
@@ -3412,6 +3478,21 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Blitz-Banna" hidden="true" type="selectionEntry" id="f0d6-8bdf-e53d-d6f9" targetId="8051-21b1-9c78-b220">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                  </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -4471,5 +4552,4 @@ This Model acts according to the &apos;Aggressive&apos; AI Archetype.</character
       </characteristics>
     </profile>
   </sharedProfiles>
-  <xmlns>http://www.battlescribe.net/schema/gameSystemSchema</xmlns>
 </gameSystem>
