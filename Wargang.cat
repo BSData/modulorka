@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="99b4-968e-1f82-68aa" name="Wargang" revision="27" battleScribeVersion="2.03" authorName="Car_Tag" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="24" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="99b4-968e-1f82-68aa" name="Wargang" revision="28" battleScribeVersion="2.03" authorName="Car_Tag" library="false" gameSystemId="5124-c842-0c8d-b7a8" gameSystemRevision="24" type="catalogue">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
@@ -3430,7 +3430,7 @@ When this model is in the &apos;Furious&apos; or &apos;Bestial&apos; states, it 
       <categoryLinks>
         <categoryLink targetId="b121-a57f-6058-b9eb" id="386e-12cf-30fb-4532" primary="false" name="Orc"/>
         <categoryLink targetId="665f-0987-feb2-fb26" id="a56b-f004-7d8e-b110" primary="false" name="Troops"/>
-        <categoryLink targetId="fd85-eeb7-abcd-329b" id="31c2-49f9-34c3-2ca0" primary="false" name="Rokkaz"/>
+        <categoryLink targetId="fd85-eeb7-abcd-329b" id="31c2-49f9-34c3-2ca0" primary="true" name="Rokkaz"/>
         <categoryLink targetId="3468-dc46-a5a9-798a" id="bae1-739e-5309-35f4" primary="false" name="Rash"/>
         <categoryLink targetId="381b-1d1c-1d0b-0693" id="ce25-3c0d-7beb-d960" primary="false" name="Mounted"/>
         <categoryLink targetId="a520-8150-7aef-b15a" id="d858-7a97-d230-4912" primary="false" name="Fast"/>
