@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="35" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5124-c842-0c8d-b7a8" name="Modulorka" revision="36" battleScribeVersion="2.03" authorName="Car_Tag" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>Please submit bug reports at https://github.com/BSData/modulorka/issues
 ----------------------------------------------
 Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/issues</readme>
   <costTypes>
-    <costType id="fda5-738e-1874-bcf7" name="Points" defaultCostLimit="-1.0" hidden="false"/>
-    <costType id="9378-4835-dc32-2b6f" name="Carry" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="fda5-738e-1874-bcf7" name="Points" defaultCostLimit="-1" hidden="false"/>
+    <costType id="9378-4835-dc32-2b6f" name="Carry" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="794d-c6bd-a194-0389" name="Model">
@@ -94,6 +94,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
     <categoryEntry id="8b92-733a-5be-8a2" name="Giant" hidden="false"/>
     <categoryEntry id="495d-b987-889a-ebd1" name="Xenophobic" hidden="false"/>
     <categoryEntry id="70c1-e0d6-8408-a1bc" name="Wurmmynd" hidden="false"/>
+    <categoryEntry name="Fly" hidden="false" id="8861-1b5d-3180-c467"/>
+    <categoryEntry name="Character" hidden="false" id="32d0-9d74-2e3c-9f68"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="b001-9d67-598a-8478" name="Wargang" hidden="false">
@@ -123,8 +125,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="91de-256f-90a8-ad76" name="Monsta Maul" hidden="false" collective="false" import="true" type="upgrade">
@@ -139,8 +141,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3561-25eb-3095-2224" name="Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -155,8 +157,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f0e7-7dd5-d3cc-02a1" name="Skoped Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -174,8 +176,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="7ef2-14c2-629e-9c17" name="Careful Shot" hidden="false" targetId="4a03-369a-2eb7-c6b9" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9979-1cbb-f2b9-381a" name="Ram" hidden="false" collective="false" import="true" type="upgrade">
@@ -190,8 +192,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="85d8-cb12-c6a7-0b57" name="Megabludga" hidden="false" collective="false" import="true" type="upgrade">
@@ -214,8 +216,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="5ab1-846a-48f3-e98b" name="Critical Hitta" hidden="false" targetId="ea7f-84eb-fb60-478b" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3032-7340-2ef2-9bdb" name="Meka-Fist" hidden="false" collective="false" import="true" type="upgrade">
@@ -235,8 +237,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="b1f4-056d-9810-a322" name="Roundhouse" hidden="false" targetId="41b3-b809-2c29-fabb" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="270a-d6cf-f4d5-0c87" name="Bludga" hidden="false" collective="false" import="true" type="upgrade">
@@ -255,8 +257,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="66c3-feaa-3855-d97f" name="Sneak Attak" hidden="false" targetId="b9c-40f-99e8-ec96" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ef97-8315-1a94-7df7" name="Meka-Klaw" hidden="false" collective="false" import="true" type="upgrade">
@@ -276,8 +278,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="1b81-ca63-6253-35e5" name="Krush" hidden="false" targetId="735e-7271-6c8b-273a" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6d47-4b99-fae2-6a46" name="Meka-Saw" hidden="false" collective="false" import="true" type="upgrade">
@@ -297,8 +299,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="08fe-92c6-851e-11eb" name="Bladespinna" hidden="false" targetId="ed4b-c4e4-65f4-e3a9" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e989-bba6-a7e4-4ca6" name="Meka-Pierca" hidden="false" collective="false" import="true" type="upgrade">
@@ -318,8 +320,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="61b8-e76a-ebb9-a7ae" name="Krush" hidden="false" targetId="735e-7271-6c8b-273a" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="63cc-6c31-848c-5a44" name="Flama-Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -347,8 +349,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="1f38-9ce8-5eba-5e83" name="Mode (B) - Flamethrowa" hidden="false" targetId="a3b7-2b4d-779b-70bc" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="beb0-78d3-2736-249a" name="Launcha-Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -376,8 +378,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="f066-678e-7a54-ddf8" name="Mode (B) - Grenade Launcha" hidden="false" targetId="4b9a-ba1a-498a-a00d" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="580c-ded9-ecd6-c8b6" name="Rokkit-Rifle" hidden="true" collective="false" import="true" type="upgrade">
@@ -405,8 +407,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="1cba-c4e4-15a7-8bb5" name="Mode (B) - Rokkit Launcha" hidden="false" targetId="4d21-552d-1cf5-03cf" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ad1a-93af-aafc-7a2b" name="Doza-Blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -424,8 +426,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="9df9-c7c9-c924-bd0b" name="Bulldoza" hidden="false" targetId="4bda-d2d1-d9a2-b341" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b35b-86ec-3e8f-21aa" name="Ram-Barz" hidden="false" collective="false" import="true" type="upgrade">
@@ -440,8 +442,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6ae9-30af-f217-47d1" name="Bullit-Spitta" hidden="false" collective="false" import="true" type="upgrade">
@@ -460,8 +462,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="f0c8-85af-df08-f568" name="Spray and Pray" hidden="false" targetId="e922-cf95-65d9-63d4" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9a73-47b0-4982-5fc5" name="Macheen Gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -484,8 +486,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="39f1-fd0d-2b76-9326" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8c24-e8dc-2a9d-fa1e" name="Grenade" hidden="false" collective="false" import="true" type="upgrade">
@@ -505,8 +507,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="177c-ac2f-12ae-7058" name="Disposabul" hidden="false" targetId="6fc1-f9f5-608e-152a" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d255-4856-c408-4b28" name="Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -524,8 +526,8 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="ce76-b7df-4892-de9c" name="Stoppin&apos; Powah" hidden="false" targetId="c42e-9d5e-c2c9-fa9c" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0ea8-9ce8-cebf-d654" name="Axe-Blasta" hidden="false" collective="false" import="true" type="upgrade">
@@ -544,13 +546,13 @@ Tell &apos;em wut dey did wrong &apos;ere: https://github.com/BSData/modulorka/i
         <infoLink id="562b-4571-5ba3-9823" name="Stoppin&apos; Powah" hidden="false" targetId="c42e-9d5e-c2c9-fa9c" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d334-16e2-2c03-025a" name="Boom-Mic" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="917f-662c-a38b-10bb" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="917f-662c-a38b-10bb" type="max"/>
       </constraints>
       <profiles>
         <profile id="b296-c877-3e44-8e6d" name="Boom-Mic" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
@@ -578,8 +580,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6dc0-5339-e7b7-6855" name="Boom-Stick" hidden="false" collective="false" import="true" type="upgrade">
@@ -603,8 +605,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="f1f3-d78b-4344-bf9a" name="Swing &amp; A Miss" hidden="false" targetId="3c96-2e85-a9ec-b3d9" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0625-b7c0-b732-883f" name="Molotov" hidden="false" collective="false" import="true" type="upgrade">
@@ -624,8 +626,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="4607-a499-4aa5-0ed6" name="Disposabul" hidden="false" targetId="6fc1-f9f5-608e-152a" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cfc2-91ed-b8b4-917d" name="Toolz" hidden="false" collective="false" import="true" type="upgrade">
@@ -645,8 +647,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="97ab-b568-b137-7b5c" name="Dual Wielda" hidden="false" targetId="ecbd-bb33-bc1-77b6" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9b29-58b7-3fe5-2eba" name="Grinda-Saw" hidden="false" collective="false" import="true" type="upgrade">
@@ -665,8 +667,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="3d3b-4f67-08dc-92b8" name="Toolz" hidden="false" targetId="0368-30e6-a401-ddb6" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ee7e-6366-13ce-09ba" name="Mega-Spanna" hidden="false" collective="false" import="true" type="upgrade">
@@ -694,8 +696,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="f71e-72e0-6f25-6fb9" name="Toolz" hidden="false" targetId="0368-30e6-a401-ddb6" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="89da-f015-7611-6807" name="Blowtorch" hidden="false" collective="false" import="true" type="upgrade">
@@ -713,8 +715,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="b53b-8e8e-7914-166b" name="Flamethrowa" hidden="false" targetId="2110-d880-48d3-1429" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b40b-1df3-8a1c-2bb2" name="Plazma-Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -732,8 +734,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="b234-4755-25fa-6082" name="Plazma" hidden="false" targetId="03e1-7f93-b673-351d" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="65b8-c795-a4a0-a69f" name="Plazma-Blasta" hidden="false" collective="false" import="true" type="upgrade">
@@ -752,8 +754,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="4886-164c-d8d1-dbe4" name="Stoppin&apos; Powah" hidden="false" targetId="c42e-9d5e-c2c9-fa9c" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1308-42ad-f0d2-6c3f" name="Rokkit-Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -780,8 +782,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="e03a-34de-61a3-22da" name="Throwin&apos; Spear" hidden="false" targetId="f4f0-1997-3180-74e3" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4592-1047-ca63-4ec7" name="Elefant Gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -800,8 +802,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="9f4c-324b-0a69-bbb2" name="Armor Puncha" hidden="false" targetId="6bf3-fbf2-a063-d8a6" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="045d-1d16-825a-5606" name="Buzz-Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -821,8 +823,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="1dd8-a970-e583-50c0" name="Malfunkshun" hidden="false" targetId="de49-646f-1fc2-de10" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="069d-d67d-648d-eabf" name="Buzz-Spear" hidden="false" collective="false" import="true" type="upgrade">
@@ -841,8 +843,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="88d-1394-3257-a5a6" name="Malfunkshun" hidden="false" targetId="de49-646f-1fc2-de10" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2325-6d8e-dcd2-fc57" name="Gob-Catcha" hidden="false" collective="false" import="true" type="upgrade">
@@ -860,8 +862,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="5215-aec9-4612-6ce3" name="Git &apos;Em" hidden="false" targetId="2541-9d83-3745-4d00" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a5a3-fc21-09b9-3b9d" name="Gob-Taza" hidden="false" collective="false" import="true" type="upgrade">
@@ -880,8 +882,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="ebc3-cbfb-57ab-8578" name="ZZZAP" hidden="false" targetId="775b-f928-df55-3afe" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a139-55c7-36a4-7b27" name="Gob-Whip" hidden="false" collective="false" import="true" type="upgrade">
@@ -899,8 +901,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="374d-1412-773d-66da" name="Git Back Up" hidden="false" targetId="39f9-aad8-2021-d7b7" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f09a-a0c0-ba41-943a" name="Vehicle Armor" hidden="false" collective="false" import="true" type="upgrade">
@@ -915,8 +917,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="c9c0-7669-249e-fd00" name="Heavy Plate" hidden="false" targetId="d058-03c9-7e11-bdf6" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ba37-0e64-d7ef-a965" name="Cyba-Eye" hidden="false" collective="false" import="true" type="upgrade">
@@ -936,8 +938,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="8b97-07ec-d250-3a70" name="Supa-Targetin&apos;" hidden="false" targetId="8296-c8ec-d72d-7e57" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ec1b-5663-94d8-c1ef" name="Supa-Legz" hidden="false" collective="false" import="true" type="upgrade">
@@ -954,8 +956,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="3d71-455c-2757-d3dd" name="Leg-Fix" hidden="false" targetId="c84d-88de-136a-c819" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8adf-ee6b-7143-1c63" name="Boss-Banna" hidden="false" collective="false" import="true" type="upgrade">
@@ -970,8 +972,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="cba9-eda1-8c59-6bb3" name="I&apos;m Da Boss!" hidden="false" targetId="97c7-78fd-c95a-9c21" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f018-3177-fdaf-fb50" name="Ammo-Krate" hidden="false" collective="false" import="true" type="upgrade">
@@ -988,8 +990,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2e67-d1fe-20b6-f58e" name="Supa-Speakaz" hidden="false" collective="false" import="true" type="upgrade">
@@ -1008,8 +1010,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8fcd-65ad-6970-43f0" name="Boombox" hidden="false" collective="false" import="true" type="upgrade">
@@ -1026,8 +1028,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="91a2-9fea-46f0-3c44" name="Sheeld-Dynamo" hidden="false" collective="false" import="true" type="upgrade">
@@ -1043,8 +1045,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         <infoLink id="69ce-b184-b516-6750" name="Sheeld-bubble" hidden="false" targetId="fc9c-dc57-bfd0-fa53" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="af0a-9bb1-7f97-e4c3" name="Meka-Grabbaz" hidden="false" collective="false" import="true" type="upgrade">
@@ -1060,8 +1062,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         <infoLink id="4845-55ee-677a-9ac6" name="Grabbaz" hidden="false" targetId="fea6-9fa1-d8c7-b8fd" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bf97-97ef-7610-2f1e" name="Toolbox" hidden="false" collective="false" import="true" type="upgrade">
@@ -1077,8 +1079,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         <infoLink id="1d69-ea5a-fbd3-fcb9" name="Hand Me A Spanna" hidden="false" targetId="ecf2-af1a-5386-f34a" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="556d-d971-e39f-56aa" name="Oila" hidden="false" collective="false" import="true" type="upgrade">
@@ -1093,8 +1095,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         <infoLink id="a5bb-d8a3-7423-ff44" name="Keep &apos;Em Movin&apos;" hidden="false" targetId="1884-fcd7-2cef-72ee" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f528-de49-c3a9-f41f" name="Portal-Kannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1109,8 +1111,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         <infoLink id="6315-5a4b-cd65-03ec" name="Shokk Portal" hidden="false" targetId="0c45-d826-f727-78c8" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1f5a-bb0f-6be8-ed84" name="Monsta Armor" hidden="false" collective="false" import="true" type="upgrade">
@@ -1125,8 +1127,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         <infoLink id="6be2-2a79-d639-71a0" name="Monsta Tank" hidden="false" targetId="c335-dae0-e64c-85af" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3241-1a3e-dbe7-e62c" name="Orc Rida" hidden="false" collective="false" import="true" type="upgrade">
@@ -1146,13 +1148,13 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
       <entryLinks>
         <entryLink id="8dd1-2ffa-d385-020a" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
           <constraints>
-            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="33e6-005e-5da2-ae3b" type="max"/>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="33e6-005e-5da2-ae3b" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dee5-84af-0dd3-de34" name="Gob-Buddy" hidden="false" collective="false" import="true" type="upgrade">
@@ -1172,13 +1174,13 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
       <entryLinks>
         <entryLink id="6922-f7f0-feac-b413" name="Gear" hidden="false" collective="false" import="true" targetId="1cc0-6960-db89-9d3a" type="selectionEntryGroup">
           <constraints>
-            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="88db-dbf6-774f-7019" type="max"/>
+            <constraint field="9378-4835-dc32-2b6f" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="88db-dbf6-774f-7019" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="41e8-ed33-3b75-d811" name="Monowheel" hidden="false" collective="false" import="true" type="upgrade">
@@ -1199,8 +1201,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         <categoryLink id="ce33-fa9e-c16c-ee52" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="26eb-359c-365b-ec52" name="Rokkit-Pak" hidden="false" collective="false" import="true" type="upgrade">
@@ -1219,8 +1221,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         <categoryLink id="8c45-070b-5126-1278" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bd3d-6e81-37e2-806b" name="Boomaraxe" hidden="false" collective="false" import="true" type="upgrade">
@@ -1240,8 +1242,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d2de-b9fd-eac6-5915" name="Hunta-Bow" hidden="false" collective="false" import="true" type="upgrade">
@@ -1260,8 +1262,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         <infoLink id="da0d-2292-a57e-d0e5" name="Careful Shot" hidden="false" targetId="4a03-369a-2eb7-c6b9" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7be1-6b57-7dd9-350b" name="Jump-Pak" hidden="false" collective="false" import="true" type="upgrade">
@@ -1279,8 +1281,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         <categoryLink id="346d-325e-502b-ca90" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2ce0-1bde-5891-2cb6" name="Flama" hidden="false" collective="false" import="true" type="upgrade">
@@ -1299,8 +1301,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         <infoLink id="e6d0-ca10-6b08-5d29" name="Flamethrowa" hidden="false" targetId="2110-d880-48d3-1429" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f44c-fdb1-a4b8-9293" name="Flama-Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -1328,8 +1330,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         <infoLink id="8f0a-a907-0540-3e2a" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c4c2-4614-ad81-0da9" name="Flama-Tank" hidden="false" collective="false" import="true" type="upgrade">
@@ -1345,8 +1347,8 @@ Adds the &apos;Slow&apos; and &apos;bulky&apos; Keywords to the Model.</characte
         <infoLink id="bd6a-b581-52e4-2eff" name="Flama-Fuel" hidden="false" targetId="b618-9692-9b54-d0c8" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="582f-fa2b-61fb-bf6d" name="Grog" hidden="false" collective="false" import="true" type="upgrade">
@@ -1364,8 +1366,8 @@ When this Model activates, the controlling Player must roll a D6. The result mus
         </profile>
       </profiles>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ba04-f7bf-62e9-e714" name="Fire-Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -1389,8 +1391,8 @@ When this Model activates, the controlling Player must roll a D6. The result mus
         <infoLink id="f5af-7b20-feaa-a542" name="Brutal" hidden="false" targetId="a1cc-4f61-81b6-24ba" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="28eb-3494-5b96-8615" name="Medi-Bag" hidden="false" collective="false" import="true" type="upgrade">
@@ -1410,8 +1412,8 @@ When this Model activates, the controlling Player must roll a D6. The result mus
         <categoryLink id="4a31-cc45-d675-d9ae" name="Doc" hidden="false" targetId="93df-2160-73a9-cb37" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4cd7-0655-190b-b317" name="Syringe" hidden="false" collective="false" import="true" type="upgrade">
@@ -1429,8 +1431,8 @@ When this Model activates, the controlling Player must roll a D6. The result mus
         <categoryLink id="5a75-339c-d551-9952" name="Doc" hidden="false" targetId="93df-2160-73a9-cb37" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2d3d-d209-b203-36c4" name="Medi-Pak" hidden="false" collective="false" import="true" type="upgrade">
@@ -1448,8 +1450,8 @@ When this Model activates, the controlling Player must roll a D6. The result mus
         <categoryLink id="96b9-2071-234b-1909" name="Doc" hidden="false" targetId="93df-2160-73a9-cb37" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9811-ddd1-b8ce-5f9f" name="Syringe-Gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1468,8 +1470,8 @@ When this Model activates, the controlling Player must roll a D6. The result mus
         <infoLink id="77f8-be4e-b5f4-bd57" name="Tranquilize" hidden="false" targetId="fa77-1ebb-6358-a4d9" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a0b2-b1d2-5a90-1943" name="Medi-Klaw" hidden="false" collective="false" import="true" type="upgrade">
@@ -1489,8 +1491,8 @@ When this Model activates, the controlling Player must roll a D6. The result mus
         <infoLink id="fbe5-4b08-07fa-55c8" name="Kombined Arms" hidden="false" targetId="dd45-4d77-3b13-ec83" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f7c8-9d22-d99f-8b90" name="Boosta-Legz" hidden="false" collective="false" import="true" type="upgrade">
@@ -1513,8 +1515,8 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
         <infoLink id="4fa7-d5ec-cfce-9275" name="Mekalegz" hidden="false" targetId="7ec3-afdd-1550-3c56" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c287-b86d-5440-f988" name="Trak-Legz" hidden="false" collective="false" import="true" type="upgrade">
@@ -1540,8 +1542,8 @@ Removes the &apos;On-Foot&apos; Keyword from this Model.</characteristic>
         <infoLink id="96bc-7811-23fd-0c05" name="Mekalegz" hidden="false" targetId="7ec3-afdd-1550-3c56" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8a9f-86ed-f044-5832" name="Cyba-Body" hidden="false" collective="false" import="true" type="upgrade">
@@ -1567,8 +1569,8 @@ Adds the Keyword &apos;Mech&apos;.</characteristic>
         <categoryLink id="d665-4581-77b1-0bb0" name="Mech" hidden="false" targetId="8ad5-49a9-b718-0bf5" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9bea-1579-9cee-df0b" name="Gun-Arm" hidden="false" collective="false" import="true" type="upgrade">
@@ -1584,8 +1586,8 @@ Adds the Keyword &apos;Mech&apos;.</characteristic>
         <infoLink id="cd37-9cb5-4341-dad2" name="Shootin&apos; Arm" hidden="false" targetId="0e15-cfec-4f49-295f" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5ad5-e8b0-a7a1-b9d4" name="Meka-Armz" hidden="false" collective="false" import="true" type="upgrade">
@@ -1600,8 +1602,8 @@ Adds the Keyword &apos;Mech&apos;.</characteristic>
         <infoLink id="cda4-5938-0568-6cfb" name="Arm-Fix" hidden="false" targetId="9752-74dd-4263-ad27" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fc58-3881-451f-5ee3" name="Rage-Wirez" hidden="false" collective="false" import="true" type="upgrade">
@@ -1618,8 +1620,8 @@ Adds the Keyword &apos;Mech&apos;.</characteristic>
         <infoLink id="7fbe-50ee-3e49-9d01" name="Brain-Fix" hidden="false" targetId="c219-5867-3929-283b" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c344-8c7b-98cb-aad0" name="Cyba-Brain" hidden="false" collective="false" import="true" type="upgrade">
@@ -1636,8 +1638,8 @@ Adds the Keyword &apos;Mech&apos;.</characteristic>
         <infoLink id="186b-d3d5-ab49-f614" name="Brain-Fix" hidden="false" targetId="c219-5867-3929-283b" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1ffb-e8f8-3694-c1ab" name="Beast-Brainz" hidden="false" collective="false" import="true" type="upgrade">
@@ -1654,8 +1656,8 @@ Adds the Keyword &apos;Mech&apos;.</characteristic>
         <infoLink id="2d79-af69-a04f-fcb8" name="Brain-Fix" hidden="false" targetId="c219-5867-3929-283b" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ae82-e926-d868-5324" name="Xtendo-Armz" hidden="false" collective="false" import="true" type="upgrade">
@@ -1676,8 +1678,8 @@ Adds the Keyword &apos;Mech&apos;.</characteristic>
         <infoLink id="7678-3cb2-68fa-0646" name="Toolz" hidden="false" targetId="0368-30e6-a401-ddb6" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6f81-9930-056c-16cd" name="Bazooka" hidden="false" collective="false" import="true" type="upgrade">
@@ -1696,8 +1698,8 @@ Adds the Keyword &apos;Mech&apos;.</characteristic>
         <infoLink id="bfb7-747b-6a3a-113d" name="Flamethrowa" hidden="false" targetId="2110-d880-48d3-1429" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9bfe-d206-a1d5-c635" name="Bazooka-Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -1730,8 +1732,8 @@ Ammo for this weapon cannot be replenished.</characteristic>
         <infoLink id="b83f-7064-6e8e-da7c" name="Kustom Rifle" hidden="false" targetId="a0b8-e6d7-baf5-c6fa" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="266f-2b53-1802-f1a0" name="Grenade-Launcha" hidden="false" collective="false" import="true" type="upgrade">
@@ -1754,8 +1756,8 @@ Ammo for this weapon cannot be replenished.</characteristic>
         <infoLink id="c253-08b0-6a9a-0dea" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6db4-2b94-ac0b-7872" name="Bazooka-Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -1779,8 +1781,8 @@ Ammo for this weapon cannot be replenished.</characteristic>
         <infoLink id="72ed-2db3-5263-8550" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3582-a4ec-a9d1-71d4" name="Trigga-Bomb" hidden="false" collective="false" import="true" type="upgrade">
@@ -1811,8 +1813,8 @@ Trigga-Bombs can be targeted by any model, and if hit will Explode.</characteris
         <categoryLink id="e702-29e8-41e7-ffea" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f2ea-3643-7411-867c" name="Land-Mine" hidden="false" collective="false" import="true" type="upgrade">
@@ -1839,8 +1841,8 @@ Placed Land-Mines will immediately explode if any model moves when within a 2&qu
         <categoryLink id="6c9f-734c-9ed2-d6a6" name="Rash" hidden="false" targetId="3468-dc46-a5a9-798a" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3dd7-492e-2039-87f0" name="Rokkit-Hamma" hidden="false" collective="false" import="true" type="upgrade">
@@ -1864,8 +1866,8 @@ Placed Land-Mines will immediately explode if any model moves when within a 2&qu
         <infoLink id="d2be-ed0b-f4b7-730e" name="Swing &amp; A Miss" hidden="false" targetId="3c96-2e85-a9ec-b3d9" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f034-b81c-d904-ba07" name="Boom-Bow" hidden="false" collective="false" import="true" type="upgrade">
@@ -1894,8 +1896,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <infoLink id="23b2-705a-426f-4175" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="42c1-8124-1c6e-35c9" name="Bullit-Bombarda" hidden="false" collective="false" import="true" type="upgrade">
@@ -1920,8 +1922,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         </profile>
       </profiles>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="47dc-c309-0eab-c59d" name="Plazma-Bombarda" hidden="false" collective="false" import="true" type="upgrade">
@@ -1951,8 +1953,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         </profile>
       </profiles>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8746-6674-66f9-be1e" name="Kannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1970,8 +1972,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <infoLink id="977c-e8a0-4839-3319" name="Armor Puncha" hidden="false" targetId="6bf3-fbf2-a063-d8a6" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cdf1-a3b3-8b7c-3403" name="Minigun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1991,8 +1993,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <infoLink id="a547-5d75-bde8-c739" name="Stoppin&apos; Powah" hidden="false" targetId="c42e-9d5e-c2c9-fa9c" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f6c2-7f36-aecb-94f4" name="Auto-Loada" hidden="false" collective="false" import="true" type="upgrade">
@@ -2009,8 +2011,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="24fe-fe0d-1437-e14b" name="Skrap-Launcha" hidden="false" collective="false" import="true" type="upgrade">
@@ -2033,8 +2035,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <infoLink id="6cea-3572-f5ad-9d35" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f608-0e54-31a1-4a84" name="Zappa-Blasta" hidden="false" collective="false" import="true" type="upgrade">
@@ -2054,8 +2056,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         </profile>
       </profiles>
       <costs>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a642-b5ef-8527-ba69" name="Rebel-Radio" hidden="false" collective="false" import="true" type="upgrade">
@@ -2072,8 +2074,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4647-5cc4-ab72-864f" name="Buzz-Sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -2096,8 +2098,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <infoLink id="4024-4797-74c5-41af" name="Dual Wielda" hidden="false" targetId="ecbd-bb33-bc1-77b6" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3bdb-662e-8247-a056" name="Rally-Banna" hidden="false" collective="false" import="true" type="upgrade">
@@ -2114,8 +2116,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6f74-9de3-0bee-f863" name="Mega-Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -2141,8 +2143,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5466-928a-ebac-bed1" name="Arma-Sheeld" hidden="false" collective="false" import="true" type="upgrade">
@@ -2168,8 +2170,8 @@ This Model can only make a single Movin&apos; action per turn.</characteristic>
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9dc8-6e17-33f9-aaf4" name="Boss-Armor" hidden="false" collective="false" import="true" type="upgrade">
@@ -2187,8 +2189,8 @@ Removes the &apos;Opentop&apos;, &apos;Fast&apos;, and &apos;Rash&apos; keywords
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1326-79c4-9734-f549" name="Ultra-Bombarda" hidden="false" collective="false" import="true" type="upgrade">
@@ -2219,8 +2221,8 @@ This Model can only make a single Movin&apos; action per turn.</characteristic>
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="4.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="4"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="32ca-fa19-61d7-e67" name="Axe-Bazooka" hidden="false" collective="false" import="true" type="upgrade">
@@ -2247,8 +2249,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <infoLink id="15b0-c110-ee89-9686" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="74ca-8ab-6944-dd01" name="Axe-Bludga" hidden="false" collective="false" import="true" type="upgrade">
@@ -2276,8 +2278,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <infoLink id="9fc4-64c4-67c4-f465" name="Powah Chord" hidden="false" targetId="7487-688f-484b-3cf8" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1650-7013-d8da-c3fa" name="Axe-Burna" hidden="false" collective="false" import="true" type="upgrade">
@@ -2301,8 +2303,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         <infoLink id="8bc5-7715-b39-cc7f" name="Reload" hidden="false" targetId="4d00-5507-8c21-c8ae" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dfda-9147-8c37-4920" name="Gitar" hidden="false" collective="false" import="true" type="upgrade">
@@ -2322,8 +2324,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3848-9c2-721-b4d6" name="Brass Knukkulz" hidden="false" collective="false" import="true" type="upgrade">
@@ -2348,8 +2350,8 @@ If the target has the &apos;Vehicle&apos; or &apos;Mech&apos; keywords, the atta
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1445-8533-d9a6-de45" name="Downaz" hidden="false" collective="false" import="true" type="upgrade">
@@ -2367,13 +2369,13 @@ This ability cannot increase a Model&apos;s HP beyond its value at the start of 
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ad5b-6a70-60aa-579f" name="Da Drumz" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d641-3540-16b5-7461" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d641-3540-16b5-7461" type="max"/>
       </constraints>
       <profiles>
         <profile id="1b06-ef08-3844-421f" name="Da Drumz" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
@@ -2399,13 +2401,13 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ebde-4c30-db15-30df" name="Keytar" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f1c8-d542-c7be-25e7" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f1c8-d542-c7be-25e7" type="max"/>
       </constraints>
       <profiles>
         <profile id="585a-aabd-c8fd-aa70" name="Keytar" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
@@ -2431,13 +2433,13 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4956-eb57-adf5-2c08" name="Megabass" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5c43-4357-7239-7792" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5c43-4357-7239-7792" type="max"/>
       </constraints>
       <profiles>
         <profile id="1e94-8560-3903-9cc8" name="Megabass" hidden="false" typeId="03b8-0a17-23ad-c84f" typeName="Gear">
@@ -2463,8 +2465,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="3"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9694-a0ce-6f47-734e" name="Snipa-Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -2487,8 +2489,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         <infoLink id="e5bf-c8b-b1b5-9f33" name="Sneak Attak" hidden="false" targetId="b9c-40f-99e8-ec96" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8051-21b1-9c78-b220" name="Blitz-Banna" hidden="false" collective="false" import="true" type="upgrade">
@@ -2500,8 +2502,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="88c1-1b56-c243-84be" name="Spek-Opz Gear" hidden="false" collective="false" import="true" type="upgrade">
@@ -2528,8 +2530,8 @@ Only one instance of this gear may be equipped in a single Wargang.</characteris
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8d61-c97-3d96-62a6" name="Sneakin&apos; Gogulz" hidden="false" collective="false" import="true" type="upgrade">
@@ -2547,8 +2549,8 @@ This Model can choose to attack or not when an Enemy Model triggers Overwatch.</
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="1"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ca47-e718-349f-afd4" name="Grapul-Gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -2574,8 +2576,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4e90-829c-67ac-10db" name="Taza-Gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -2595,8 +2597,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="1"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d30-bc-5366-a15a" name="Powah-Bludga" hidden="false" collective="false" import="true" type="upgrade">
@@ -2620,9 +2622,38 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
         <infoLink id="8643-12d4-e8d1-94ed" name="Armor Puncha" hidden="false" targetId="6bf3-fbf2-a063-d8a6" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2.0"/>
-        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2.0"/>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="2"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="2"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flakk-Kannon" hidden="false" id="266e-8382-e2c-f1cd">
+      <costs>
+        <cost name="Points" typeId="fda5-738e-1874-bcf7" value="4"/>
+        <cost name="Carry" typeId="9378-4835-dc32-2b6f" value="4"/>
+      </costs>
+      <profiles>
+        <profile name="Flakk-Kannon" typeId="3bbe-22d4-9fb4-ad36" typeName="Weapon" hidden="false" id="89a3-cc00-64f6-a74">
+          <characteristics>
+            <characteristic name="Range" typeId="3dd0-6944-32b1-358a">4-80</characteristic>
+            <characteristic name="Power" typeId="d43c-ca14-824b-f2c7">1</characteristic>
+            <characteristic name="Carry" typeId="8348-6d8a-bf0b-028d">4</characteristic>
+            <characteristic name="Ammo" typeId="9f56-d6cf-fd09-7fa2">∞</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bombarda" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="9343-74ac-8037-c0aa">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">This weapon uses the &apos;Dangerzone&apos; Special Attack Rules, and has a radius of 3&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Anti-Air" typeId="82b5-7793-d995-c63c" typeName="Passive" hidden="false" id="5be1-ea8e-8aee-94ca">
+          <characteristics>
+            <characteristic name="Description" typeId="f9a7-df23-1898-0927">Any models which have the &apos;Hover&apos; or &apos;Fly&apos; Keywords, and are affected by the Dangerzone ignore any Cover or other Aim test modifiers when rolling to see if they are hit by the Dangerzone. 
+
+
+If this weapon successfully hits a Model which has the &apos;Hover&apos; or &apos;Fly&apos; Keywords, the attack has +1 Power.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2647,7 +2678,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2677,8 +2708,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1590-958c-9778-75fb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1590-958c-9778-75fb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2691,8 +2722,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2705,8 +2736,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2719,8 +2750,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2734,7 +2765,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2764,8 +2795,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1590-958c-9778-75fb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1590-958c-9778-75fb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2778,8 +2809,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2792,8 +2823,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2806,8 +2837,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2823,8 +2854,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2843,8 +2874,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2863,8 +2894,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2881,7 +2912,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2890,7 +2921,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2905,8 +2936,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd85-eeb7-abcd-329b" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd85-eeb7-abcd-329b" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2921,7 +2952,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2935,8 +2966,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09e6-55ad-80f3-b415" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09e6-55ad-80f3-b415" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2956,8 +2987,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd85-eeb7-abcd-329b" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd85-eeb7-abcd-329b" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2972,7 +3003,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2986,8 +3017,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3004,7 +3035,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3013,7 +3044,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3028,8 +3059,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09e6-55ad-80f3-b415" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09e6-55ad-80f3-b415" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3049,8 +3080,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0fb-c1e5-a83d-28d9" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0fb-c1e5-a83d-28d9" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3065,7 +3096,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c2-066c-e9d3-c267" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c2-066c-e9d3-c267" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3074,7 +3105,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c2-066c-e9d3-c267" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c2-066c-e9d3-c267" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3083,7 +3114,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c2-066c-e9d3-c267" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c2-066c-e9d3-c267" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3099,8 +3130,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0fb-c1e5-a83d-28d9" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0fb-c1e5-a83d-28d9" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3128,7 +3159,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd85-eeb7-abcd-329b" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fd85-eeb7-abcd-329b" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3150,7 +3181,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3159,7 +3190,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3168,7 +3199,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3178,7 +3209,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3187,13 +3218,14 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
         <entryLink id="957b-bcf8-33df-47e0" name="Zappa-Blasta" hidden="false" collective="false" import="true" targetId="f608-0e54-31a1-4a84" type="selectionEntry"/>
         <entryLink id="5f5e-3e5c-51bf-d447" name="Skrap-Launcha" hidden="false" collective="false" import="true" targetId="24fe-fe0d-1437-e14b" type="selectionEntry"/>
         <entryLink id="52f9-c630-c91-8692" name="Ultra-Bombarda" hidden="false" collective="false" import="true" targetId="1326-79c4-9734-f549" type="selectionEntry"/>
+        <entryLink import="true" name="Flakk-Kannon" hidden="false" type="selectionEntry" id="5cf9-812b-b9f3-3d0f" targetId="266e-8382-e2c-f1cd"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="8e06-3553-989d-f740" name="Misc Gear" hidden="false" collective="false" import="true">
       <selectionEntryGroups>
         <selectionEntryGroup id="c5b0-904e-b921-ce0d" name="Mekalegz" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9862-5ade-3927-3682" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9862-5ade-3927-3682" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="34e1-41f1-6da1-dd3e" name="Monowheel" hidden="true" collective="false" import="true" targetId="41e8-ed33-3b75-d811" type="selectionEntry">
@@ -3202,18 +3234,18 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                       </conditions>
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
                           </conditions>
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
-                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -3230,18 +3262,18 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                       </conditions>
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
                           </conditions>
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
-                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -3258,18 +3290,18 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                       </conditions>
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
                           </conditions>
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
-                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -3286,18 +3318,18 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                       </conditions>
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
                           </conditions>
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
-                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -3312,7 +3344,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
         </selectionEntryGroup>
         <selectionEntryGroup id="198a-de6f-23fc-da08" name="Mekabrainz" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="714b-1d81-6408-6473" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="714b-1d81-6408-6473" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="55a2-00da-95b4-107f" name="Rage-Wirez" hidden="true" collective="false" import="true" targetId="fc58-3881-451f-5ee3" type="selectionEntry">
@@ -3321,8 +3353,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3335,8 +3367,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3349,8 +3381,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3367,8 +3399,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3381,15 +3413,15 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="set" field="fda5-738e-1874-bcf7" value="0">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bfc-f1ce-6f54-8142" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bfc-f1ce-6f54-8142" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3400,9 +3432,9 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3415,8 +3447,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1537-8b19-1962-9051" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="381b-1d1c-1d0b-0693" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1537-8b19-1962-9051" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="381b-1d1c-1d0b-0693" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3429,14 +3461,14 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09e6-55ad-80f3-b415" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09e6-55ad-80f3-b415" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3451,14 +3483,14 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3473,8 +3505,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3487,13 +3519,13 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3508,8 +3540,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3522,9 +3554,9 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3537,8 +3569,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3551,9 +3583,9 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3564,7 +3596,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bea-1579-9cee-df0b" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bea-1579-9cee-df0b" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3575,14 +3607,14 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3597,14 +3629,14 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3619,13 +3651,13 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3640,19 +3672,19 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c1f-2fb4-4e6c-42ca" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bfc-f1ce-6f54-8142" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c1f-2fb4-4e6c-42ca" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bfc-f1ce-6f54-8142" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3667,9 +3699,9 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3682,14 +3714,14 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3704,14 +3736,14 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5748-94ea-1f98-ce73" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3726,7 +3758,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3737,9 +3769,9 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3752,9 +3784,9 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3767,8 +3799,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3781,8 +3813,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3795,8 +3827,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3809,8 +3841,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3823,7 +3855,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09e6-55ad-80f3-b415" type="instanceOf"/>
+            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09e6-55ad-80f3-b415" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3834,9 +3866,9 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3849,12 +3881,12 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
       <modifiers>
         <modifier type="increment" field="a7ea-8932-5231-323b" value="1">
           <repeats>
-            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bea-1579-9cee-df0b" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bea-1579-9cee-df0b" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a7ea-8932-5231-323b" type="max"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a7ea-8932-5231-323b" type="max"/>
       </constraints>
       <entryLinks>
         <entryLink id="ab29-f771-b75c-3474" name="Plazma-Blasta" hidden="true" collective="false" import="true" targetId="65b8-c795-a4a0-a69f" type="selectionEntry">
@@ -3864,8 +3896,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3879,8 +3911,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3894,9 +3926,9 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93df-2160-73a9-cb37" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3939,8 +3971,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3954,8 +3986,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3969,8 +4001,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0fb-c1e5-a83d-28d9" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0fb-c1e5-a83d-28d9" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3984,8 +4016,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0fb-c1e5-a83d-28d9" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0fb-c1e5-a83d-28d9" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3999,8 +4031,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09e6-55ad-80f3-b415" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09e6-55ad-80f3-b415" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4014,7 +4046,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4027,7 +4059,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4048,7 +4080,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4061,7 +4093,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0fb-c1e5-a83d-28d9" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0fb-c1e5-a83d-28d9" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4074,7 +4106,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4083,7 +4115,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4092,7 +4124,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4103,7 +4135,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5df4-b9fd-4669-a869" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4112,6 +4144,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
         <entryLink id="5458-f236-b93e-fec6" name="Zappa-Blasta" hidden="false" collective="false" import="true" targetId="f608-0e54-31a1-4a84" type="selectionEntry"/>
         <entryLink id="88d7-3d3d-1b6f-2ecf" name="Buzz-Sword" hidden="false" collective="false" import="true" targetId="4647-5cc4-ab72-864f" type="selectionEntry"/>
         <entryLink id="fca0-49ce-51cc-d26c" name="Powah-Bludga" hidden="false" collective="false" import="true" targetId="d30-bc-5366-a15a" type="selectionEntry"/>
+        <entryLink import="true" name="Flakk-Kannon" hidden="false" type="selectionEntry" id="83b8-5337-29fe-524c" targetId="266e-8382-e2c-f1cd"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="77e7-3bdf-c517-ace5" name="Mech Gear" hidden="true" collective="false" import="true">
@@ -4120,7 +4153,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad5-49a9-b718-0bf5" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4132,7 +4165,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="fda5-738e-1874-bcf7" value="0">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bfc-f1ce-6f54-8142" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bfc-f1ce-6f54-8142" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4141,7 +4174,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4150,7 +4183,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d15d-f4b9-edac-0c07" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4161,7 +4194,7 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce31-63e9-6928-32d3" type="instanceOf"/>
+            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce31-63e9-6928-32d3" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4172,9 +4205,9 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="665f-0987-feb2-fb26" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="665f-0987-feb2-fb26" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4187,9 +4220,9 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="665f-0987-feb2-fb26" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="665f-0987-feb2-fb26" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4206,8 +4239,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4220,8 +4253,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4234,13 +4267,13 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4255,8 +4288,8 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4269,14 +4302,14 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bfc-f1ce-6f54-8142" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bfc-f1ce-6f54-8142" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4291,14 +4324,14 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bfc-f1ce-6f54-8142" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bfc-f1ce-6f54-8142" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4313,14 +4346,14 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bfc-f1ce-6f54-8142" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bfc-f1ce-6f54-8142" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4335,14 +4368,14 @@ Use of this Ability does not end the Model&apos;s Turn.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bfc-f1ce-6f54-8142" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2e5c-9991-128e-3d2d" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8bfc-f1ce-6f54-8142" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c377-399d-c098-4a83" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b121-a57f-6058-b9eb" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
